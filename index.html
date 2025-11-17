@@ -15,33 +15,56 @@
                 <div id="chart"></div>
                 <div id="popup" style="position:absolute; left:-9999px; top:-9999px; background:#fff; border:1px solid #ddd; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:6px; padding:10px 12px; max-width:320px; z-index:1000;"></div>
             </div>
-            <div id="sidebar" style="min-width:360px;">
-                <div id="controls" style="margin: 0 0 8px 0;">
-            <label for="taxagroupSelect">Taxon Group: </label>
-            <select id="taxagroupSelect" style="margin-bottom:8px; width:200px;">
-                <option value="">Loading...</option>
-            </select>
-            <label for="rotate">Rotate: </label>
-            <input id="rotate" type="range" min="-180" max="180" value="0" step="1">
-            <span id="rotateValue">0°</span>
-            <span style="margin-left:16px;">
-                <button id="zoomOut">-</button>
-                <button id="zoomIn">+</button>
-                <button id="zoomReset">reset</button>
-                <span id="zoomValue">1.0×</span>
-            </span>
-            <span style="margin-left:16px;">
-                <input id="searchInput" type="text" placeholder="Search name or id" style="width:200px;">
-                <button id="searchBtn">Search</button>
-            </span>
+            <div id="right-panel" style="min-width:360px; display:flex; flex-direction:column; gap:16px;">
+                <div id="title-section">
+                    <h1>Neotoma Taxonomy Hierarchical Visualizer</h1>
                 </div>
-                <div id="info" style="margin-top:8px; background:#fff; border:1px solid #eee; border-radius:6px; padding:8px 10px; max-width:360px;"></div>
+                <div id="sidebar">
+                <div id="controls">
+                    <!-- First row: Rotate and Zoom -->
+                    <div class="control-row rotate-zoom-row">
+                        <div class="rotate-control">
+                            <label for="rotate">Rotate:</label>
+                            <input id="rotate" type="range" min="-180" max="180" value="0" step="1">
+                            <span id="rotateValue">0°</span>
+                        </div>
+                        <div class="zoom-control">
+                            <button id="zoomOut">-</button>
+                            <button id="zoomIn">+</button>
+                            <button id="zoomReset">reset</button>
+                            <span id="zoomValue">1.0×</span>
+                        </div>
+                    </div>
+
+                    <!-- Second row: Taxon Group and Search -->
+                    <div class="control-row taxon-group-search-row">
+                        <div class="taxon-group-section">
+                            <label for="taxagroupSelect">Taxon Group:</label>
+                            <div class="custom-select-wrapper">
+                                <select id="taxagroupSelect" style="display: none;">
+                                    <option value="">Loading...</option>
+                                </select>
+                                <div class="custom-select">
+                                    <div class="custom-select-trigger">Loading...</div>
+                                    <div class="custom-options"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-section">
+                            <input id="searchInput" type="text" placeholder="Search name or id">
+                            <button id="searchBtn">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="info"></div>
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="src/taxon-group-select.js"></script>
         <script type="module" src="mammal_path_combined.js"></script>
         <script type="module">
-        // Convert taxonpaths.json format to the format expected by renderMammalTree
+        // Convert data/taxonpaths.json format to the format expected by renderMammalTree
         function convertTaxonPaths(data) {
             // data is an object with a SQL query string as key and array as value
             const rows = Object.values(data)[0] || [];
@@ -162,7 +185,7 @@
         let allRows = [];
         let currentTaxagroupid = 'MAM'; // Default to MAM for Mammalia
 
-        fetch("taxonpaths.json")
+        fetch("data/taxonpaths.json")
             .then(r => r.json())
             .then(data => {
                 allRows = convertTaxonPaths(data);
@@ -192,7 +215,7 @@
                     loadTreeForGroup(currentTaxagroupid);
                 });
             })
-            .catch(err => console.error('Failed to load taxonpaths.json', err));
+            .catch(err => console.error('Failed to load data/taxonpaths.json', err));
 
         function loadTreeForGroup(taxagroupid) {
             if (!taxagroupid) {

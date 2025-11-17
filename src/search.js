@@ -23,6 +23,7 @@ export function setupSearch({
   root.descendants().forEach(n => idToNode.set(n.data.id, n));
   let currentMatches = [];
   let currentMatchIndex = -1;
+  let isShowingDetails = false; // Track if we're showing details of a single result
   
   function focusNode(d) {
     setCurrentRotate(90 - (d.x * 180 / Math.PI));
@@ -54,19 +55,105 @@ export function setupSearch({
     node.select('text').classed('highlight', d => matchIds.has(d.data.id));
   }
   
+  function showSearchResultsList() {
+    // Show the list of all search results
+    isShowingDetails = false;
+    const panel = document.getElementById('info');
+    if (!panel || currentMatches.length === 0) return;
+    
+    highlightAllMatches(currentMatches);
+    
+    const matchList = currentMatches.map((m, idx) => {
+      const path = m.ancestors().reverse().map(n => n.data.name).join(' / ');
+      return `<div style="cursor:pointer;padding:4px 0;border-bottom:1px solid #e5e7eb;" data-index="${idx}" class="search-result-item">${path}</div>`;
+    }).join('');
+    
+    panel.innerHTML = `
+      <div style="font-weight:600;margin-bottom:6px;">Search Results (${currentMatches.length} matches)</div>
+      <div style="max-height:300px;overflow-y:auto;">${matchList}</div>
+    `;
+    panel.style.display = 'block';
+    
+    // Add click handlers for each result
+    panel.querySelectorAll('.search-result-item').forEach((item, idx) => {
+      item.addEventListener('click', () => {
+        currentMatchIndex = idx;
+        isShowingDetails = true;
+        const selectedNode = currentMatches[idx];
+        focusNode(selectedNode);
+        showNodeDetails(selectedNode);
+      });
+      item.addEventListener('mouseenter', () => {
+        item.style.backgroundColor = '#f3f4f6';
+      });
+      item.addEventListener('mouseleave', () => {
+        item.style.backgroundColor = 'transparent';
+      });
+    });
+  }
+  
+  function showNodeDetails(selectedNode) {
+    // Show details of a single selected node with back button
+    const panel = document.getElementById('info');
+    if (!panel) return;
+    
+    const names = selectedNode.ancestors().reverse().map(n => n.data.name);
+    
+    // Only show back button if there are multiple matches to go back to
+    const backButton = currentMatches.length > 1 ? `
+      <button id="backToResults" style="
+        margin-top: 12px;
+        padding: 8px 16px;
+        background: linear-gradient(135deg, #43a047, #43a047);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+      " onmouseover="this.style.filter='brightness(1.1)'" onmouseout="this.style.filter='brightness(1)'">
+        Back to Results
+      </button>
+    ` : '';
+    
+    panel.innerHTML = `
+      <div style="font-weight:600;margin-bottom:6px;">Search Results (${names.length} matches)</div>
+      <div>${names.map(n => `<div>${n}</div>`).join('')}</div>
+      ${backButton}
+    `;
+    panel.style.display = 'block';
+    
+    // Add back button handler if it exists
+    const backBtn = document.getElementById('backToResults');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        if (info) info.clear();
+        showSearchResultsList();
+      });
+    }
+  }
+  
   const searchInput = document.getElementById('searchInput');
   const searchBtn = document.getElementById('searchBtn');
   
   function runSearch() {
     if (!searchInput) return;
     const q = searchInput.value.trim();
+    
+    // Clear previous focus labels before starting new search
+    if (info) info.clear();
+    
     if (!q) {
       // Clear search results
       currentMatches = [];
       currentMatchIndex = -1;
       link.classed('highlight', false);
       node.select('text').classed('highlight', false);
-      if (info) info.clear();
       return;
     }
     
@@ -96,41 +183,13 @@ export function setupSearch({
       }
       highlightAllMatches([]);
     } else if (matches.length === 1) {
-      // Single match - focus directly
+      // Single match - focus directly and show details
+      isShowingDetails = true;
       focusNode(matches[0]);
+      showNodeDetails(matches[0]);
     } else {
-      // Multiple matches - show list and highlight all
-      highlightAllMatches(matches);
-      if (info) {
-        const panel = document.getElementById('info');
-        if (panel) {
-          const matchList = matches.map((m, idx) => {
-            const path = m.ancestors().reverse().map(n => n.data.name).join(' / ');
-            return `<div style="cursor:pointer;padding:4px 0;border-bottom:1px solid #e5e7eb;" data-index="${idx}" class="search-result-item">${path}</div>`;
-          }).join('');
-          panel.innerHTML = `
-            <div style="font-weight:600;margin-bottom:6px;">Search Results (${matches.length} matches)</div>
-            <div style="max-height:300px;overflow-y:auto;">${matchList}</div>
-          `;
-          panel.style.display = 'block';
-          
-          // Add click handlers for each result
-          panel.querySelectorAll('.search-result-item').forEach((item, idx) => {
-            item.addEventListener('click', () => {
-              currentMatchIndex = idx;
-              // Focus on selected node and highlight only its path
-              const selectedNode = matches[idx];
-              focusNode(selectedNode);
-            });
-            item.addEventListener('mouseenter', () => {
-              item.style.backgroundColor = '#f3f4f6';
-            });
-            item.addEventListener('mouseleave', () => {
-              item.style.backgroundColor = 'transparent';
-            });
-          });
-        }
-      }
+      // Multiple matches - show list
+      showSearchResultsList();
     }
   }
   

@@ -182,7 +182,7 @@ function renderMammalTree({
 
   // Angle-based label culling (avoid overlap at initial scale)
   const cull = applyAngleCulling(root, node, 0.9);
-  const info = setupFocusInfo();
+  const info = setupFocusInfo(node);
   const { showAt: showPopupAt } = createPopup('popup');
 
   // 6) Click/Double-click interactions
