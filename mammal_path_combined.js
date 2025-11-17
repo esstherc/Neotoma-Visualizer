@@ -1,10 +1,11 @@
 import { applyAngleCulling } from './src/labelCulling.js';
 import { setupFocusInfo } from './src/searchFocus.js';
-import { normalizeRows, pathsToTree } from './src/data.js';
+import { normalizeRows, pathsToTree, addMissingSynonyms } from './src/data.js';
 import { createPopup } from './src/popup.js';
 import { highlightPath } from './src/highlight.js';
 import { enrichTreeWithPaths, reorderTreeForGrouping, computeLeafOrder } from './src/grouping.js';
 import { setupSearch } from './src/search.js';
+import { initSynonyms, getSynonymInfo, isSynonymsReady } from './src/synonyms.js';
 // Data helpers now imported from ./src/data.js
 
 /**
@@ -19,8 +20,9 @@ import { setupSearch } from './src/search.js';
  *     margin: 40                    // extra padding
  *   });
  */
-function renderMammalTree({
+async function renderMammalTree({
   rows,
+  allRowsForSynonyms = null,  // Optional: all rows including those filtered out, for adding synonym nodes
   selector = '#chart',
   rootId = 6171,
   rootName = 'Mammalia',
@@ -34,10 +36,22 @@ function renderMammalTree({
     console.warn('renderMammalTree: rows is empty.');
     return;
   }
+  
+  // Initialize synonym data for search functionality
+  await initSynonyms();
 
   // 1) Build hierarchy from path-list
   const normalizedRows = normalizeRows(rows);
-  const treeData = pathsToTree(normalizedRows, rootId, rootName);
+  const { root: treeData, byId } = pathsToTree(normalizedRows, rootId, rootName);
+  
+  // 1.5) Add missing synonyms to the tree
+  const synonymManager = {
+    isReady: () => isSynonymsReady(),
+    getSynonymInfo: (id) => getSynonymInfo(id)
+  };
+  // Use allRowsForSynonyms if provided, otherwise use rows
+  const rowsForSynonymLookup = allRowsForSynonyms || rows;
+  addMissingSynonyms(treeData, byId, synonymManager, rowsForSynonymLookup);
   
   // Enrich tree with path information for grouping
   enrichTreeWithPaths(treeData, normalizedRows);

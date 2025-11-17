@@ -4,7 +4,7 @@
  * Infer family from a path (names array).
  * Looks for names ending in -idae, or uses a node at a specific depth.
  */
-export function inferFamilyFromPath(names, groupDepth = 3) {
+function inferFamilyFromPath(names, groupDepth = 3) {
   if (!names || !Array.isArray(names)) return null;
   
   // First, try to find a name ending in -idae (typical family suffix)
@@ -73,7 +73,7 @@ export function enrichTreeWithPaths(treeData, rows) {
  * Compute groupKey for a leaf node based on its path.
  * node is a d3.hierarchy node, so we access data via node.data
  */
-export function getGroupKey(node, groupDepth = 3) {
+function getGroupKey(node, groupDepth = 3) {
   if (!node || !node.data) return 'Unknown';
   
   // Try to get pathNames from node.data

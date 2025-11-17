@@ -86,7 +86,96 @@ export function pathsToTree(rows, rootId = 6171, rootName = 'Mammalia') {
     }
   }
   (function prune(n) { if (n.children && n.children.length) n.children.forEach(prune); else delete n.children; })(root);
-  return root;
+  return { root, byId };
+}
+
+/**
+ * Add missing synonym nodes to the tree
+ * @param {Object} treeRoot - The root of the tree
+ * @param {Map} byId - Map of node ID to node object
+ * @param {Object} synonymManager - The synonym manager with getSynonymInfo method
+ * @param {Array} allRows - All available rows including those not in tree
+ */
+export function addMissingSynonyms(treeRoot, byId, synonymManager, allRows) {
+  if (!synonymManager || !synonymManager.isReady()) {
+    console.log('Synonym manager not ready, skipping synonym additions');
+    return;
+  }
+  
+  // Create a map of all available nodes from allRows
+  const allNodesMap = new Map();
+  allRows.forEach(row => {
+    if (row.taxonid && row.taxonname) {
+      allNodesMap.set(row.taxonid, {
+        id: row.taxonid,
+        name: row.taxonname,
+        taxagroupid: row.taxagroupid
+      });
+    }
+  });
+  
+  let addedCount = 0;
+  
+  // Iterate through all nodes currently in the tree
+  const nodesToCheck = Array.from(byId.keys());
+  nodesToCheck.forEach(nodeId => {
+    const synonymInfo = synonymManager.getSynonymInfo(nodeId);
+    if (!synonymInfo || !synonymInfo.synonyms) return;
+    
+    const currentNode = byId.get(nodeId);
+    if (!currentNode) return;
+    
+    // Check each synonym
+    synonymInfo.synonyms.forEach(syn => {
+      const synId = syn.invalid_id;
+      
+      // If synonym is not in tree but exists in allRows, add it
+      if (!byId.has(synId) && allNodesMap.has(synId)) {
+        const synNodeData = allNodesMap.get(synId);
+        
+        // Find the parent of the current node to add synonym as sibling
+        let parent = null;
+        
+        // Search for parent by traversing the tree
+        function findParent(node, targetId, par = null) {
+          if (node.id === targetId) return par;
+          if (node.children) {
+            for (const child of node.children) {
+              const result = findParent(child, targetId, node);
+              if (result) return result;
+            }
+          }
+          return null;
+        }
+        
+        parent = findParent(treeRoot, nodeId);
+        
+        if (parent) {
+          // Create synonym node as sibling
+          const synNode = {
+            id: synId,
+            name: synNodeData.name,
+            isSynonym: true, // Mark this as a synonym node added artificially
+            validId: synonymInfo.validId
+          };
+          
+          // Add to parent's children
+          if (!parent.children) parent.children = [];
+          parent.children.push(synNode);
+          
+          // Add to byId map
+          byId.set(synId, synNode);
+          
+          addedCount++;
+          console.log(`Added synonym: ${synNodeData.name} (ID: ${synId}) as sibling of ${currentNode.name} (ID: ${nodeId})`);
+        }
+      }
+    });
+  });
+  
+  if (addedCount > 0) {
+    console.log(`✓ Added ${addedCount} missing synonym nodes to the tree`);
+  }
 }
 
 

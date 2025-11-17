@@ -217,14 +217,14 @@
             })
             .catch(err => console.error('Failed to load data/taxonpaths.json', err));
 
-        function loadTreeForGroup(taxagroupid) {
+        async function loadTreeForGroup(taxagroupid) {
             if (!taxagroupid) {
                 // Clear the chart if no group selected
                 d3.select('#chart').selectAll('*').remove();
                 return;
             }
             
-            // Filter rows by taxagroupid
+            // Filter rows by taxagroupid for the tree
             const filteredRows = filterRowsByGroup(allRows, taxagroupid);
             
             if (filteredRows.length === 0) {
@@ -233,15 +233,21 @@
                 return;
             }
             
+            // Get ALL rows for this taxagroupid (including those without full paths)
+            // This is needed to add missing synonym nodes
+            const allRowsForGroup = allRows.filter(row => row.taxagroupid === taxagroupid);
+            
             // Get root info for this taxagroupid
             const rootInfo = getRootInfo(allRows, taxagroupid);
             
             // Clear previous chart
             d3.select('#chart').selectAll('*').remove();
             
-            // Render tree with appropriate root
-            window.renderMammalTree({ 
+            // Render tree with appropriate root (now async to load synonyms)
+            // Pass filteredRows for tree building, allRowsForGroup for synonym lookup
+            await window.renderMammalTree({ 
                 rows: filteredRows,
+                allRowsForSynonyms: allRowsForGroup,
                 rootId: rootInfo.rootId,
                 rootName: rootInfo.rootName
             });

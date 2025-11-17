@@ -8,7 +8,6 @@
   font-optical-sizing: auto;
 }
 
-#popup.hidden { display: none; }
 
 body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
   font-optical-sizing: auto; 
@@ -261,6 +260,12 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Ro
 svg path { transition: stroke-width 150ms ease, opacity 150ms ease; }
 /* Highlighted links should be lines only (no area fill) */
 svg path.highlight { fill: none !important; stroke: #43a047 !important; stroke-width: 2px; }
+/* Synonym highlighted links with different color */
+svg path.highlight-synonym { fill: none !important; stroke: #f59e0b !important; stroke-width: 2px; }
+
+/* Text highlight styles */
+svg text.highlight { fill: #43a047 !important; font-weight: 600 !important; }
+svg text.highlight-synonym { fill: #f59e0b !important; font-weight: 600 !important; }
 
 /* Focus label styling */
 .focus-label {
