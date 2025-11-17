@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Neotoma Mammal Visualization</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="layout" style="display:flex; align-items:flex-start; gap:16px;">
+            <div id="stage" style="position:relative;">
+                <div id="chart"></div>
+                <div id="popup" style="position:absolute; left:-9999px; top:-9999px; background:#fff; border:1px solid #ddd; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:6px; padding:10px 12px; max-width:320px; z-index:1000;"></div>
+            </div>
+            <div id="right-panel" style="min-width:360px; display:flex; flex-direction:column; gap:16px;">
+                <div id="title-section">
+                    <h1>Neotoma Taxonomy Hierarchical Visualizer</h1>
+                </div>
+                <div id="sidebar">
+                <div id="controls">
+                    <!-- First row: Rotate and Zoom -->
+                    <div class="control-row rotate-zoom-row">
+                        <div class="rotate-control">
+                            <label for="rotate">Rotate:</label>
+                            <input id="rotate" type="range" min="-180" max="180" value="0" step="1">
+                            <span id="rotateValue">0°</span>
+                        </div>
+                        <div class="zoom-control">
+                            <button id="zoomOut">-</button>
+                            <button id="zoomIn">+</button>
+                            <button id="zoomReset">reset</button>
+                            <span id="zoomValue">1.0×</span>
+                            <div id="viewSwitchGroup" class="view-switch-group">
+                                <button id="wholeViewBtn" class="view-switch-btn active">Whole View</button>
+                                <button id="focusViewBtn" class="view-switch-btn">Focus View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second row: Taxon Group and Search -->
+                    <div class="control-row taxon-group-search-row">
+                        <div class="taxon-group-section">
+                            <label for="taxagroupSelect">Taxon Group:</label>
+                            <div class="custom-select-wrapper">
+                                <select id="taxagroupSelect" style="display: none;">
+                                    <option value="">Loading...</option>
+                                </select>
+                                <div class="custom-select">
+                                    <div class="custom-select-trigger">Loading...</div>
+                                    <div class="custom-options"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-section">
+                            <input id="searchInput" type="text" placeholder="Search name or id">
+                            <button id="searchBtn">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="info"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="src/taxon-group-select.js"></script>
+        <script type="module" src="mammal_path_combined.js"></script>
+        <script type="module">
+        import { initViewSwitch, resetViewState } from './src/viewSwitch.js';
+        // Convert data/taxonpaths.json format to the format expected by renderMammalTree
+        function convertTaxonPaths(data) {
+            // data is an object with a SQL query string as key and array as value
+            const rows = Object.values(data)[0] || [];
+            return rows.map(row => {
+                // Convert array_to_string (comma-separated IDs) to array
+                const ids_root_to_leaf = row.array_to_string 
+                    ? row.array_to_string.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id))
+                    : [];
+                // Convert taxonnames (comma-separated names) to array
+                const names_root_to_leaf = row.taxonnames 
+                    ? row.taxonnames.split(',').map(name => name.trim())
+                    : [];
+                return {
+                    taxonid: row.taxonid,
+                    taxonname: row.taxonname,
+                    ids_root_to_leaf: ids_root_to_leaf,
+                    names_root_to_leaf: names_root_to_leaf,
+                    taxagroupid: row.taxagroupid
+                };
+            });
+        }
+
+        // Extract unique taxagroupid values
+        function extractTaxaGroups(rows) {
+            const groups = new Set();
+            rows.forEach(row => {
+                if (row.taxagroupid) {
+                    groups.add(row.taxagroupid);
+                }
+            });
+            return Array.from(groups).sort();
+        }
+
+        // Filter rows by taxagroupid and find appropriate root
+        function filterRowsByGroup(rows, taxagroupid) {
+            if (!taxagroupid) return [];
+            const filtered = rows.filter(row => row.taxagroupid === taxagroupid);
+            
+            if (taxagroupid === 'MAM') {
+                // For Mammalia, filter to only include paths that contain Mammalia (6171)
+                // and extract paths starting from Mammalia
+                return filtered
+                    .filter(row => row.ids_root_to_leaf.includes(6171))
+                    .map(row => {
+                        const mammaliaIndex = row.ids_root_to_leaf.indexOf(6171);
+                        return {
+                            ...row,
+                            ids_root_to_leaf: row.ids_root_to_leaf.slice(mammaliaIndex),
+                            names_root_to_leaf: row.names_root_to_leaf.slice(mammaliaIndex)
+                        };
+                    });
+            } else {
+                // For other groups, find the most common root node
+                // Count occurrences of first node in each path
+                const rootCounts = new Map();
+                filtered.forEach(row => {
+                    if (row.ids_root_to_leaf.length > 0) {
+                        const rootId = row.ids_root_to_leaf[0];
+                        rootCounts.set(rootId, (rootCounts.get(rootId) || 0) + 1);
+                    }
+                });
+                
+                // Find the most common root
+                let mostCommonRoot = 32182; // Default to Eukaryota
+                let maxCount = 0;
+                rootCounts.forEach((count, rootId) => {
+                    if (count > maxCount) {
+                        maxCount = count;
+                        mostCommonRoot = rootId;
+                    }
+                });
+                
+                // Filter to only include paths starting from the most common root
+                return filtered.filter(row => 
+                    row.ids_root_to_leaf.length > 0 && 
+                    row.ids_root_to_leaf[0] === mostCommonRoot
+                );
+            }
+        }
+        
+        // Get root info for a taxagroupid
+        function getRootInfo(rows, taxagroupid) {
+            if (taxagroupid === 'MAM') {
+                return { rootId: 6171, rootName: 'Mammalia' };
+            }
+            
+            // For other groups, find the most common root
+            const filtered = rows.filter(row => row.taxagroupid === taxagroupid);
+            const rootCounts = new Map();
+            const rootNames = new Map();
+            
+            filtered.forEach(row => {
+                if (row.ids_root_to_leaf.length > 0) {
+                    const rootId = row.ids_root_to_leaf[0];
+                    const rootName = row.names_root_to_leaf[0];
+                    rootCounts.set(rootId, (rootCounts.get(rootId) || 0) + 1);
+                    if (!rootNames.has(rootId)) {
+                        rootNames.set(rootId, rootName);
+                    }
+                }
+            });
+            
+            let mostCommonRoot = 32182; // Default to Eukaryota
+            let maxCount = 0;
+            rootCounts.forEach((count, rootId) => {
+                if (count > maxCount) {
+                    maxCount = count;
+                    mostCommonRoot = rootId;
+                }
+            });
+            
+            return {
+                rootId: mostCommonRoot,
+                rootName: rootNames.get(mostCommonRoot) || 'Root'
+            };
+        }
+
+        let allRows = [];
+        let currentTaxagroupid = 'MAM'; // Default to MAM for Mammalia
+
+        fetch("data/taxonpaths.json")
+            .then(r => r.json())
+            .then(data => {
+                allRows = convertTaxonPaths(data);
+                
+                // Extract unique taxagroupid values
+                const taxaGroups = extractTaxaGroups(allRows);
+                
+                // Populate dropdown
+                const select = document.getElementById('taxagroupSelect');
+                select.innerHTML = '';
+                taxaGroups.forEach(group => {
+                    const option = document.createElement('option');
+                    option.value = group;
+                    option.textContent = group;
+                    if (group === currentTaxagroupid) {
+                        option.selected = true;
+                    }
+                    select.appendChild(option);
+                });
+                
+                // Load default view (Mammalia)
+                loadTreeForGroup(currentTaxagroupid);
+                
+                // Handle dropdown change
+                select.addEventListener('change', (e) => {
+                    currentTaxagroupid = e.target.value;
+                    loadTreeForGroup(currentTaxagroupid);
+                });
+            })
+            .catch(err => console.error('Failed to load data/taxonpaths.json', err));
+
+        async function loadTreeForGroup(taxagroupid) {
+            if (!taxagroupid) {
+                // Clear the chart if no group selected
+                d3.select('#chart').selectAll('*').remove();
+                resetViewState();
+                return;
+            }
+            
+            // Filter rows by taxagroupid for the tree
+            const filteredRows = filterRowsByGroup(allRows, taxagroupid);
+            
+            if (filteredRows.length === 0) {
+                console.warn(`No data found for taxagroupid: ${taxagroupid}`);
+                d3.select('#chart').selectAll('*').remove();
+                resetViewState();
+                return;
+            }
+            
+            // Get ALL rows for this taxagroupid (including those without full paths)
+            // This is needed to add missing synonym nodes
+            const allRowsForGroup = allRows.filter(row => row.taxagroupid === taxagroupid);
+            
+            // Get root info for this taxagroupid
+            const rootInfo = getRootInfo(allRows, taxagroupid);
+            
+            // Clear previous chart
+            d3.select('#chart').selectAll('*').remove();
+            
+            // Reset view state when switching groups
+            resetViewState();
+            
+            // Initialize view switch with render function
+            initViewSwitch(
+                async (rows, rootId, rootName, allRowsForSynonyms) => {
+                    d3.select('#chart').selectAll('*').remove();
+                    await window.renderMammalTree({ 
+                        rows: rows,
+                        allRowsForSynonyms: allRowsForSynonyms,
+                        rootId: rootId,
+                        rootName: rootName
+                    });
+                },
+                filteredRows,
+                rootInfo,
+                taxagroupid,
+                allRowsForGroup
+            );
+            
+            // Render tree with appropriate root (now async to load synonyms)
+            // Pass filteredRows for tree building, allRowsForGroup for synonym lookup
+            await window.renderMammalTree({ 
+                rows: filteredRows,
+                allRowsForSynonyms: allRowsForGroup,
+                rootId: rootInfo.rootId,
+                rootName: rootInfo.rootName
+            });
+        }
+        </script>
+    </body>
+</html>
