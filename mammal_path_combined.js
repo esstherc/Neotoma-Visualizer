@@ -261,13 +261,7 @@ async function renderMammalTree({
         highlightPath(link, node, d);
         setHighlightedPath(d);
         if (info) info.show(d);
-        
-        // If in initial view and node has children, navigate to it
-        if (isInitialView && d.children && d.children.length > 0 && window.navigateToNode) {
-          const nodeData = d.data;
-          const taxagroupid = nodeData.taxagroupid || 'MAM';
-          window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
-        }
+        // Navigation is now only available via the "Go to Tree" button in the info panel
       }, 220);
     })
     .on('dblclick', (event, d) => {
