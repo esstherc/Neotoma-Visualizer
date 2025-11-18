@@ -6,17 +6,65 @@
 //   info.clear(); // to hide
 export function setupFocusInfo(nodeSelection) {
   const panel = document.getElementById('info');
+  let currentNode = null; // Store current node for button handler
   
   function show(d) {
     if (!panel || !d) return;
     
+    currentNode = d; // Store current node
+    
     // Update info panel
     const names = d.ancestors().reverse().map(n => n.data.name);
+    
+    // Check if node has children (can have a subtree)
+    // A node can have a subtree if:
+    // 1. It has children in the current tree, OR
+    // 2. We can check if there's data available to build a subtree
+    const hasSubtree = (d.children && d.children.length > 0) || 
+                      (d.descendants && d.descendants().length > 1); // Has descendants beyond itself
+    
+    // Add "Go to Tree" button only if node has a subtree and navigateToNode is available
+    const goToTreeButton = (hasSubtree && window.navigateToNode) ? `
+      <button id="goToTreeFromClick" style="
+        margin-top: 12px;
+        padding: 8px 16px;
+        background: linear-gradient(135deg, #2563eb, #2563eb);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+      " onmouseover="this.style.filter='brightness(1.1)'" onmouseout="this.style.filter='brightness(1)'">
+        Go to Tree
+      </button>
+    ` : '';
+    
     panel.innerHTML = `
       <div style="font-weight:600;margin-bottom:6px;">Search Results (${names.length} matches)</div>
-      <div>${names.map(n => `<div>${n}</div>`).join('')}</div>
+      <div style="margin-bottom:8px;"><strong>Path:</strong> ${names.map(n => `<div style="margin-left:12px;">${n}</div>`).join('')}</div>
+      ${goToTreeButton}
     `;
     panel.style.display = 'block';
+    
+    // Add event listener for "Go to Tree" button
+    const goToTreeBtn = document.getElementById('goToTreeFromClick');
+    if (goToTreeBtn && window.navigateToNode) {
+      // Remove any existing listeners by cloning the button
+      const newBtn = goToTreeBtn.cloneNode(true);
+      goToTreeBtn.parentNode.replaceChild(newBtn, goToTreeBtn);
+      
+      newBtn.addEventListener('click', () => {
+        const nodeData = d.data;
+        const taxagroupid = nodeData.taxagroupid || 'MAM';
+        window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
+      });
+    }
     
     // Add taxon name labels to all nodes in the path
     if (nodeSelection) {

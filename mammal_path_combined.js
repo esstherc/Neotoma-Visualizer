@@ -29,9 +29,11 @@ async function renderMammalTree({
   rootName = 'Mammalia',
   size = 900,
   margin = 40,
-  groupDepth = 3,  // Depth for grouping (0=root, 3=typically family level)
+  groupDepth = 2,  // Depth for grouping (0=root, 3=typically family level)
   groupPadding = 0.1,  // Extra angle (in radians) between groups (~5.7 degrees)
   siblingSeparation = 0.3,  // Minimum angle between siblings (in radians)
+  isInitialView = false,  // Whether this is the initial 4-level view
+  rootNodes = null,  // For initial view, the root nodes structure
 } = {}) {
   if (!rows || !rows.length) {
     console.warn('renderMammalTree: rows is empty.');
@@ -43,7 +45,54 @@ async function renderMammalTree({
 
   // 1) Build hierarchy from path-list
   const normalizedRows = normalizeRows(rows);
-  const { root: treeData, byId } = pathsToTree(normalizedRows, rootId, rootName);
+  
+  // For initial view with rootNodes, build tree from rootNodes structure
+  let treeData, byId;
+  if (isInitialView && rootNodes) {
+    // Build tree from rootNodes structure
+    const root = { id: rootId, name: rootName, children: [] };
+    byId = new Map([[root.id, root]]);
+    
+    function addNodeToTree(parent, nodeData) {
+      let child = byId.get(nodeData.id);
+      if (!child) {
+        child = {
+          id: nodeData.id,
+          name: nodeData.name,
+          taxagroupid: nodeData.taxagroupid,
+          children: []
+        };
+        byId.set(nodeData.id, child);
+        if (!parent.children) parent.children = [];
+        parent.children.push(child);
+      }
+      
+      if (nodeData.children && nodeData.children.length > 0) {
+        nodeData.children.forEach(childData => {
+          addNodeToTree(child, childData);
+        });
+      }
+    }
+    
+    rootNodes.forEach(rootNode => {
+      addNodeToTree(root, rootNode);
+    });
+    
+    // Prune empty children
+    (function prune(n) {
+      if (n.children && n.children.length) {
+        n.children.forEach(prune);
+      } else {
+        delete n.children;
+      }
+    })(root);
+    
+    treeData = root;
+  } else {
+    const result = pathsToTree(normalizedRows, rootId, rootName);
+    treeData = result.root;
+    byId = result.byId;
+  }
   
   // 1.5) Add missing synonyms to the tree
   const synonymManager = {
@@ -212,10 +261,26 @@ async function renderMammalTree({
         highlightPath(link, node, d);
         setHighlightedPath(d);
         if (info) info.show(d);
+        
+        // If in initial view and node has children, navigate to it
+        if (isInitialView && d.children && d.children.length > 0 && window.navigateToNode) {
+          const nodeData = d.data;
+          const taxagroupid = nodeData.taxagroupid || 'MAM';
+          window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
+        }
       }, 220);
     })
     .on('dblclick', (event, d) => {
       clearTimeout(clickTimer);
+      
+      // If double-clicking a node with children, navigate to it
+      if (d.children && d.children.length > 0 && window.navigateToNode) {
+        const nodeData = d.data;
+        const taxagroupid = nodeData.taxagroupid || 'MAM';
+        window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
+        return;
+      }
+      
       // Build a path string to show (root -> node names)
       const names = d.ancestors().reverse().map(a => a.data.name).join(' / ');
       // Show popup with empty info section for now

@@ -120,10 +120,29 @@ export function setupSearch({
         }
       }
       
+      // Add "Go to Tree" button if node has children
+      const hasChildren = m.children && m.children.length > 0;
+      const goToTreeBtn = hasChildren && window.navigateToNode ? `
+        <button class="go-to-tree-btn" data-index="${idx}" style="
+          margin-top: 4px;
+          padding: 4px 8px;
+          background: #2563eb;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: 500;
+        " onmouseover="this.style.filter='brightness(1.1)'" onmouseout="this.style.filter='brightness(1)'">
+          Go to Tree
+        </button>
+      ` : '';
+      
       return `<div style="cursor:pointer;padding:6px 0;border-bottom:1px solid #e5e7eb;" data-index="${idx}" class="search-result-item">
         <div style="display:flex;flex-direction:column;gap:2px;">
           <div>${path}</div>
           ${synonymBadge ? `<div style="font-size:12px;">${synonymBadge}</div>` : ''}
+          ${goToTreeBtn}
         </div>
       </div>`;
     }).join('');
@@ -136,7 +155,11 @@ export function setupSearch({
     
     // Add click handlers for each result
     panel.querySelectorAll('.search-result-item').forEach((item, idx) => {
-      item.addEventListener('click', () => {
+      item.addEventListener('click', (e) => {
+        // Don't trigger if clicking the "Go to Tree" button
+        if (e.target.classList.contains('go-to-tree-btn')) {
+          return;
+        }
         currentMatchIndex = idx;
         isShowingDetails = true;
         const selectedNode = currentMatches[idx];
@@ -148,6 +171,20 @@ export function setupSearch({
       });
       item.addEventListener('mouseleave', () => {
         item.style.backgroundColor = 'transparent';
+      });
+    });
+    
+    // Add handlers for "Go to Tree" buttons
+    panel.querySelectorAll('.go-to-tree-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const idx = parseInt(btn.getAttribute('data-index'));
+        const selectedNode = currentMatches[idx];
+        if (selectedNode && window.navigateToNode) {
+          const nodeData = selectedNode.data;
+          const taxagroupid = nodeData.taxagroupid || 'MAM';
+          window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
+        }
       });
     });
   }
@@ -338,11 +375,43 @@ export function setupSearch({
       </button>
     ` : '';
     
+    // Check if node has children (can have a subtree)
+    const hasSubtree = selectedNode && (
+      (selectedNode.children && selectedNode.children.length > 0) ||
+      (selectedNode.descendants && selectedNode.descendants().length > 1)
+    );
+    
+    // Add "Go to Tree" button - only show if node has a subtree
+    const goToTreeButton = (hasSubtree && window.navigateToNode) ? `
+      <button id="goToTree" style="
+        margin-top: 12px;
+        ${currentMatches.length > 1 ? 'margin-left: 8px;' : ''}
+        padding: 8px 16px;
+        background: linear-gradient(135deg, #2563eb, #2563eb);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+      " onmouseover="this.style.filter='brightness(1.1)'" onmouseout="this.style.filter='brightness(1)'">
+        Go to Tree
+      </button>
+    ` : '';
+    
     panel.innerHTML = `
-      <div style="font-weight:600;margin-bottom:6px;">Search Results (${names.length} matches)</div>
-      <div>${names.map(n => `<div>${n}</div>`).join('')}</div>
+      <div style="font-weight:600;margin-bottom:6px;">Search Results (${currentMatches.length} matches)</div>
+      <div style="margin-bottom:8px;"><strong>Path:</strong> ${names.map(n => `<div style="margin-left:12px;">${n}</div>`).join('')}</div>
       ${synonymSection}
-      ${backButton}
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        ${backButton}
+        ${goToTreeButton}
+      </div>
     `;
     panel.style.display = 'block';
     
@@ -352,6 +421,16 @@ export function setupSearch({
       backBtn.addEventListener('click', () => {
         if (info) info.clear();
         showSearchResultsList();
+      });
+    }
+    
+    // Add go to tree button handler if it exists
+    const goToTreeBtn = document.getElementById('goToTree');
+    if (goToTreeBtn && window.navigateToNode) {
+      goToTreeBtn.addEventListener('click', () => {
+        const nodeData = selectedNode.data;
+        const taxagroupid = nodeData.taxagroupid || 'MAM';
+        window.navigateToNode(nodeData.id, nodeData.name, taxagroupid);
       });
     }
   }
