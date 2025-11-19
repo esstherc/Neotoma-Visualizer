@@ -8,6 +8,7 @@ let originalRows = null; // Store original rows for restoring
 let originalRootInfo = null; // Store original root info
 let renderFunction = null; // Store the render function reference
 let allRowsForSynonyms = null; // Store all rows for synonyms
+let isShowingFocusViewWarning = false; // Flag to prevent repeated warnings
 
 /**
  * Initialize view switch functionality
@@ -17,6 +18,10 @@ let allRowsForSynonyms = null; // Store all rows for synonyms
  * @param {String} taxagroupid - Current taxagroupid
  * @param {Array} allRows - All rows for synonyms
  */
+// Store event handlers to allow removal
+let wholeViewHandler = null;
+let focusViewHandler = null;
+
 export function initViewSwitch(renderFn, rows, rootInfo, taxagroupid, allRows) {
   renderFunction = renderFn;
   originalRows = rows;
@@ -26,18 +31,32 @@ export function initViewSwitch(renderFn, rows, rootInfo, taxagroupid, allRows) {
   const wholeViewBtn = document.getElementById('wholeViewBtn');
   const focusViewBtn = document.getElementById('focusViewBtn');
   
+  // Remove existing event listeners if any
+  if (wholeViewBtn && wholeViewHandler) {
+    wholeViewBtn.removeEventListener('click', wholeViewHandler);
+  }
+  if (focusViewBtn && focusViewHandler) {
+    focusViewBtn.removeEventListener('click', focusViewHandler);
+  }
+  
+  // Create new handlers
+  wholeViewHandler = () => {
+    if (!isFocusView) return; // Already in whole view
+    switchToWholeView();
+  };
+  
+  focusViewHandler = () => {
+    if (isFocusView) return; // Already in focus view
+    switchToFocusView();
+  };
+  
+  // Add event listeners
   if (wholeViewBtn) {
-    wholeViewBtn.addEventListener('click', () => {
-      if (!isFocusView) return; // Already in whole view
-      switchToWholeView();
-    });
+    wholeViewBtn.addEventListener('click', wholeViewHandler);
   }
   
   if (focusViewBtn) {
-    focusViewBtn.addEventListener('click', () => {
-      if (isFocusView) return; // Already in focus view
-      switchToFocusView();
-    });
+    focusViewBtn.addEventListener('click', focusViewHandler);
   }
   
   updateButtonState();
@@ -61,6 +80,10 @@ export function setHighlightedPath(node) {
     pathIds: ancestors.map(n => n.data.id)
   };
   
+  // Clear warning when path is set
+  isShowingFocusViewWarning = false;
+  hideFocusViewWarning();
+  
   console.log('setHighlightedPath called', {
     nodeName: node.data.name,
     nodeId: node.data.id,
@@ -80,6 +103,11 @@ export function setHighlightedPath(node) {
  */
 export function setMatchIds(matchIds) {
   currentMatchIds = matchIds instanceof Set ? matchIds : new Set(matchIds);
+  // Clear warning when matches are set
+  if (currentMatchIds.size > 0) {
+    isShowingFocusViewWarning = false;
+    hideFocusViewWarning();
+  }
   console.log('setMatchIds called', {
     count: currentMatchIds.size,
     ids: Array.from(currentMatchIds).slice(0, 10)
@@ -112,7 +140,16 @@ async function switchToFocusView() {
   
   // Check if we have match IDs or highlighted path
   if (currentMatchIds.size === 0 && !currentHighlightedPath) {
-    alert('Please search or select a path first, then switch to Focus View.');
+    // Show friendly message in info panel instead of blocking alert
+    if (!isShowingFocusViewWarning) {
+      isShowingFocusViewWarning = true;
+      showFocusViewWarning();
+      // Auto-hide after 5 seconds
+      setTimeout(() => {
+        hideFocusViewWarning();
+        isShowingFocusViewWarning = false;
+      }, 5000);
+    }
     return;
   }
   
@@ -125,6 +162,8 @@ async function switchToFocusView() {
   }
   
   isFocusView = true;
+  isShowingFocusViewWarning = false;
+  hideFocusViewWarning();
   updateButtonState();
   
   // Filter rows: include all rows that contain any of the matched node IDs
@@ -228,6 +267,58 @@ export function resetViewState() {
   isFocusView = false;
   currentHighlightedPath = null;
   currentMatchIds.clear();
+  isShowingFocusViewWarning = false;
+  hideFocusViewWarning();
   updateButtonState();
+}
+
+/**
+ * Show warning message in info panel when trying to use Focus View without selection
+ */
+function showFocusViewWarning() {
+  const panel = document.getElementById('info');
+  if (!panel) return;
+  
+  panel.innerHTML = `
+    <div style="
+      padding: 12px 16px;
+      background-color: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 6px;
+      color: #856404;
+      font-size: 14px;
+      line-height: 1.5;
+    ">
+      <div style="font-weight: 600; margin-bottom: 4px;">⚠️ Focus View Unavailable</div>
+      <div>Please search for a taxon or click on a node in the tree first, then switch to Focus View.</div>
+      <button onclick="this.parentElement.style.display='none'" style="
+        margin-top: 8px;
+        padding: 4px 12px;
+        background: #ffc107;
+        color: #856404;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+      ">Dismiss</button>
+    </div>
+  `;
+  panel.style.display = 'block';
+}
+
+/**
+ * Hide warning message
+ */
+function hideFocusViewWarning() {
+  const panel = document.getElementById('info');
+  if (panel && isShowingFocusViewWarning) {
+    // Only hide if it's showing the warning (check for warning content)
+    const warningContent = panel.querySelector('div[style*="background-color: #fff3cd"]');
+    if (warningContent) {
+      panel.style.display = 'none';
+      panel.innerHTML = '';
+    }
+  }
 }
 

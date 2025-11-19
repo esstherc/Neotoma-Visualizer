@@ -646,6 +646,29 @@
                 isInitialView: true,
                 rootNodes: nodesToRender
             });
+            
+            // Initialize view switch for initial view
+            // Store nodesToRender in a variable accessible to the render function
+            const initialNodesToRender = nodesToRender;
+            initViewSwitch(
+                async (rows, rootId, rootName, allRowsForSynonyms) => {
+                    d3.select('#chart').selectAll('*').remove();
+                    // For Focus View, we may have filtered rows, so rebuild nodes if needed
+                    // But for initial view restoration, use the stored nodes
+                    await window.renderMammalTree({ 
+                        rows: rows,
+                        allRowsForSynonyms: allRowsForSynonyms,
+                        rootId: rootId,
+                        rootName: rootName,
+                        isInitialView: isInitialView, // Use current isInitialView state
+                        rootNodes: isInitialView ? initialNodesToRender : null
+                    });
+                },
+                rows,
+                { rootId: rootId, rootName: rootName },
+                null, // taxagroupid is null for initial view
+                allRows
+            );
         }
         
         // Update tree toggle button states
