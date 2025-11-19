@@ -120,12 +120,9 @@ export function setupSearch({
         }
       }
 
-      // Add "Go to Tree" button if node has a subtree in the full data
-      // Check both current tree children and full data to see if node has descendants
-      const hasChildrenInTree = m.children && m.children.length > 0;
-      const hasSubtreeInData = window.nodeHasSubtree ? window.nodeHasSubtree(m.data.id) : false;
-      const hasSubtree = hasChildrenInTree || hasSubtreeInData;
-      const goToTreeBtn = hasSubtree && window.navigateToNode ? `
+      // Add "Go to Tree" button if node has children
+      const hasChildren = m.children && m.children.length > 0;
+      const goToTreeBtn = hasChildren && window.navigateToNode ? `
         <button class="go-to-tree-btn" data-index="${idx}" style="
           margin-top: 4px;
           padding: 4px 8px;
@@ -378,11 +375,11 @@ export function setupSearch({
       </button>
     ` : '';
 
-    // Check if node has a subtree in the full data
-    // Check both current tree children and full data to see if node has descendants
-    const hasChildrenInTree = selectedNode && selectedNode.children && selectedNode.children.length > 0;
-    const hasSubtreeInData = selectedNode && window.nodeHasSubtree ? window.nodeHasSubtree(selectedNode.data.id) : false;
-    const hasSubtree = hasChildrenInTree || hasSubtreeInData;
+    // Check if node has children (can have a subtree)
+    const hasSubtree = selectedNode && (
+      (selectedNode.children && selectedNode.children.length > 0) ||
+      (selectedNode.descendants && selectedNode.descendants().length > 1)
+    );
 
     // Add "Go to Tree" button - only show if node has a subtree
     const goToTreeButton = (hasSubtree && window.navigateToNode) ? `
