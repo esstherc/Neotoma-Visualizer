@@ -15,7 +15,7 @@
                 <div id="chart"></div>
                 <div id="popup" style="position:absolute; left:-9999px; top:-9999px; background:#fff; border:1px solid #ddd; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:6px; padding:10px 12px; max-width:320px; z-index:1000;"></div>
             </div>
-            <div id="right-panel" style="min-width:360px; display:flex; flex-direction:column; gap:16px;">
+            <div id="right-panel" style="min-width:0; max-width:100%; flex:0 1 auto; display:flex; flex-direction:column; gap:16px; box-sizing:border-box;">
                 <div id="title-section">
                     <h1>Neotoma Taxonomy Hierarchical Visualizer</h1>
                 </div>
@@ -124,9 +124,35 @@
                     ? row.array_to_string.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id))
                     : [];
                 // Convert taxonnames (comma-separated names) to array
-                const names_root_to_leaf = row.taxonnames
-                    ? row.taxonnames.split(',').map(name => name.trim())
-                    : [];
+                // Handle commas within names by using the ID count to determine correct splitting
+                let names_root_to_leaf = [];
+                if (row.taxonnames) {
+                    const expectedCount = ids_root_to_leaf.length;
+                    if (expectedCount > 0) {
+                        // Split on ", " (comma followed by space) which is the separator between names
+                        const parts = row.taxonnames.split(', ');
+                        if (parts.length === expectedCount) {
+                            // Perfect match - no commas within names
+                            names_root_to_leaf = parts.map(name => name.trim());
+                        } else if (parts.length > expectedCount) {
+                            // Some names contain ", " - merge from the right until we have the correct count
+                            const merged = [];
+                            // Take the first (expectedCount - 1) parts as-is
+                            for (let i = 0; i < expectedCount - 1; i++) {
+                                merged.push(parts[i].trim());
+                            }
+                            // Merge all remaining parts as the last name
+                            merged.push(parts.slice(expectedCount - 1).join(', ').trim());
+                            names_root_to_leaf = merged;
+                        } else {
+                            // Fewer parts than expected - shouldn't happen but handle gracefully
+                            names_root_to_leaf = parts.map(name => name.trim());
+                        }
+                    } else {
+                        // Fallback to simple split if no IDs available
+                        names_root_to_leaf = row.taxonnames.split(',').map(name => name.trim());
+                    }
+                }
                 return {
                     taxonid: row.taxonid,
                     taxonname: row.taxonname,
