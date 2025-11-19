@@ -11,12 +11,12 @@
 //     updateLabelOrientation    // function to update label orientation
 //   });
 
-import { 
-  getAllSynonymIds, 
-  getAllSynonymNames, 
+import {
+  getAllSynonymIds,
+  getAllSynonymNames,
   isInvalidId,
   getSynonymInfo,
-  isSynonymsReady 
+  isSynonymsReady
 } from './synonyms.js';
 import { setHighlightedPath, clearHighlightedPath, setMatchIds } from './viewSwitch.js';
 
@@ -36,7 +36,7 @@ export function setupSearch({
   let isShowingDetails = false; // Track if we're showing details of a single result
   let primaryMatchIds = new Set(); // IDs that directly matched the search query
   let synonymMatchIds = new Set(); // IDs that matched through synonym relationships
-  
+
   function focusNode(d) {
     setCurrentRotate(90 - (d.x * 180 / Math.PI));
     updateRotate();
@@ -47,38 +47,38 @@ export function setupSearch({
     setHighlightedPath(d);
     if (info) info.show(d);
   }
-  
+
   function highlightAllMatches(matches) {
     // Clear previous highlights
     link.classed('highlight', false);
     link.classed('highlight-synonym', false);
     node.select('text').classed('highlight', false);
     node.select('text').classed('highlight-synonym', false);
-    
+
     if (matches.length === 0) return;
-    
+
     // Collect all ancestors for primary and synonym matches separately
     const primaryAncestors = new Set();
     const synonymAncestors = new Set();
-    
+
     // First pass: collect primary ancestors
     matches.forEach(m => {
       if (primaryMatchIds.has(m.data.id)) {
         m.ancestors().forEach(a => primaryAncestors.add(a));
       }
     });
-    
+
     // Second pass: collect synonym ancestors (including shared ones)
     matches.forEach(m => {
       if (synonymMatchIds.has(m.data.id)) {
         m.ancestors().forEach(a => synonymAncestors.add(a));
       }
     });
-    
+
     // Highlight links
     // A link gets primary highlight if both nodes are in primary path
     // A link gets synonym highlight if both nodes are in synonym path but NOT both in primary path
-    link.classed('highlight', l => 
+    link.classed('highlight', l =>
       primaryAncestors.has(l.source) && primaryAncestors.has(l.target)
     );
     link.classed('highlight-synonym', l => {
@@ -86,23 +86,23 @@ export function setupSearch({
       const inPrimary = primaryAncestors.has(l.source) && primaryAncestors.has(l.target);
       return inSynonym && !inPrimary;
     });
-    
+
     // Highlight text nodes
     node.select('text').classed('highlight', d => primaryMatchIds.has(d.data.id));
     node.select('text').classed('highlight-synonym', d => synonymMatchIds.has(d.data.id));
   }
-  
+
   function showSearchResultsList() {
     // Show the list of all search results
     isShowingDetails = false;
     const panel = document.getElementById('info');
     if (!panel || currentMatches.length === 0) return;
-    
+
     highlightAllMatches(currentMatches);
-    
+
     const matchList = currentMatches.map((m, idx) => {
       const path = m.ancestors().reverse().map(n => n.data.name).join(' / ');
-      
+
       // Add synonym badge if this is an invalid/synonym name
       let synonymBadge = '';
       if (isSynonymsReady() && isInvalidId(m.data.id)) {
@@ -119,14 +119,17 @@ export function setupSearch({
           ">synonym of ${synonymInfo.validName}</span>`;
         }
       }
-      
-      // Add "Go to Tree" button if node has children
-      const hasChildren = m.children && m.children.length > 0;
-      const goToTreeBtn = hasChildren && window.navigateToNode ? `
+
+      // Add "Go to Tree" button if node has a subtree in the full data
+      // Check both current tree children and full data to see if node has descendants
+      const hasChildrenInTree = m.children && m.children.length > 0;
+      const hasSubtreeInData = window.nodeHasSubtree ? window.nodeHasSubtree(m.data.id) : false;
+      const hasSubtree = hasChildrenInTree || hasSubtreeInData;
+      const goToTreeBtn = hasSubtree && window.navigateToNode ? `
         <button class="go-to-tree-btn" data-index="${idx}" style="
           margin-top: 4px;
           padding: 4px 8px;
-          background: #2563eb;
+          background: #43a047;
           color: white;
           border: none;
           border-radius: 4px;
@@ -137,7 +140,7 @@ export function setupSearch({
           Go to Tree
         </button>
       ` : '';
-      
+
       return `<div style="cursor:pointer;padding:6px 0;border-bottom:1px solid #e5e7eb;" data-index="${idx}" class="search-result-item">
         <div style="display:flex;flex-direction:column;gap:2px;">
           <div>${path}</div>
@@ -146,13 +149,13 @@ export function setupSearch({
         </div>
       </div>`;
     }).join('');
-    
+
     panel.innerHTML = `
       <div style="font-weight:600;margin-bottom:6px;">Search Results (${currentMatches.length} matches)</div>
       <div style="max-height:300px;overflow-y:auto;">${matchList}</div>
     `;
     panel.style.display = 'block';
-    
+
     // Add click handlers for each result
     panel.querySelectorAll('.search-result-item').forEach((item, idx) => {
       item.addEventListener('click', (e) => {
@@ -173,7 +176,7 @@ export function setupSearch({
         item.style.backgroundColor = 'transparent';
       });
     });
-    
+
     // Add handlers for "Go to Tree" buttons
     panel.querySelectorAll('.go-to-tree-btn').forEach((btn) => {
       btn.addEventListener('click', (e) => {
@@ -188,14 +191,14 @@ export function setupSearch({
       });
     });
   }
-  
+
   function showNodeDetails(selectedNode) {
     // Show details of a single selected node with back button
     const panel = document.getElementById('info');
     if (!panel) return;
-    
+
     const names = selectedNode.ancestors().reverse().map(n => n.data.name);
-    
+
     // Build synonym information section with type and date
     let synonymSection = '';
     if (isSynonymsReady()) {
@@ -203,24 +206,24 @@ export function setupSearch({
       if (synonymInfo) {
         const isInvalid = isInvalidId(selectedNode.data.id);
         const allNames = getAllSynonymNames(selectedNode.data.id);
-        
+
         // Helper function to format date (only show date, not time)
         const formatDate = (dateStr) => {
           if (!dateStr) return 'N/A';
           const date = new Date(dateStr);
-          return date.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
+          return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
           });
         };
-        
+
         if (allNames.size > 1 || isInvalid) {
           // This taxon has synonyms or is itself a synonym
-          const otherNames = Array.from(allNames).filter(name => 
+          const otherNames = Array.from(allNames).filter(name =>
             name.toLowerCase() !== selectedNode.data.name.toLowerCase()
           );
-          
+
           // Check which synonyms are actually in the tree
           const synonymsInTree = [];
           const synonymsNotInTree = [];
@@ -235,16 +238,16 @@ export function setupSearch({
               synonymsNotInTree.push(synDetails);
             }
           });
-          
+
           // Find synonym details for the current node if it's invalid
           let currentSynonymDetails = null;
           if (isInvalid) {
             const currentId = selectedNode.data.id;
-            currentSynonymDetails = synonymInfo.synonyms.find(syn => 
+            currentSynonymDetails = synonymInfo.synonyms.find(syn =>
               syn.invalid_id === currentId
             );
           }
-          
+
           synonymSection = `
             <div style="
               margin-top: 12px;
@@ -271,16 +274,16 @@ export function setupSearch({
                   </div>
                 </div>
               ` : ''}
-              
+
               <div style="font-weight:600;font-size:15px;margin-bottom:6px;color:#1f2937;">
                 ${isInvalid ? 'Valid Name:' : 'Synonyms:'}
               </div>
-              
-              ${isInvalid ? 
+
+              ${isInvalid ?
                 `<div style="font-size:15px;color:#059669;font-weight:600;margin-bottom:4px;">
                   ${synonymInfo.validName}
                 </div>
-                ${synonymsInTree.length > 0 || synonymsNotInTree.length > 1 ? 
+                ${synonymsInTree.length > 0 || synonymsNotInTree.length > 1 ?
                   '<div style="font-size:14px;color:#6b7280;margin-top:6px;">Other synonyms:</div>' : ''}
                 ${synonymsInTree.filter(s => s.invalid_id !== selectedNode.data.id).length > 0 ? `
                   <div style="font-size:14px;color:#6b7280;">
@@ -312,9 +315,9 @@ export function setupSearch({
                       </div>
                     `).join('')}
                   </div>
-                ` : ''}` 
+                ` : ''}`
                 : ''}
-              
+
               ${synonymsInTree.length > 0 && !isInvalid ? `
                 <div style="font-size:14px;color:#6b7280;">
                   ${synonymsInTree.map(synDetails => `
@@ -330,7 +333,7 @@ export function setupSearch({
                   `).join('')}
                 </div>
               ` : ''}
-              
+
               ${synonymsNotInTree.length > 0 && !isInvalid ? `
                 <div style="font-size:14px;color:#9ca3af;margin-top:8px;">
                   <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Not in current tree:</div>
@@ -352,7 +355,7 @@ export function setupSearch({
         }
       }
     }
-    
+
     // Only show back button if there are multiple matches to go back to
     const backButton = currentMatches.length > 1 ? `
       <button id="backToResults" style="
@@ -374,13 +377,13 @@ export function setupSearch({
         Back to Results
       </button>
     ` : '';
-    
-    // Check if node has children (can have a subtree)
-    const hasSubtree = selectedNode && (
-      (selectedNode.children && selectedNode.children.length > 0) ||
-      (selectedNode.descendants && selectedNode.descendants().length > 1)
-    );
-    
+
+    // Check if node has a subtree in the full data
+    // Check both current tree children and full data to see if node has descendants
+    const hasChildrenInTree = selectedNode && selectedNode.children && selectedNode.children.length > 0;
+    const hasSubtreeInData = selectedNode && window.nodeHasSubtree ? window.nodeHasSubtree(selectedNode.data.id) : false;
+    const hasSubtree = hasChildrenInTree || hasSubtreeInData;
+
     // Add "Go to Tree" button - only show if node has a subtree
     const goToTreeButton = (hasSubtree && window.navigateToNode) ? `
       <button id="goToTree" style="
@@ -403,7 +406,7 @@ export function setupSearch({
         Go to Tree
       </button>
     ` : '';
-    
+
     panel.innerHTML = `
       <div style="font-weight:600;margin-bottom:6px;">Search Results (${currentMatches.length} matches)</div>
       <div style="margin-bottom:8px;"><strong>Path:</strong> ${names.map(n => `<div style="margin-left:12px;">${n}</div>`).join('')}</div>
@@ -414,7 +417,7 @@ export function setupSearch({
       </div>
     `;
     panel.style.display = 'block';
-    
+
     // Add back button handler if it exists
     const backBtn = document.getElementById('backToResults');
     if (backBtn) {
@@ -423,7 +426,7 @@ export function setupSearch({
         showSearchResultsList();
       });
     }
-    
+
     // Add go to tree button handler if it exists
     const goToTreeBtn = document.getElementById('goToTree');
     if (goToTreeBtn && window.navigateToNode) {
@@ -434,17 +437,17 @@ export function setupSearch({
       });
     }
   }
-  
+
   const searchInput = document.getElementById('searchInput');
   const searchBtn = document.getElementById('searchBtn');
-  
+
   function runSearch() {
     if (!searchInput) return;
     const q = searchInput.value.trim();
-    
+
     // Clear previous focus labels before starting new search
     if (info) info.clear();
-    
+
     if (!q) {
       // Clear search results
       currentMatches = [];
@@ -458,17 +461,17 @@ export function setupSearch({
       clearHighlightedPath();
       return;
     }
-    
+
     let matches = [];
     const matchedIds = new Set(); // Track matched node IDs to avoid duplicates
     primaryMatchIds = new Set(); // Reset primary matches
     synonymMatchIds = new Set(); // Reset synonym matches
-    
+
     const id = Number(q);
     if (!Number.isNaN(id) && idToNode.has(id)) {
       // Exact ID match - check for synonyms if available
       primaryMatchIds.add(id); // The searched ID is primary
-      
+
       if (isSynonymsReady()) {
         const allSynonymIds = getAllSynonymIds(id);
         allSynonymIds.forEach(synId => {
@@ -489,12 +492,12 @@ export function setupSearch({
     } else {
       // Fuzzy name search - find all matches including synonyms
       const lower = q.toLowerCase();
-      
+
       // First pass: direct name matches
-      const directMatches = root.descendants().filter(n => 
+      const directMatches = root.descendants().filter(n =>
         (n.data.name || '').toLowerCase().includes(lower)
       );
-      
+
       // Add direct matches as primary
       directMatches.forEach(n => {
         if (!matchedIds.has(n.data.id)) {
@@ -503,26 +506,26 @@ export function setupSearch({
           primaryMatchIds.add(n.data.id);
         }
       });
-      
+
       // Second pass: check synonyms if available
       if (isSynonymsReady()) {
         // Track which nodes match through synonym names
         const synonymNameMatches = new Set();
-        
+
         // Check if any synonym names match the search term
         root.descendants().forEach(n => {
           if (matchedIds.has(n.data.id)) return; // Already matched as primary
-          
+
           const allSynonymNames = getAllSynonymNames(n.data.id);
-          const hasMatchingSynonym = Array.from(allSynonymNames).some(name => 
+          const hasMatchingSynonym = Array.from(allSynonymNames).some(name =>
             name.toLowerCase().includes(lower)
           );
-          
+
           if (hasMatchingSynonym) {
             synonymNameMatches.add(n.data.id);
           }
         });
-        
+
         // Add all related synonym IDs
         const allPrimaryIds = new Set(primaryMatchIds);
         allPrimaryIds.forEach(primaryId => {
@@ -538,7 +541,7 @@ export function setupSearch({
             }
           });
         });
-        
+
         // Add nodes matched through synonym names
         synonymNameMatches.forEach(nodeId => {
           const allSynonymIds = getAllSynonymIds(nodeId);
@@ -548,7 +551,7 @@ export function setupSearch({
               matchedIds.add(synId);
               // If this ID matches the search in its synonym name, mark as primary
               const allNames = getAllSynonymNames(synId);
-              const matchesDirectly = Array.from(allNames).some(name => 
+              const matchesDirectly = Array.from(allNames).some(name =>
                 name.toLowerCase().includes(lower)
               );
               if (matchesDirectly) {
@@ -561,25 +564,25 @@ export function setupSearch({
         });
       }
     }
-    
+
     currentMatches = matches;
     currentMatchIndex = -1;
-    
+
     // Set match IDs for Focus View
     const allMatchIds = new Set([...primaryMatchIds, ...synonymMatchIds]);
     setMatchIds(allMatchIds);
-    
+
     // Debug: log the classification of matches and check for synonyms not in tree
     console.log('Search results for:', q);
     console.log('Primary match IDs:', Array.from(primaryMatchIds));
     console.log('Synonym match IDs:', Array.from(synonymMatchIds));
     console.log('Total matches:', matches.length);
     matches.forEach(m => {
-      const type = primaryMatchIds.has(m.data.id) ? 'PRIMARY' : 
+      const type = primaryMatchIds.has(m.data.id) ? 'PRIMARY' :
                    synonymMatchIds.has(m.data.id) ? 'SYNONYM' : 'UNKNOWN';
       console.log(`  - ${m.data.name} (ID: ${m.data.id}) [${type}]`);
     });
-    
+
     // Check if there are synonyms that exist in the synonym database but not in the current tree
     if (isSynonymsReady() && (primaryMatchIds.size > 0 || synonymMatchIds.size > 0)) {
       const allCheckedIds = new Set([...primaryMatchIds, ...synonymMatchIds]);
@@ -589,25 +592,25 @@ export function setupSearch({
           const allSynonymIds = getAllSynonymIds(matchId);
           const allSynonymNames = getAllSynonymNames(matchId);
           const missingInTree = [];
-          
+
           // Check each synonym ID
           synonymInfo.synonyms.forEach(syn => {
             if (!idToNode.has(syn.invalid_id)) {
-              missingInTree.push({ 
-                id: syn.invalid_id, 
+              missingInTree.push({
+                id: syn.invalid_id,
                 name: syn.invalid_name,
-                type: syn.synonymtype 
+                type: syn.synonymtype
               });
             }
           });
-          
+
           if (missingInTree.length > 0) {
             console.log(`⚠️ Synonyms of "${synonymInfo.validName}" (ID: ${synonymInfo.validId}) not in current tree:`, missingInTree);
           }
         }
       });
     }
-    
+
     if (matches.length === 0) {
       if (info) {
         const panel = document.getElementById('info');
@@ -631,10 +634,10 @@ export function setupSearch({
       showSearchResultsList();
     }
   }
-  
+
   if (searchBtn) searchBtn.addEventListener('click', runSearch);
   if (searchInput) {
-    searchInput.addEventListener('keydown', (e) => { 
+    searchInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         runSearch();
       } else if (e.key === 'ArrowDown' && currentMatches.length > 0) {

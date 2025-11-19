@@ -6,7 +6,7 @@
         <title>Neotoma Mammal Visualization</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -120,11 +120,11 @@
             const rows = Object.values(data)[0] || [];
             return rows.map(row => {
                 // Convert array_to_string (comma-separated IDs) to array
-                const ids_root_to_leaf = row.array_to_string 
+                const ids_root_to_leaf = row.array_to_string
                     ? row.array_to_string.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id))
                     : [];
                 // Convert taxonnames (comma-separated names) to array
-                const names_root_to_leaf = row.taxonnames 
+                const names_root_to_leaf = row.taxonnames
                     ? row.taxonnames.split(',').map(name => name.trim())
                     : [];
                 return {
@@ -152,7 +152,7 @@
         function filterRowsByGroup(rows, taxagroupid) {
             if (!taxagroupid) return [];
             const filtered = rows.filter(row => row.taxagroupid === taxagroupid);
-            
+
             if (taxagroupid === 'MAM') {
                 // For Mammalia, filter to only include paths that contain Mammalia (6171)
                 // and extract paths starting from Mammalia
@@ -176,7 +176,7 @@
                         rootCounts.set(rootId, (rootCounts.get(rootId) || 0) + 1);
                     }
                 });
-                
+
                 // Find the most common root
                 let mostCommonRoot = 32182; // Default to Eukaryota
                 let maxCount = 0;
@@ -186,26 +186,26 @@
                         mostCommonRoot = rootId;
                     }
                 });
-                
+
                 // Filter to only include paths starting from the most common root
-                return filtered.filter(row => 
-                    row.ids_root_to_leaf.length > 0 && 
+                return filtered.filter(row =>
+                    row.ids_root_to_leaf.length > 0 &&
                     row.ids_root_to_leaf[0] === mostCommonRoot
                 );
             }
         }
-        
+
         // Get root info for a taxagroupid
         function getRootInfo(rows, taxagroupid) {
             if (taxagroupid === 'MAM') {
                 return { rootId: 6171, rootName: 'Mammalia' };
             }
-            
+
             // For other groups, find the most common root
             const filtered = rows.filter(row => row.taxagroupid === taxagroupid);
             const rootCounts = new Map();
             const rootNames = new Map();
-            
+
             filtered.forEach(row => {
                 if (row.ids_root_to_leaf.length > 0) {
                     const rootId = row.ids_root_to_leaf[0];
@@ -216,7 +216,7 @@
                     }
                 }
             });
-            
+
             let mostCommonRoot = 32182; // Default to Eukaryota
             let maxCount = 0;
             rootCounts.forEach((count, rootId) => {
@@ -225,7 +225,7 @@
                     mostCommonRoot = rootId;
                 }
             });
-            
+
             return {
                 rootId: mostCommonRoot,
                 rootName: rootNames.get(mostCommonRoot) || 'Root'
@@ -247,20 +247,20 @@
             .then(([taxonData, namesMap]) => {
                 taxagroupNames = namesMap; // Store the mapping
                 allRows = convertTaxonPaths(taxonData);
-                
+
                 // Extract unique taxagroupid values
                 const taxaGroups = extractTaxaGroups(allRows);
-                
+
                 // Populate dropdown
                 const select = document.getElementById('taxagroupSelect');
                 select.innerHTML = '';
-                
+
                 // Add "Major Groups" as the first option
                 const majorGroupsOption = document.createElement('option');
                 majorGroupsOption.value = '';
                 majorGroupsOption.textContent = 'Major Groups';
                 select.appendChild(majorGroupsOption);
-                
+
                 // Add all other taxon groups with full names
                 taxaGroups.forEach(group => {
                     const option = document.createElement('option');
@@ -269,36 +269,36 @@
                     option.textContent = taxagroupNames[group] || group;
                     select.appendChild(option);
                 });
-                
+
                 // Set "Major Groups" as selected (initial view)
                 select.value = '';
-                
+
                 // Load initial 4-level view
                 loadInitialView();
-                
+
                 // Handle dropdown change
                 select.addEventListener('change', (e) => {
                     // Skip if we're programmatically syncing the dropdown
                     if (isSyncingDropdown) {
                         return;
                     }
-                    
+
                     const selectedValue = e.target.value;
-                    
+
                     if (selectedValue === '') {
                         // "Major Groups" selected - show initial view
                         currentTaxagroupid = null;
                         isInitialView = true;
                         navigationStack = [];
                         currentTreeType = 'main';
-                        
+
                         // Show tree toggle for Major Groups view
                         const toggleDiv = document.getElementById('treeViewToggle');
                         if (toggleDiv) {
                             toggleDiv.style.display = 'block';
                             toggleDiv.style.visibility = 'visible';
                         }
-                        
+
                         updateBackButton();
                         loadInitialView();
                     } else {
@@ -307,13 +307,13 @@
                         isInitialView = false;
                         navigationStack = [];
                         currentTreeType = 'main';
-                        
+
                         // Hide tree toggle when selecting a specific group
                         const toggleDiv = document.getElementById('treeViewToggle');
                         if (toggleDiv) {
                             toggleDiv.style.display = 'none';
                         }
-                        
+
                         updateBackButton();
                         loadTreeForGroup(currentTaxagroupid);
                     }
@@ -328,12 +328,12 @@
             const levelMap = new Map(); // Map of level -> Map of id -> nodeData
             const idToTaxagroupid = new Map(); // Track taxagroupid for each node ID
             const standaloneOrphans = []; // Nodes with only one ID (no hierarchical path)
-            
+
             allRows.forEach(row => {
                 const ids = row.ids_root_to_leaf || [];
                 const names = row.names_root_to_leaf || [];
                 const taxagroupid = row.taxagroupid;
-                
+
                 // Check for standalone orphan nodes (only one ID, no path)
                 if (ids.length === 1 && names.length === 1) {
                     standaloneOrphans.push({
@@ -345,18 +345,18 @@
                     });
                     return; // Skip processing for standalone orphans
                 }
-                
+
                 // Only process rows with at least 4 levels
                 if (ids.length >= 4 && names.length >= 4) {
                     // Get first 4 levels
                     for (let i = 0; i < Math.min(4, ids.length); i++) {
                         const id = ids[i];
                         const name = names[i];
-                        
+
                         if (!levelMap.has(i)) {
                             levelMap.set(i, new Map());
                         }
-                        
+
                         const levelData = levelMap.get(i);
                         if (!levelData.has(id)) {
                             levelData.set(id, {
@@ -367,16 +367,16 @@
                                 pathCount: 0 // Count how many paths go through this node
                             });
                         }
-                        
+
                         // Track taxagroupid
                         if (taxagroupid) {
                             levelData.get(id).taxagroupids.add(taxagroupid);
                             idToTaxagroupid.set(id, taxagroupid); // Store most recent taxagroupid
                         }
-                        
+
                         // Increment path count
                         levelData.get(id).pathCount++;
-                        
+
                         // Add child relationship
                         if (i > 0) {
                             const parentId = ids[i - 1];
@@ -388,50 +388,50 @@
                     }
                 }
             });
-            
+
             // Convert to tree structure starting from level 0 (Eukaryota)
             const rootNodes = [];
             const orphanNodes = []; // Nodes with only one taxonname that aren't linking to anything
             const rootLevel = levelMap.get(0);
-            
+
             if (rootLevel) {
                 rootLevel.forEach((nodeData, id) => {
                     // Use the most common taxagroupid for this node
                     const taxagroupids = Array.from(nodeData.taxagroupids);
                     const taxagroupid = taxagroupids[0] || 'MAM'; // Use first one as default
-                    
+
                     // Recursively build children up to level 3 (Mammalia)
                     function buildChildren(parentNode, level, isOrphan = false) {
                         if (level >= 3) return; // Stop at level 3 (Mammalia)
-                        
+
                         const nextLevel = levelMap.get(level + 1);
                         if (!nextLevel) return;
-                        
+
                         parentNode.children = [];
                         const parentData = levelMap.get(level).get(parentNode.id);
                         const childrenSet = parentData?.children || new Set();
-                        
+
                         childrenSet.forEach(childId => {
                             const childData = nextLevel.get(childId);
-                            
+
                             // Check if this is an orphan node (single taxonname, no children)
                             // An orphan node: appears in only one path AND has no children
-                            const isOrphanNode = childData && 
-                                childData.pathCount === 1 && 
+                            const isOrphanNode = childData &&
+                                childData.pathCount === 1 &&
                                 childData.children.size === 0;
-                            
+
                             // For main tree: include if has children, is level 2, or has multiple paths
                             // For orphan tree: include only orphan nodes
-                            const shouldInclude = isOrphan 
+                            const shouldInclude = isOrphan
                                 ? isOrphanNode
-                                : (childData && 
+                                : (childData &&
                                     (childData.children.size > 0 || level === 2 || childData.pathCount > 1));
-                            
+
                             if (childData && shouldInclude) {
                                 // Use the most common taxagroupid for this child
                                 const childTaxagroupids = Array.from(childData.taxagroupids);
                                 const childTaxagroupid = childTaxagroupids[0] || idToTaxagroupid.get(childId) || 'MAM';
-                                
+
                                 const childNode = {
                                     id: childId,
                                     name: childData.name,
@@ -442,13 +442,13 @@
                                 parentNode.children.push(childNode);
                             }
                         });
-                        
+
                         // Remove children property if empty
                         if (parentNode.children.length === 0) {
                             delete parentNode.children;
                         }
                     }
-                    
+
                     // Build main tree node
                     if (nodeData.children.size > 0) {
                         const node = {
@@ -458,25 +458,25 @@
                             children: []
                         };
                         buildChildren(node, 0, false);
-                        
+
                         // Only add if node has children after building
                         if (node.children && node.children.length > 0) {
                             rootNodes.push(node);
                         }
                     }
-                    
+
                     // Build orphan tree node (nodes with single taxonname, no children)
                     // Check if this root has orphan descendants at any level
                     function hasOrphanDescendants(nodeId, level) {
                         if (level >= 3) return false;
                         const nodeData = levelMap.get(level)?.get(nodeId);
                         if (!nodeData) return false;
-                        
+
                         // Check if this node itself is an orphan (but only if it's not level 0)
                         if (level > 0 && nodeData.pathCount === 1 && nodeData.children.size === 0) {
                             return true;
                         }
-                        
+
                         // Check descendants
                         for (const childId of nodeData.children) {
                             if (hasOrphanDescendants(childId, level + 1)) {
@@ -485,7 +485,7 @@
                         }
                         return false;
                     }
-                    
+
                     if (hasOrphanDescendants(id, 0)) {
                         const orphanNode = {
                             id: id,
@@ -494,7 +494,7 @@
                             children: []
                         };
                         buildChildren(orphanNode, 0, true);
-                        
+
                         // Only add if node has orphan children after building
                         if (orphanNode.children && orphanNode.children.length > 0) {
                             orphanNodes.push(orphanNode);
@@ -502,12 +502,12 @@
                     }
                 });
             }
-            
+
             // Build orphan tree from standalone orphans
             // Structure: Root -> taxagroupid -> orphan nodes
             const orphanTreeByGroup = new Map();
             let orphanGroupIdCounter = -1000000; // Use negative IDs to avoid conflicts
-            
+
             standaloneOrphans.forEach(orphan => {
                 const group = orphan.taxagroupid || 'MAM';
                 if (!orphanTreeByGroup.has(group)) {
@@ -526,28 +526,28 @@
                     children: []
                 });
             });
-            
+
             // Add standalone orphans to orphan tree (these will be children of the synthetic root)
             orphanTreeByGroup.forEach((groupRoot, group) => {
                 if (groupRoot.children.length > 0) {
                     orphanNodes.push(groupRoot);
                 }
             });
-            
+
             console.log('Orphan nodes found:', {
                 standaloneOrphans: standaloneOrphans.length,
                 orphanTreeNodes: orphanNodes.length,
                 sampleOrphans: standaloneOrphans.slice(0, 5)
             });
-            
+
             return { mainTree: rootNodes, orphanTree: orphanNodes };
         }
-        
+
         // Store both trees
         let mainTreeNodes = [];
         let orphanTreeNodes = [];
         let currentTreeType = 'main'; // 'main' or 'orphan'
-        
+
         // Load initial 4-level view
         async function loadInitialView(treeType = 'main') {
             isInitialView = true;
@@ -556,7 +556,7 @@
             updateBackButton();
             syncDropdownValue();
             currentTreeType = treeType;
-            
+
             // Build trees if not already built
             if (mainTreeNodes.length === 0 && orphanTreeNodes.length === 0) {
                 const trees = buildInitialView();
@@ -569,10 +569,10 @@
                     orphanTreeSample: orphanTreeNodes.slice(0, 2)
                 });
             }
-            
+
             // Select which tree to show
             const rootNodes = treeType === 'main' ? mainTreeNodes : orphanTreeNodes;
-            
+
             // Show/hide tree toggle - always show in initial view
             const toggleDiv = document.getElementById('treeViewToggle');
             if (toggleDiv) {
@@ -591,14 +591,14 @@
                 console.error('treeViewToggle element not found in DOM!');
             }
             updateTreeToggleButtons();
-            
+
             // Convert to rows format for rendering
             const rows = [];
             rootNodes.forEach(root => {
                 function traverse(node, pathIds = [], pathNames = []) {
                     const newPathIds = [...pathIds, node.id];
                     const newPathNames = [...pathNames, node.name];
-                    
+
                     if (node.children && node.children.length > 0) {
                         node.children.forEach(child => {
                             traverse(child, newPathIds, newPathNames);
@@ -616,15 +616,15 @@
                 }
                 traverse(root);
             });
-            
+
             // Clear previous chart
             d3.select('#chart').selectAll('*').remove();
             resetViewState();
-            
+
             // Determine root ID and name based on tree type
             let rootId, rootName;
             let nodesToRender = rootNodes;
-            
+
             if (treeType === 'orphan') {
                 // For orphan tree, always use a synthetic root
                 // Structure will be: Root -> taxagroupid -> orphan nodes
@@ -636,9 +636,9 @@
                 rootId = 0;
                 rootName = 'Root';
             }
-            
+
             // Render with special handling for initial view
-            await window.renderMammalTree({ 
+            await window.renderMammalTree({
                 rows: rows,
                 allRowsForSynonyms: allRows,
                 rootId: rootId,
@@ -646,7 +646,7 @@
                 isInitialView: true,
                 rootNodes: nodesToRender
             });
-            
+
             // Initialize view switch for initial view
             // Store nodesToRender in a variable accessible to the render function
             const initialNodesToRender = nodesToRender;
@@ -655,7 +655,7 @@
                     d3.select('#chart').selectAll('*').remove();
                     // For Focus View, we may have filtered rows, so rebuild nodes if needed
                     // But for initial view restoration, use the stored nodes
-                    await window.renderMammalTree({ 
+                    await window.renderMammalTree({
                         rows: rows,
                         allRowsForSynonyms: allRowsForSynonyms,
                         rootId: rootId,
@@ -670,12 +670,12 @@
                 allRows
             );
         }
-        
+
         // Update tree toggle button states
         function updateTreeToggleButtons() {
             const mainBtn = document.getElementById('mainTreeBtn');
             const orphanBtn = document.getElementById('orphanTreeBtn');
-            
+
             if (mainBtn && orphanBtn) {
                 if (currentTreeType === 'main') {
                     mainBtn.classList.add('active');
@@ -694,12 +694,12 @@
                 }
             }
         }
-        
+
         // Set up tree toggle buttons
         function setupTreeToggle() {
             const mainBtn = document.getElementById('mainTreeBtn');
             const orphanBtn = document.getElementById('orphanTreeBtn');
-            
+
             if (mainBtn) {
                 mainBtn.addEventListener('click', () => {
                     if (currentTreeType !== 'main') {
@@ -707,7 +707,7 @@
                     }
                 });
             }
-            
+
             if (orphanBtn) {
                 orphanBtn.addEventListener('click', () => {
                     if (currentTreeType !== 'orphan') {
@@ -716,14 +716,14 @@
                 });
             }
         }
-        
+
         // Set up when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', setupTreeToggle);
         } else {
             setupTreeToggle();
         }
-        
+
         // Navigate to a specific node (drill down)
         async function navigateToNode(nodeId, nodeName, taxagroupid) {
             // Push current state to navigation stack
@@ -734,21 +734,21 @@
                 rootName: currentRootName,
                 treeType: currentTreeType
             });
-            
+
             isInitialView = false;
             currentTaxagroupid = taxagroupid;
             currentRootId = nodeId;
             currentRootName = nodeName;
-            
+
             // Hide tree toggle when navigating away from initial view
             const toggleDiv = document.getElementById('treeViewToggle');
             if (toggleDiv) {
                 toggleDiv.style.display = 'none';
             }
-            
+
             updateBackButton();
             syncDropdownValue();
-            
+
             // Filter rows to start from this node
             const filteredRows = allRows
                 .filter(row => {
@@ -759,7 +759,7 @@
                     const ids = row.ids_root_to_leaf || [];
                     const names = row.names_root_to_leaf || [];
                     const index = ids.indexOf(nodeId);
-                    
+
                     if (index >= 0) {
                         return {
                             ...row,
@@ -770,19 +770,19 @@
                     return row;
                 })
                 .filter(row => row.ids_root_to_leaf.length > 1); // Must have at least the root and one child
-            
+
             // Get all rows for this taxagroupid for synonyms
             const allRowsForGroup = allRows.filter(row => row.taxagroupid === taxagroupid);
-            
+
             // Clear previous chart
             d3.select('#chart').selectAll('*').remove();
             resetViewState();
-            
+
             // Initialize view switch
             initViewSwitch(
                 async (rows, rootId, rootName, allRowsForSynonyms) => {
                     d3.select('#chart').selectAll('*').remove();
-                    await window.renderMammalTree({ 
+                    await window.renderMammalTree({
                         rows: rows,
                         allRowsForSynonyms: allRowsForSynonyms,
                         rootId: rootId,
@@ -794,16 +794,16 @@
                 taxagroupid,
                 allRowsForGroup
             );
-            
+
             // Render tree
-            await window.renderMammalTree({ 
+            await window.renderMammalTree({
                 rows: filteredRows,
                 allRowsForSynonyms: allRowsForGroup,
                 rootId: nodeId,
                 rootName: nodeName
             });
         }
-        
+
         // Go back in navigation
         async function goBack() {
             if (navigationStack.length === 0) {
@@ -811,17 +811,17 @@
                 await loadInitialView(currentTreeType);
                 return;
             }
-            
+
             const previousState = navigationStack.pop();
             currentTaxagroupid = previousState.taxagroupid;
             isInitialView = previousState.isInitialView;
             currentRootId = previousState.rootId;
             currentRootName = previousState.rootName;
             currentTreeType = previousState.treeType || 'main';
-            
+
             updateBackButton();
             syncDropdownValue();
-            
+
             if (isInitialView) {
                 await loadInitialView(currentTreeType);
             } else if (currentTaxagroupid) {
@@ -833,7 +833,7 @@
                 await loadTreeForGroup(currentTaxagroupid);
             }
         }
-        
+
         // Sync dropdown value with current state
         function syncDropdownValue() {
             const select = document.getElementById('taxagroupSelect');
@@ -849,7 +849,7 @@
                     // Fallback to Major Groups
                     newValue = '';
                 }
-                
+
                 // Only update if value has changed to avoid unnecessary events
                 if (select.value !== newValue) {
                     isSyncingDropdown = true;
@@ -864,12 +864,12 @@
                 }
             }
         }
-        
+
         // Update back button visibility
         function updateBackButton() {
             const navDiv = document.getElementById('navigation');
             const backBtn = document.getElementById('backButton');
-            
+
             if (navDiv && backBtn) {
                 if (isInitialView && navigationStack.length === 0) {
                     navDiv.style.display = 'none';
@@ -878,7 +878,7 @@
                 }
             }
         }
-        
+
         // Set up back button (will be called after DOM is ready)
         function setupBackButton() {
             const backBtn = document.getElementById('backButton');
@@ -889,14 +889,14 @@
                 newBtn.addEventListener('click', goBack);
             }
         }
-        
+
         // Set up when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', setupBackButton);
         } else {
             setupBackButton();
         }
-        
+
         let currentRootId = null;
         let currentRootName = null;
 
@@ -907,47 +907,47 @@
                 resetViewState();
                 return;
             }
-            
+
             currentTaxagroupid = taxagroupid;
             isInitialView = false;
             syncDropdownValue();
-            
+
             // Hide tree toggle when loading a specific group
             const toggleDiv = document.getElementById('treeViewToggle');
             if (toggleDiv) {
                 toggleDiv.style.display = 'none';
             }
-            
+
             // Filter rows by taxagroupid for the tree
             const filteredRows = filterRowsByGroup(allRows, taxagroupid);
-            
+
             if (filteredRows.length === 0) {
                 console.warn(`No data found for taxagroupid: ${taxagroupid}`);
                 d3.select('#chart').selectAll('*').remove();
                 resetViewState();
                 return;
             }
-            
+
             // Get ALL rows for this taxagroupid (including those without full paths)
             // This is needed to add missing synonym nodes
             const allRowsForGroup = allRows.filter(row => row.taxagroupid === taxagroupid);
-            
+
             // Get root info for this taxagroupid
             const rootInfo = getRootInfo(allRows, taxagroupid);
             currentRootId = rootInfo.rootId;
             currentRootName = rootInfo.rootName;
-            
+
             // Clear previous chart
             d3.select('#chart').selectAll('*').remove();
-            
+
             // Reset view state when switching groups
             resetViewState();
-            
+
             // Initialize view switch with render function
             initViewSwitch(
                 async (rows, rootId, rootName, allRowsForSynonyms) => {
                     d3.select('#chart').selectAll('*').remove();
-                    await window.renderMammalTree({ 
+                    await window.renderMammalTree({
                         rows: rows,
                         allRowsForSynonyms: allRowsForSynonyms,
                         rootId: rootId,
@@ -959,19 +959,35 @@
                 taxagroupid,
                 allRowsForGroup
             );
-            
+
             // Render tree with appropriate root (now async to load synonyms)
             // Pass filteredRows for tree building, allRowsForGroup for synonym lookup
-            await window.renderMammalTree({ 
+            await window.renderMammalTree({
                 rows: filteredRows,
                 allRowsForSynonyms: allRowsForGroup,
                 rootId: rootInfo.rootId,
                 rootName: rootInfo.rootName
             });
         }
-        
-        // Export navigateToNode for use in renderMammalTree
+
+        // Helper function to check if a node has a subtree in the full data
+        // A node has a subtree if there are rows where the nodeId appears in the path
+        // and there are more IDs after it (meaning it has descendants)
+        function nodeHasSubtree(nodeId) {
+            if (!allRows || allRows.length === 0) return false;
+
+            return allRows.some(row => {
+                const ids = row.ids_root_to_leaf || [];
+                const index = ids.indexOf(nodeId);
+
+                // Node must appear in the path AND have at least one more ID after it
+                return index >= 0 && index < ids.length - 1;
+            });
+        }
+
+        // Export navigateToNode and nodeHasSubtree for use in other modules
         window.navigateToNode = navigateToNode;
+        window.nodeHasSubtree = nodeHasSubtree;
         </script>
     </body>
 </html>
