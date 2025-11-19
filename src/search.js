@@ -387,7 +387,7 @@ export function setupSearch({
         margin-top: 12px;
         ${currentMatches.length > 1 ? 'margin-left: 8px;' : ''}
         padding: 8px 16px;
-        background: linear-gradient(135deg, #2563eb, #2563eb);
+        background: linear-gradient(135deg, #43a047, #43a047);
         color: white;
         border: none;
         border-radius: 8px;

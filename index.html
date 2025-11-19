@@ -118,15 +118,51 @@
         function convertTaxonPaths(data) {
             // data is an object with a SQL query string as key and array as value
             const rows = Object.values(data)[0] || [];
+
+            // Helper function to parse comma-separated taxon names, respecting commas inside parentheses
+            function parseTaxonNames(taxonnames) {
+                if (!taxonnames || typeof taxonnames !== 'string') return [];
+
+                const names = [];
+                let current = '';
+                let depth = 0; // Track depth of parentheses nesting
+
+                for (let i = 0; i < taxonnames.length; i++) {
+                    const char = taxonnames[i];
+
+                    if (char === '(') {
+                        depth++;
+                        current += char;
+                    } else if (char === ')') {
+                        depth--;
+                        current += char;
+                    } else if (char === ',' && depth === 0) {
+                        // Only split on comma if we're not inside parentheses
+                        if (current.trim()) {
+                            names.push(current.trim());
+                        }
+                        current = '';
+                    } else {
+                        current += char;
+                    }
+                }
+
+                // Add the last name
+                if (current.trim()) {
+                    names.push(current.trim());
+                }
+
+                return names;
+            }
+
             return rows.map(row => {
                 // Convert array_to_string (comma-separated IDs) to array
                 const ids_root_to_leaf = row.array_to_string
                     ? row.array_to_string.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id))
                     : [];
-                // Convert taxonnames (comma-separated names) to array
-                const names_root_to_leaf = row.taxonnames
-                    ? row.taxonnames.split(',').map(name => name.trim())
-                    : [];
+                // Convert taxonnames (comma-separated names) to array, respecting commas inside parentheses
+                const names_root_to_leaf = parseTaxonNames(row.taxonnames);
+
                 return {
                     taxonid: row.taxonid,
                     taxonname: row.taxonname,
@@ -749,27 +785,76 @@
             updateBackButton();
             syncDropdownValue();
 
-            // Filter rows to start from this node
-            const filteredRows = allRows
-                .filter(row => {
-                    const ids = row.ids_root_to_leaf || [];
-                    return ids.includes(nodeId);
-                })
-                .map(row => {
-                    const ids = row.ids_root_to_leaf || [];
-                    const names = row.names_root_to_leaf || [];
-                    const index = ids.indexOf(nodeId);
+            // Check if this is a synthetic taxagroupid node in orphan tree (negative ID < -999999)
+            // These nodes represent taxagroupid groupings of standalone orphans
+            const isSyntheticTaxagroupidNode = nodeId < -999999;
 
-                    if (index >= 0) {
-                        return {
-                            ...row,
-                            ids_root_to_leaf: ids.slice(index),
-                            names_root_to_leaf: names.slice(index)
-                        };
-                    }
-                    return row;
-                })
-                .filter(row => row.ids_root_to_leaf.length > 1); // Must have at least the root and one child
+            let filteredRows, rootNodesToRender = null, renderRootId, renderRootName;
+
+            if (isSyntheticTaxagroupidNode) {
+                // This is a synthetic taxagroupid node - get all standalone orphans with this taxagroupid
+                const standaloneOrphans = allRows
+                    .filter(row => {
+                        const ids = row.ids_root_to_leaf || [];
+                        const names = row.names_root_to_leaf || [];
+                        const rowTaxagroupid = row.taxagroupid || 'MAM';
+                        // Standalone orphans have only one ID and match the taxagroupid
+                        return ids.length === 1 && names.length === 1 && rowTaxagroupid === taxagroupid;
+                    })
+                    .map(row => ({
+                        id: row.ids_root_to_leaf[0],
+                        name: row.names_root_to_leaf[0],
+                        taxagroupid: row.taxagroupid || 'MAM',
+                        children: []
+                    }));
+
+                // Build a root structure: Root -> taxagroupid -> orphans
+                const syntheticRoot = {
+                    id: -999999,
+                    name: 'Root',
+                    children: [{
+                        id: nodeId,
+                        name: nodeName,
+                        taxagroupid: taxagroupid,
+                        children: standaloneOrphans
+                    }]
+                };
+
+                rootNodesToRender = [syntheticRoot.children[0]]; // The taxagroupid node with its orphan children
+                renderRootId = -999999;
+                renderRootName = 'Root';
+
+                // For rendering, we need rows but they'll be ignored when isInitialView=true and rootNodes is provided
+                filteredRows = allRows.filter(row => {
+                    const rowTaxagroupid = row.taxagroupid || 'MAM';
+                    return rowTaxagroupid === taxagroupid;
+                });
+            } else {
+                // Normal node navigation - filter rows to start from this node
+                filteredRows = allRows
+                    .filter(row => {
+                        const ids = row.ids_root_to_leaf || [];
+                        return ids.includes(nodeId);
+                    })
+                    .map(row => {
+                        const ids = row.ids_root_to_leaf || [];
+                        const names = row.names_root_to_leaf || [];
+                        const index = ids.indexOf(nodeId);
+
+                        if (index >= 0) {
+                            return {
+                                ...row,
+                                ids_root_to_leaf: ids.slice(index),
+                                names_root_to_leaf: names.slice(index)
+                            };
+                        }
+                        return row;
+                    })
+                    .filter(row => row.ids_root_to_leaf.length > 1); // Must have at least the root and one child
+
+                renderRootId = nodeId;
+                renderRootName = nodeName;
+            }
 
             // Get all rows for this taxagroupid for synonyms
             const allRowsForGroup = allRows.filter(row => row.taxagroupid === taxagroupid);
@@ -786,11 +871,13 @@
                         rows: rows,
                         allRowsForSynonyms: allRowsForSynonyms,
                         rootId: rootId,
-                        rootName: rootName
+                        rootName: rootName,
+                        isInitialView: isSyntheticTaxagroupidNode,
+                        rootNodes: isSyntheticTaxagroupidNode ? rootNodesToRender : null
                     });
                 },
                 filteredRows,
-                { rootId: nodeId, rootName: nodeName },
+                { rootId: renderRootId, rootName: renderRootName },
                 taxagroupid,
                 allRowsForGroup
             );
@@ -799,8 +886,10 @@
             await window.renderMammalTree({
                 rows: filteredRows,
                 allRowsForSynonyms: allRowsForGroup,
-                rootId: nodeId,
-                rootName: nodeName
+                rootId: renderRootId,
+                rootName: renderRootName,
+                isInitialView: isSyntheticTaxagroupidNode,
+                rootNodes: isSyntheticTaxagroupidNode ? rootNodesToRender : null
             });
         }
 
