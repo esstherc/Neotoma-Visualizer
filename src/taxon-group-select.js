@@ -26,35 +26,37 @@ function initCustomSelect() {
         const selectedOption = options.find(opt => opt.value === selectedValue);
         if (selectedOption) {
             trigger.textContent = selectedOption.textContent;
+        } else if (options.length > 0) {
+            // Fallback: use first option if selected option not found
+            trigger.textContent = options[0].textContent;
         }
 
         // Update options
         optionsContainer.innerHTML = '';
         options.forEach(option => {
-            if (option.value) { // Skip empty options
-                const customOption = document.createElement('div');
-                customOption.className = 'custom-option';
-                if (option.value === selectedValue) {
-                    customOption.classList.add('selected');
-                }
-                customOption.textContent = option.textContent;
-                customOption.dataset.value = option.value;
-
-                customOption.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    selectElement.value = this.dataset.value;
-                    
-                    // Trigger change event on original select
-                    const event = new Event('change', { bubbles: true });
-                    selectElement.dispatchEvent(event);
-                    
-                    // Update UI
-                    syncCustomSelect();
-                    customSelect.classList.remove('open');
-                });
-
-                optionsContainer.appendChild(customOption);
+            // Include all options, including those with empty values (like "Major Groups")
+            const customOption = document.createElement('div');
+            customOption.className = 'custom-option';
+            if (option.value === selectedValue) {
+                customOption.classList.add('selected');
             }
+            customOption.textContent = option.textContent;
+            customOption.dataset.value = option.value;
+
+            customOption.addEventListener('click', function(e) {
+                e.stopPropagation();
+                selectElement.value = this.dataset.value;
+                
+                // Trigger change event on original select
+                const event = new Event('change', { bubbles: true });
+                selectElement.dispatchEvent(event);
+                
+                // Update UI
+                syncCustomSelect();
+                customSelect.classList.remove('open');
+            });
+
+            optionsContainer.appendChild(customOption);
         });
     }
 

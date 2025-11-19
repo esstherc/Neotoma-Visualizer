@@ -236,11 +236,17 @@
         let currentTaxagroupid = null; // Start with null for initial view
         let navigationStack = []; // Stack to track navigation history
         let isInitialView = true; // Track if we're in the initial 4-level view
+        let isSyncingDropdown = false; // Flag to prevent recursive calls when syncing dropdown
+        let taxagroupNames = {}; // Store taxagroupid to full name mapping
 
-        fetch("data/taxonpaths.json")
-            .then(r => r.json())
-            .then(data => {
-                allRows = convertTaxonPaths(data);
+        // Load both taxonpaths and taxagroup names mapping in parallel
+        Promise.all([
+            fetch("data/taxonpaths.json").then(r => r.json()),
+            fetch("data/taxagroup_names.json").then(r => r.json()).catch(() => ({})) // Fallback to empty object if file not found
+        ])
+            .then(([taxonData, namesMap]) => {
+                taxagroupNames = namesMap; // Store the mapping
+                allRows = convertTaxonPaths(taxonData);
                 
                 // Extract unique taxagroupid values
                 const taxaGroups = extractTaxaGroups(allRows);
@@ -248,34 +254,72 @@
                 // Populate dropdown
                 const select = document.getElementById('taxagroupSelect');
                 select.innerHTML = '';
+                
+                // Add "Major Groups" as the first option
+                const majorGroupsOption = document.createElement('option');
+                majorGroupsOption.value = '';
+                majorGroupsOption.textContent = 'Major Groups';
+                select.appendChild(majorGroupsOption);
+                
+                // Add all other taxon groups with full names
                 taxaGroups.forEach(group => {
                     const option = document.createElement('option');
-                    option.value = group;
-                    option.textContent = group;
+                    option.value = group; // Keep taxagroupid as value
+                    // Use full name from mapping, fallback to taxagroupid if not found
+                    option.textContent = taxagroupNames[group] || group;
                     select.appendChild(option);
                 });
+                
+                // Set "Major Groups" as selected (initial view)
+                select.value = '';
                 
                 // Load initial 4-level view
                 loadInitialView();
                 
                 // Handle dropdown change
                 select.addEventListener('change', (e) => {
-                    currentTaxagroupid = e.target.value;
-                    isInitialView = false;
-                    navigationStack = [];
-                    currentTreeType = 'main';
-                    
-                    // Hide tree toggle when selecting a specific group
-                    const toggleDiv = document.getElementById('treeViewToggle');
-                    if (toggleDiv) {
-                        toggleDiv.style.display = 'none';
+                    // Skip if we're programmatically syncing the dropdown
+                    if (isSyncingDropdown) {
+                        return;
                     }
                     
-                    updateBackButton();
-                    loadTreeForGroup(currentTaxagroupid);
+                    const selectedValue = e.target.value;
+                    
+                    if (selectedValue === '') {
+                        // "Major Groups" selected - show initial view
+                        currentTaxagroupid = null;
+                        isInitialView = true;
+                        navigationStack = [];
+                        currentTreeType = 'main';
+                        
+                        // Show tree toggle for Major Groups view
+                        const toggleDiv = document.getElementById('treeViewToggle');
+                        if (toggleDiv) {
+                            toggleDiv.style.display = 'block';
+                            toggleDiv.style.visibility = 'visible';
+                        }
+                        
+                        updateBackButton();
+                        loadInitialView();
+                    } else {
+                        // Specific taxon group selected
+                        currentTaxagroupid = selectedValue;
+                        isInitialView = false;
+                        navigationStack = [];
+                        currentTreeType = 'main';
+                        
+                        // Hide tree toggle when selecting a specific group
+                        const toggleDiv = document.getElementById('treeViewToggle');
+                        if (toggleDiv) {
+                            toggleDiv.style.display = 'none';
+                        }
+                        
+                        updateBackButton();
+                        loadTreeForGroup(currentTaxagroupid);
+                    }
                 });
             })
-            .catch(err => console.error('Failed to load data/taxonpaths.json', err));
+            .catch(err => console.error('Failed to load data files', err));
 
         // Build initial 4-level view (Eukaryota, Animalia, Vertebrata, Mammalia)
         // Returns both main tree and orphan tree
@@ -507,8 +551,10 @@
         // Load initial 4-level view
         async function loadInitialView(treeType = 'main') {
             isInitialView = true;
+            currentTaxagroupid = null;
             navigationStack = [];
             updateBackButton();
+            syncDropdownValue();
             currentTreeType = treeType;
             
             // Build trees if not already built
@@ -678,6 +724,7 @@
             }
             
             updateBackButton();
+            syncDropdownValue();
             
             // Filter rows to start from this node
             const filteredRows = allRows
@@ -750,6 +797,7 @@
             currentTreeType = previousState.treeType || 'main';
             
             updateBackButton();
+            syncDropdownValue();
             
             if (isInitialView) {
                 await loadInitialView(currentTreeType);
@@ -760,6 +808,37 @@
                     toggleDiv.style.display = 'none';
                 }
                 await loadTreeForGroup(currentTaxagroupid);
+            }
+        }
+        
+        // Sync dropdown value with current state
+        function syncDropdownValue() {
+            const select = document.getElementById('taxagroupSelect');
+            if (select) {
+                let newValue = '';
+                if (isInitialView && currentTaxagroupid === null) {
+                    // Major Groups view
+                    newValue = '';
+                } else if (currentTaxagroupid) {
+                    // Specific taxon group
+                    newValue = currentTaxagroupid;
+                } else {
+                    // Fallback to Major Groups
+                    newValue = '';
+                }
+                
+                // Only update if value has changed to avoid unnecessary events
+                if (select.value !== newValue) {
+                    isSyncingDropdown = true;
+                    select.value = newValue;
+                    // Trigger change event to sync custom select
+                    const event = new Event('change', { bubbles: true });
+                    select.dispatchEvent(event);
+                    // Reset flag after a short delay to allow event to process
+                    setTimeout(() => {
+                        isSyncingDropdown = false;
+                    }, 0);
+                }
             }
         }
         
@@ -808,6 +887,7 @@
             
             currentTaxagroupid = taxagroupid;
             isInitialView = false;
+            syncDropdownValue();
             
             // Hide tree toggle when loading a specific group
             const toggleDiv = document.getElementById('treeViewToggle');
