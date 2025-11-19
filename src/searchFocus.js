@@ -1,10 +1,10 @@
 // Simple info panel to display the focused node and its ancestors
 // Also displays taxon name label on the dendrogram
 // Usage:
-//   const info = setupFocusInfo(node);
+//   const info = setupFocusInfo(node, getCurrentRotate);
 //   info.show(d); // to display d and its ancestors + label on dendrogram
 //   info.clear(); // to hide
-export function setupFocusInfo(nodeSelection) {
+export function setupFocusInfo(nodeSelection, getCurrentRotate = () => 0) {
   const panel = document.getElementById('info');
   let currentNode = null; // Store current node for button handler
   
@@ -75,15 +75,23 @@ export function setupFocusInfo(nodeSelection) {
       const pathNodes = d.ancestors();
       
       // Add labels to all nodes in the path
+      // Calculate label orientation based on current rotation
+      const currentRotate = getCurrentRotate();
+      const rotRad = (currentRotate * Math.PI) / 180;
+      const tau = Math.PI * 2;
+      function outward(node) { 
+        return ((node.x + rotRad) % tau + tau) % tau < Math.PI; 
+      }
+      
       pathNodes.forEach(ancestorNode => {
         const nodeGroup = nodeSelection.filter(n => n === ancestorNode);
         
         nodeGroup.append('text')
           .attr('class', 'focus-label')
           .attr('dy', '0.32em')
-          .attr('x', node => (node.x < Math.PI) === !node.children ? 16 : -16)
-          .attr('text-anchor', node => (node.x < Math.PI) === !node.children ? 'start' : 'end')
-          .attr('transform', node => node.x >= Math.PI ? 'rotate(180)' : null)
+          .attr('x', node => (outward(node) === !node.children ? 16 : -16))
+          .attr('text-anchor', node => (outward(node) === !node.children ? 'start' : 'end'))
+          .attr('transform', node => outward(node) ? null : 'rotate(180)')
           .style('fill', '#2e7d32')
           .style('font-size', '14px')
           .style('font-weight', '700')

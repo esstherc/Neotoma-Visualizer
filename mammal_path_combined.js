@@ -229,9 +229,6 @@ async function renderMammalTree({
 
   node.append('text')
     .attr('dy', '0.32em')
-    .attr('x', d => (d.x < Math.PI) === !d.children ? 6 : -6)
-    .attr('text-anchor', d => (d.x < Math.PI) === !d.children ? 'start' : 'end')
-    .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
     .text(d => d.data.name);
 
   // Recompute text orientation after rotation so labels don't appear upside-down
@@ -244,10 +241,13 @@ async function renderMammalTree({
       .attr('text-anchor', d => (outward(d) === !d.children ? 'start' : 'end'))
       .attr('transform', d => outward(d) ? null : 'rotate(180)');
   }
+  
+  // Initialize label orientation correctly
+  updateLabelOrientation();
 
   // Angle-based label culling (avoid overlap at initial scale)
   const cull = applyAngleCulling(root, node, 0.9);
-  const info = setupFocusInfo(node);
+  const info = setupFocusInfo(node, () => currentRotate);
   const { showAt: showPopupAt } = createPopup('popup');
 
   // 6) Click/Double-click interactions
