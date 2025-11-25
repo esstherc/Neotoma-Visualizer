@@ -288,9 +288,8 @@ function setupHeatmapControls(tracker) {
   const startBtn = document.getElementById('heatmapStart');
   const toggleBtn = document.getElementById('heatmapToggle');
   const exportBtn = document.getElementById('heatmapExport');
-  const newSessionBtn = document.getElementById('heatmapNewSession');
   const statusEl = document.getElementById('heatmapStatus');
-  if (!tracker || !startBtn || !toggleBtn || !exportBtn || !newSessionBtn) return;
+  if (!tracker || !startBtn || !toggleBtn || !exportBtn) return;
 
   function updateStatus() {
     if (!statusEl) return;
@@ -304,13 +303,9 @@ function setupHeatmapControls(tracker) {
   }
 
   startBtn.addEventListener('click', () => {
-    if (tracker.isRunning) {
-      tracker.stopSession();
-      startBtn.textContent = 'Start';
-    } else {
-      tracker.startSession();
-      startBtn.textContent = 'Stop';
-    }
+    // Each click starts a fresh session; if one is running, roll to a new one.
+    tracker.newSession({ autoStart: true });
+    startBtn.textContent = 'Start';
     updateStatus();
   });
 
@@ -322,12 +317,6 @@ function setupHeatmapControls(tracker) {
 
   exportBtn.addEventListener('click', () => {
     tracker.downloadAll();
-    updateStatus();
-  });
-
-  newSessionBtn.addEventListener('click', () => {
-    tracker.newSession({ autoStart: tracker.isRunning });
-    startBtn.textContent = tracker.isRunning ? 'Stop' : 'Start';
     updateStatus();
   });
 
