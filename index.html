@@ -59,6 +59,21 @@
                             <button id="searchBtn">Search</button>
                         </div>
                     </div>
+
+                    <!-- Third row: Heatmap tracking -->
+                    <div class="control-row heatmap-row">
+                        <div class="heatmap-copy">
+                            <div class="heatmap-title">Interaction Heatmap</div>
+                            <div class="heatmap-subtitle">Mouse dwell-time overlay</div>
+                            <div id="heatmapStatus" class="heatmap-status">Tracking quietly · 0s recorded</div>
+                        </div>
+                        <div class="heatmap-actions">
+                            <button id="heatmapStart">Start</button>
+                            <button id="heatmapToggle">Show Heatmap</button>
+                            <button id="heatmapNewSession">New Session</button>
+                            <button id="heatmapExport">Export All</button>
+                        </div>
+                    </div>
                 </div>
                 <div id="info"></div>
                 <div id="treeViewToggle" style="margin-top: 12px; display: block; visibility: visible;">
@@ -114,6 +129,7 @@
         <script type="module" src="mammal_path_combined.js"></script>
         <script type="module">
         import { initViewSwitch, resetViewState } from './src/viewSwitch.js';
+        import { HeatmapTracker, setupHeatmapControls } from './src/heatmap-tracker.js';
         // Convert data/taxonpaths.json format to the format expected by renderMammalTree
         function convertTaxonPaths(data) {
             // data is an object with a SQL query string as key and array as value
@@ -268,12 +284,33 @@
             };
         }
 
+        // Heatmap tracker setup (kept independent from render logic)
+        let heatmapTracker = null;
+        function initHeatmapTracker() {
+            const pageContainer = document.body;
+            if (!pageContainer) return;
+
+            heatmapTracker = new HeatmapTracker({
+                container: pageContainer,
+                listenTo: pageContainer,
+                cellSize: 26,
+                paintIntervalMs: 140
+            });
+            setupHeatmapControls(heatmapTracker);
+
+            // Expose for experiments/debugging without touching render code
+            window.heatmapTracker = heatmapTracker;
+        }
+
         let allRows = [];
         let currentTaxagroupid = null; // Start with null for initial view
         let navigationStack = []; // Stack to track navigation history
         let isInitialView = true; // Track if we're in the initial 4-level view
         let isSyncingDropdown = false; // Flag to prevent recursive calls when syncing dropdown
         let taxagroupNames = {}; // Store taxagroupid to full name mapping
+
+        // Start heatmap tracking immediately (overlay stays hidden until toggled)
+        initHeatmapTracker();
 
         // Load both taxonpaths and taxagroup names mapping in parallel
         Promise.all([
