@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-20T05:35:47+00:00",
-  "since": "2026-06-20",
+  "generated_at": "2026-07-27T05:45:15+00:00",
+  "since": "2026-06-27",
   "counts": {
-    "new": 123,
-    "modified": 12,
-    "total": 135
+    "new": 131,
+    "modified": 11,
+    "total": 142
   },
   "new": [
     {
@@ -861,6 +861,54 @@
         "Amphipleuraceae",
         "Frickea",
         "Frickea lewisana"
+      ]
+    },
+    {
+      "taxonid": 69733,
+      "taxonname": "Frustulia capitata",
+      "highertaxonid": 24451,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:33:42.000Z",
+      "recdatemodified": "2026-07-23T14:33:42.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24601,
+        24451,
+        69733
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Amphipleuraceae",
+        "Frustulia",
+        "Frustulia capitata"
+      ]
+    },
+    {
+      "taxonid": 69734,
+      "taxonname": "Geissleria cf. kriegeri",
+      "highertaxonid": 24452,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:35:26.000Z",
+      "recdatemodified": "2026-07-23T14:35:26.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        22534,
+        24452,
+        69734
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Naviculaceae",
+        "Geissleria",
+        "Geissleria cf. kriegeri"
       ]
     },
     {
@@ -1764,6 +1812,30 @@
       ]
     },
     {
+      "taxonid": 69735,
+      "taxonname": "Nitzschia cf. subacicularis",
+      "highertaxonid": 24521,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:42:28.000Z",
+      "recdatemodified": "2026-07-23T14:42:28.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24603,
+        24521,
+        69735
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Bacillariaceae",
+        "Nitzschia",
+        "Nitzschia cf. subacicularis"
+      ]
+    },
+    {
       "taxonid": 69660,
       "taxonname": "Nitzschia columbiana",
       "highertaxonid": 24521,
@@ -2004,6 +2076,30 @@
       ]
     },
     {
+      "taxonid": 69736,
+      "taxonname": "Parlibellus spp.",
+      "highertaxonid": 24532,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:43:34.000Z",
+      "recdatemodified": "2026-07-23T14:43:34.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24604,
+        24532,
+        69736
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Berkeleyaceae",
+        "Parlibellus",
+        "Parlibellus spp."
+      ]
+    },
+    {
       "taxonid": 69667,
       "taxonname": "Pinnularia marchica",
       "highertaxonid": 5397,
@@ -2193,6 +2289,30 @@
         "Diatomaceae",
         "Pseudostaurosiropsis",
         "Pseudostaurosiropsis sp. 1"
+      ]
+    },
+    {
+      "taxonid": 69737,
+      "taxonname": "Pseudostaurosiropsis spp.",
+      "highertaxonid": 24559,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:46:24.000Z",
+      "recdatemodified": "2026-07-23T14:46:24.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24610,
+        24559,
+        69737
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Diatomaceae",
+        "Pseudostaurosiropsis",
+        "Pseudostaurosiropsis spp."
       ]
     },
     {
@@ -2486,6 +2606,30 @@
       ]
     },
     {
+      "taxonid": 69738,
+      "taxonname": "Staurophora cf. soodensis",
+      "highertaxonid": 24578,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:48:19.000Z",
+      "recdatemodified": "2026-07-23T14:48:19.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24602,
+        24578,
+        69738
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Anomoeoneidaceae",
+        "Staurophora",
+        "Staurophora cf. soodensis"
+      ]
+    },
+    {
       "taxonid": 69721,
       "taxonname": "Staurophora soodensis",
       "highertaxonid": 24578,
@@ -2771,6 +2915,30 @@
         "Thalassiosiraceae",
         "Thalassiosira",
         "Thalassiosira sp. 2-1 CHES SRC"
+      ]
+    },
+    {
+      "taxonid": 69739,
+      "taxonname": "Trachyneis aspera var. vulgaris",
+      "highertaxonid": 30291,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:50:29.000Z",
+      "recdatemodified": "2026-07-23T14:50:29.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        22534,
+        30291,
+        69739
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Naviculaceae",
+        "Trachyneis",
+        "Trachyneis aspera var. vulgaris"
       ]
     },
     {
@@ -3064,6 +3232,42 @@
       ]
     },
     {
+      "taxonid": 69740,
+      "taxonname": "Tsuga heterophylla-type",
+      "highertaxonid": 34163,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-07-23T19:48:20.000Z",
+      "recdatemodified": "2026-07-23T19:48:20.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        16996,
+        1944,
+        329,
+        34163,
+        69740
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Pan-Coniferae",
+        "Coniferae",
+        "Pinaceae",
+        "Tsuga-type",
+        "Tsuga heterophylla-type"
+      ]
+    },
+    {
       "taxonid": 69724,
       "taxonname": "Verbascum cf. V. lychnitis",
       "highertaxonid": 4964,
@@ -3211,36 +3415,6 @@
         "Chironomidae",
         "Tanypodinae",
         "Ablabesmyia-type"
-      ]
-    },
-    {
-      "taxonid": 54713,
-      "taxonname": "Arthrolips",
-      "highertaxonid": 21935,
-      "taxagroupid": "INS",
-      "recdatecreated": "2025-05-17T00:15:16.000Z",
-      "recdatemodified": "2026-06-25T15:35:10.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        21935,
-        54713
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Corylophidae",
-        "Arthrolips"
       ]
     },
     {

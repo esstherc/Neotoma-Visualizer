@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T05:35:47+00:00",
+  "generated_at": "2026-07-27T05:45:15+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -472120,6 +472120,70 @@
       "taxagroupid": "DIA",
       "recdatecreated": "2026-07-16T16:57:30.000Z",
       "recdatemodified": "2026-07-16T16:57:30.000Z"
+    },
+    "69733": {
+      "taxonid": 69733,
+      "taxonname": "Frustulia capitata",
+      "highertaxonid": 24451,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:33:42.000Z",
+      "recdatemodified": "2026-07-23T14:33:42.000Z"
+    },
+    "69734": {
+      "taxonid": 69734,
+      "taxonname": "Geissleria cf. kriegeri",
+      "highertaxonid": 24452,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:35:26.000Z",
+      "recdatemodified": "2026-07-23T14:35:26.000Z"
+    },
+    "69735": {
+      "taxonid": 69735,
+      "taxonname": "Nitzschia cf. subacicularis",
+      "highertaxonid": 24521,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:42:28.000Z",
+      "recdatemodified": "2026-07-23T14:42:28.000Z"
+    },
+    "69736": {
+      "taxonid": 69736,
+      "taxonname": "Parlibellus spp.",
+      "highertaxonid": 24532,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:43:34.000Z",
+      "recdatemodified": "2026-07-23T14:43:34.000Z"
+    },
+    "69737": {
+      "taxonid": 69737,
+      "taxonname": "Pseudostaurosiropsis spp.",
+      "highertaxonid": 24559,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:46:24.000Z",
+      "recdatemodified": "2026-07-23T14:46:24.000Z"
+    },
+    "69738": {
+      "taxonid": 69738,
+      "taxonname": "Staurophora cf. soodensis",
+      "highertaxonid": 24578,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:48:19.000Z",
+      "recdatemodified": "2026-07-23T14:48:19.000Z"
+    },
+    "69739": {
+      "taxonid": 69739,
+      "taxonname": "Trachyneis aspera var. vulgaris",
+      "highertaxonid": 30291,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-23T14:50:29.000Z",
+      "recdatemodified": "2026-07-23T14:50:29.000Z"
+    },
+    "69740": {
+      "taxonid": 69740,
+      "taxonname": "Tsuga heterophylla-type",
+      "highertaxonid": 34163,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-07-23T19:48:20.000Z",
+      "recdatemodified": "2026-07-23T19:48:20.000Z"
     }
   }
 }
