@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T05:45:15+00:00",
-  "since": "2026-06-27",
+  "generated_at": "2026-08-03T05:37:40+00:00",
+  "since": "2026-07-04",
   "counts": {
-    "new": 131,
-    "modified": 11,
-    "total": 142
+    "new": 140,
+    "modified": 3,
+    "total": 143
   },
   "new": [
     {
@@ -2990,6 +2990,238 @@
       ]
     },
     {
+      "taxonid": 69742,
+      "taxonname": "Cyphon cf. C. coarctatus",
+      "highertaxonid": 57204,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:39:18.000Z",
+      "recdatemodified": "2026-07-28T10:39:18.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        18121,
+        57204,
+        69742
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Scirtidae",
+        "Cyphon",
+        "Cyphon cf. C. coarctatus"
+      ]
+    },
+    {
+      "taxonid": 69743,
+      "taxonname": "Helophorus nubilus",
+      "highertaxonid": 13970,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:41:43.000Z",
+      "recdatemodified": "2026-07-28T10:41:43.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        13969,
+        13970,
+        69743
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Hydrophilidae",
+        "Helophorus",
+        "Helophorus nubilus"
+      ]
+    },
+    {
+      "taxonid": 69746,
+      "taxonname": "Lochmaea suturalis",
+      "highertaxonid": 51977,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:45:52.000Z",
+      "recdatemodified": "2026-07-28T10:45:52.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        14035,
+        51977,
+        69746
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Chrysomelidae",
+        "Lochmaea",
+        "Lochmaea suturalis"
+      ]
+    },
+    {
+      "taxonid": 69745,
+      "taxonname": "Macronychus quadrituberculatus",
+      "highertaxonid": 22269,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:44:32.000Z",
+      "recdatemodified": "2026-07-28T10:44:32.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        16781,
+        22269,
+        69745
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Elmidae",
+        "Macronychus",
+        "Macronychus quadrituberculatus"
+      ]
+    },
+    {
+      "taxonid": 69744,
+      "taxonname": "Oulimnius tuberculatus",
+      "highertaxonid": 27522,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:43:02.000Z",
+      "recdatemodified": "2026-07-28T10:43:02.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        16781,
+        27522,
+        69744
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Elmidae",
+        "Oulimnius",
+        "Oulimnius tuberculatus"
+      ]
+    },
+    {
+      "taxonid": 69748,
+      "taxonname": "Phyllotreta vittula",
+      "highertaxonid": 21871,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:49:22.000Z",
+      "recdatemodified": "2026-07-28T10:49:22.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        14035,
+        21871,
+        69748
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Chrysomelidae",
+        "Phyllotreta",
+        "Phyllotreta vittula"
+      ]
+    },
+    {
+      "taxonid": 69747,
+      "taxonname": "Plateumaris sericea/consimilis",
+      "highertaxonid": 21647,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:48:16.000Z",
+      "recdatemodified": "2026-07-28T10:48:16.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        13916,
+        14035,
+        21647,
+        69747
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Coleoptera",
+        "Chrysomelidae",
+        "Plateumaris",
+        "Plateumaris sericea/consimilis"
+      ]
+    },
+    {
+      "taxonid": 69749,
+      "taxonname": "Cypricercus centrurus",
+      "highertaxonid": 14561,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-08-02T21:02:58.000Z",
+      "recdatemodified": "2026-08-02T21:02:58.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14522,
+        14560,
+        14561,
+        69749
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Cyprididae",
+        "Cypricercinae",
+        "Cypricercus",
+        "Cypricercus centrurus"
+      ]
+    },
+    {
       "taxonid": 69694,
       "taxonname": "Indeterminable (folded)",
       "highertaxonid": 312,
@@ -3103,6 +3335,56 @@
         "Cariceae",
         "Carex",
         "Carex cf. C. ornithopoda"
+      ]
+    },
+    {
+      "taxonid": 69741,
+      "taxonname": "Parietaria judaica",
+      "highertaxonid": 475,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-07-28T07:39:14.000Z",
+      "recdatemodified": "2026-07-28T07:39:14.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2132,
+        9653,
+        9652,
+        9606,
+        9607,
+        9116,
+        1816,
+        464,
+        475,
+        69741
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Eudicotyledoneae",
+        "Gunneridae",
+        "Pentapetalae",
+        "Rosidae",
+        "Fabidae",
+        "Rosales",
+        "Urticalean Rosids",
+        "Urticaceae",
+        "Parietaria",
+        "Parietaria judaica"
       ]
     },
     {
@@ -3350,12 +3632,12 @@
       ]
     },
     {
-      "taxonid": 32192,
-      "taxonname": "Ablabesmyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T06:16:17.000Z",
-      "recdatemodified": "2026-07-02T22:02:21.000Z",
+      "taxonid": 50773,
+      "taxonname": "Fabaeformiscandona wedgwoodii",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2023-04-16T06:15:36.000Z",
+      "recdatemodified": "2026-07-29T21:04:52.000Z",
       "changed_fields": [
         "recdatemodified"
       ],
@@ -3364,32 +3646,38 @@
         32182,
         6758,
         9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        32192
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14450,
+        14451,
+        14452,
+        50773
       ],
       "path_names": [
         "Eukaryota",
         "Animalia",
         "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Ablabesmyia"
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Candonidae",
+        "Candoninae",
+        "Candona",
+        "Fabaeformiscandona wedgwoodii"
       ]
     },
     {
-      "taxonid": 69106,
-      "taxonname": "Ablabesmyia-type",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:03.000Z",
-      "recdatemodified": "2026-07-02T22:13:38.000Z",
+      "taxonid": 33976,
+      "taxonname": "Limnocythere camera",
+      "highertaxonid": 14597,
+      "taxagroupid": "OST",
+      "recdatecreated": "2017-10-27T15:20:14.000Z",
+      "recdatemodified": "2026-07-29T05:39:50.000Z",
       "changed_fields": [
         "recdatemodified"
       ],
@@ -3398,297 +3686,29 @@
         32182,
         6758,
         9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        69106
+        9450,
+        13914,
+        14443,
+        24059,
+        24060,
+        14595,
+        14596,
+        14597,
+        33976
       ],
       "path_names": [
         "Eukaryota",
         "Animalia",
         "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Ablabesmyia-type"
-      ]
-    },
-    {
-      "taxonid": 22870,
-      "taxonname": "Diamesa",
-      "highertaxonid": 32225,
-      "taxagroupid": "INS",
-      "recdatecreated": "2014-07-30T15:33:22.000Z",
-      "recdatemodified": "2026-07-02T20:38:52.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        32225,
-        22870
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Diamesinae",
-        "Diamesa"
-      ]
-    },
-    {
-      "taxonid": 32206,
-      "taxonname": "Krenopelopia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:23:02.000Z",
-      "recdatemodified": "2026-07-02T22:03:13.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        32206
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Krenopelopia"
-      ]
-    },
-    {
-      "taxonid": 32212,
-      "taxonname": "Monopelopia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:34:33.000Z",
-      "recdatemodified": "2026-07-02T22:04:01.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        32212
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Monopelopia"
-      ]
-    },
-    {
-      "taxonid": 32214,
-      "taxonname": "Natarsia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:39:42.000Z",
-      "recdatemodified": "2026-07-02T21:53:45.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        32214
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Natarsia"
-      ]
-    },
-    {
-      "taxonid": 23282,
-      "taxonname": "Procladius",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2014-08-18T19:16:49.000Z",
-      "recdatemodified": "2026-07-02T21:57:45.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        23282
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Procladius"
-      ]
-    },
-    {
-      "taxonid": 32247,
-      "taxonname": "Xenopelopia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:28:07.000Z",
-      "recdatemodified": "2026-07-02T22:05:25.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        32247
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Xenopelopia"
-      ]
-    },
-    {
-      "taxonid": 46864,
-      "taxonname": "Zavrelimyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-01-11T13:44:18.000Z",
-      "recdatemodified": "2026-07-02T22:06:50.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        46864
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Zavrelimyia"
-      ]
-    },
-    {
-      "taxonid": 50012,
-      "taxonname": "Zavrelimyia type A",
-      "highertaxonid": 46864,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T21:11:24.000Z",
-      "recdatemodified": "2026-07-02T21:40:37.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        14062,
-        33141,
-        18678,
-        27839,
-        46864,
-        50012
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Diptera",
-        "Nematocera",
-        "Chironomidae",
-        "Tanypodinae",
-        "Zavrelimyia",
-        "Zavrelimyia type A"
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cytherocopina",
+        "Cytheroidea",
+        "Limnocytheridae",
+        "Limnocytherinae",
+        "Limnocythere",
+        "Limnocythere camera"
       ]
     }
   ]

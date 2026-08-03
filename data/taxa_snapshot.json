@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T05:45:15+00:00",
+  "generated_at": "2026-08-03T05:37:40+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -362193,14 +362193,6 @@
       "recdatecreated": "2023-04-14T22:22:27.000Z",
       "recdatemodified": "2023-04-14T22:22:27.000Z"
     },
-    "50773": {
-      "taxonid": 50773,
-      "taxonname": "Candona wedgewoodii",
-      "highertaxonid": 14452,
-      "taxagroupid": "OST",
-      "recdatecreated": "2023-04-16T06:15:36.000Z",
-      "recdatemodified": "2023-04-16T06:15:36.000Z"
-    },
     "50775": {
       "taxonid": 50775,
       "taxonname": "Candonopsis boui",
@@ -377575,14 +377567,6 @@
       "highertaxonid": 33971,
       "taxagroupid": "OST",
       "recdatecreated": "2017-10-27T15:14:58.000Z",
-      "recdatemodified": "2024-09-13T17:40:58.000Z"
-    },
-    "33976": {
-      "taxonid": 33976,
-      "taxonname": "Limnocythere camera",
-      "highertaxonid": 14597,
-      "taxagroupid": "OST",
-      "recdatecreated": "2017-10-27T15:20:14.000Z",
       "recdatemodified": "2024-09-13T17:40:58.000Z"
     },
     "33977": {
@@ -471761,6 +471745,30 @@
       "recdatecreated": "2026-07-09T19:17:11.000Z",
       "recdatemodified": "2026-07-09T19:17:11.000Z"
     },
+    "69745": {
+      "taxonid": 69745,
+      "taxonname": "Macronychus quadrituberculatus",
+      "highertaxonid": 22269,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:44:32.000Z",
+      "recdatemodified": "2026-07-28T10:44:32.000Z"
+    },
+    "69746": {
+      "taxonid": 69746,
+      "taxonname": "Lochmaea suturalis",
+      "highertaxonid": 51977,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:45:52.000Z",
+      "recdatemodified": "2026-07-28T10:45:52.000Z"
+    },
+    "69747": {
+      "taxonid": 69747,
+      "taxonname": "Plateumaris sericea/consimilis",
+      "highertaxonid": 21647,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:48:16.000Z",
+      "recdatemodified": "2026-07-28T10:48:16.000Z"
+    },
     "69689": {
       "taxonid": 69689,
       "taxonname": "Thalassiosira sp. 2-1 CHES SRC",
@@ -472184,6 +472192,70 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-07-23T19:48:20.000Z",
       "recdatemodified": "2026-07-23T19:48:20.000Z"
+    },
+    "69741": {
+      "taxonid": 69741,
+      "taxonname": "Parietaria judaica",
+      "highertaxonid": 475,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-07-28T07:39:14.000Z",
+      "recdatemodified": "2026-07-28T07:39:14.000Z"
+    },
+    "69742": {
+      "taxonid": 69742,
+      "taxonname": "Cyphon cf. C. coarctatus",
+      "highertaxonid": 57204,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:39:18.000Z",
+      "recdatemodified": "2026-07-28T10:39:18.000Z"
+    },
+    "69743": {
+      "taxonid": 69743,
+      "taxonname": "Helophorus nubilus",
+      "highertaxonid": 13970,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:41:43.000Z",
+      "recdatemodified": "2026-07-28T10:41:43.000Z"
+    },
+    "69744": {
+      "taxonid": 69744,
+      "taxonname": "Oulimnius tuberculatus",
+      "highertaxonid": 27522,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:43:02.000Z",
+      "recdatemodified": "2026-07-28T10:43:02.000Z"
+    },
+    "69748": {
+      "taxonid": 69748,
+      "taxonname": "Phyllotreta vittula",
+      "highertaxonid": 21871,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-07-28T10:49:22.000Z",
+      "recdatemodified": "2026-07-28T10:49:22.000Z"
+    },
+    "33976": {
+      "taxonid": 33976,
+      "taxonname": "Limnocythere camera",
+      "highertaxonid": 14597,
+      "taxagroupid": "OST",
+      "recdatecreated": "2017-10-27T15:20:14.000Z",
+      "recdatemodified": "2026-07-29T05:39:50.000Z"
+    },
+    "50773": {
+      "taxonid": 50773,
+      "taxonname": "Fabaeformiscandona wedgwoodii",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2023-04-16T06:15:36.000Z",
+      "recdatemodified": "2026-07-29T21:04:52.000Z"
+    },
+    "69749": {
+      "taxonid": 69749,
+      "taxonname": "Cypricercus centrurus",
+      "highertaxonid": 14561,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-08-02T21:02:58.000Z",
+      "recdatemodified": "2026-08-02T21:02:58.000Z"
     }
   }
 }
