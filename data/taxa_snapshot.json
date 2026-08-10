@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T05:37:40+00:00",
+  "generated_at": "2026-08-10T03:49:25+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -108833,14 +108833,6 @@
       "recdatecreated": "2013-02-21T00:00:00.000Z",
       "recdatemodified": "2022-11-05T12:36:02.000Z"
     },
-    "14517": {
-      "taxonid": 14517,
-      "taxonname": "Ilyocypris gibba",
-      "highertaxonid": 14515,
-      "taxagroupid": "OST",
-      "recdatecreated": "2013-02-21T00:00:00.000Z",
-      "recdatemodified": "2022-11-05T12:41:29.000Z"
-    },
     "14511": {
       "taxonid": 14511,
       "taxonname": "Cyclocypris ovum",
@@ -108936,6 +108928,14 @@
       "taxagroupid": "OST",
       "recdatecreated": "2013-02-21T00:00:00.000Z",
       "recdatemodified": "2026-01-26T09:17:39.000Z"
+    },
+    "14517": {
+      "taxonid": 14517,
+      "taxonname": "Ilyocypris gibba",
+      "highertaxonid": 14515,
+      "taxagroupid": "OST",
+      "recdatecreated": "2013-02-21T00:00:00.000Z",
+      "recdatemodified": "2026-08-05T16:05:39.000Z"
     },
     "14547": {
       "taxonid": 14547,
@@ -173849,14 +173849,6 @@
       "recdatecreated": "2015-11-30T19:59:09.000Z",
       "recdatemodified": "2015-11-30T19:59:09.000Z"
     },
-    "25535": {
-      "taxonid": 25535,
-      "taxonname": "Pelocypris tuberculatum",
-      "highertaxonid": 14534,
-      "taxagroupid": "OST",
-      "recdatecreated": "2015-11-30T20:04:35.000Z",
-      "recdatemodified": "2015-11-30T20:04:35.000Z"
-    },
     "25536": {
       "taxonid": 25536,
       "taxonname": "Myotis (medium)",
@@ -217537,22 +217529,6 @@
       "recdatecreated": "2017-09-03T13:34:18.000Z",
       "recdatemodified": "2017-12-18T21:19:45.000Z"
     },
-    "32199": {
-      "taxonid": 32199,
-      "taxonname": "Corynoneura scutellata",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T13:44:25.000Z",
-      "recdatemodified": "2017-12-18T21:56:18.000Z"
-    },
-    "32200": {
-      "taxonid": 32200,
-      "taxonname": "Corynoneura scutellata-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T13:44:53.000Z",
-      "recdatemodified": "2017-12-18T21:56:30.000Z"
-    },
     "32202": {
       "taxonid": 32202,
       "taxonname": "Cricotopus",
@@ -217577,6 +217553,14 @@
       "recdatecreated": "2023-10-04T20:36:51.000Z",
       "recdatemodified": "2023-10-04T20:36:51.000Z"
     },
+    "32200": {
+      "taxonid": 32200,
+      "taxonname": "Corynoneura scutellata-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T13:44:53.000Z",
+      "recdatemodified": "2026-08-04T17:12:52.000Z"
+    },
     "32205": {
       "taxonid": 32205,
       "taxonname": "Dasyhelea-type",
@@ -217593,22 +217577,6 @@
       "recdatecreated": "2017-09-03T14:25:10.000Z",
       "recdatemodified": "2017-12-18T21:58:23.000Z"
     },
-    "32208": {
-      "taxonid": 32208,
-      "taxonname": "Metriocnemus fuscipes",
-      "highertaxonid": 32207,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:27:31.000Z",
-      "recdatemodified": "2017-12-18T21:58:35.000Z"
-    },
-    "32209": {
-      "taxonid": 32209,
-      "taxonname": "Metriocnemus fuscipes-type",
-      "highertaxonid": 32207,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:28:13.000Z",
-      "recdatemodified": "2017-12-18T21:58:44.000Z"
-    },
     "32210": {
       "taxonid": 32210,
       "taxonname": "Micropsectra radialis",
@@ -217616,14 +217584,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-03T14:32:11.000Z",
       "recdatemodified": "2017-12-18T21:46:50.000Z"
-    },
-    "32211": {
-      "taxonid": 32211,
-      "taxonname": "Micropsectra radialis-type",
-      "highertaxonid": 22879,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:32:42.000Z",
-      "recdatemodified": "2017-12-18T21:47:16.000Z"
     },
     "32215": {
       "taxonid": 32215,
@@ -217641,22 +217601,6 @@
       "recdatecreated": "2017-09-04T00:38:25.000Z",
       "recdatemodified": "2017-12-18T22:07:23.000Z"
     },
-    "32217": {
-      "taxonid": 32217,
-      "taxonname": "Parakiefferiella bathophila",
-      "highertaxonid": 32216,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T00:45:54.000Z",
-      "recdatemodified": "2017-12-18T22:07:35.000Z"
-    },
-    "32218": {
-      "taxonid": 32218,
-      "taxonname": "Parakiefferiella bathophila-type",
-      "highertaxonid": 32216,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T00:46:27.000Z",
-      "recdatemodified": "2017-12-18T22:07:48.000Z"
-    },
     "32219": {
       "taxonid": 32219,
       "taxonname": "Paraphaenocladius",
@@ -217664,14 +217608,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-04T00:48:24.000Z",
       "recdatemodified": "2017-12-18T22:08:01.000Z"
-    },
-    "32220": {
-      "taxonid": 32220,
-      "taxonname": "Paraphaenocladius impensus",
-      "highertaxonid": 32219,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T00:49:36.000Z",
-      "recdatemodified": "2017-12-18T22:08:11.000Z"
     },
     "32221": {
       "taxonid": 32221,
@@ -217688,14 +217624,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-04T00:57:10.000Z",
       "recdatemodified": "2017-12-18T21:38:56.000Z"
-    },
-    "32224": {
-      "taxonid": 32224,
-      "taxonname": "Paratanytarsus penicillatus-type",
-      "highertaxonid": 22884,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T01:01:10.000Z",
-      "recdatemodified": "2017-12-18T21:49:25.000Z"
     },
     "32225": {
       "taxonid": 32225,
@@ -217760,62 +217688,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-04T02:57:39.000Z",
       "recdatemodified": "2017-12-18T22:09:24.000Z"
-    },
-    "32238": {
-      "taxonid": 32238,
-      "taxonname": "Stempellinella",
-      "highertaxonid": 32240,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:05:57.000Z",
-      "recdatemodified": "2017-12-18T21:42:59.000Z"
-    },
-    "32239": {
-      "taxonid": 32239,
-      "taxonname": "Zavrelia",
-      "highertaxonid": 32240,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:07:16.000Z",
-      "recdatemodified": "2017-12-18T21:44:16.000Z"
-    },
-    "32240": {
-      "taxonid": 32240,
-      "taxonname": "Stempellinina",
-      "highertaxonid": 32222,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:11:24.000Z",
-      "recdatemodified": "2017-12-18T21:42:12.000Z"
-    },
-    "32241": {
-      "taxonid": 32241,
-      "taxonname": "Stempellinella/Zavrelia",
-      "highertaxonid": 32240,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:13:59.000Z",
-      "recdatemodified": "2017-12-18T21:43:19.000Z"
-    },
-    "32243": {
-      "taxonid": 32243,
-      "taxonname": "Tanytarsus mendax",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:18:37.000Z",
-      "recdatemodified": "2017-12-18T21:50:07.000Z"
-    },
-    "32244": {
-      "taxonid": 32244,
-      "taxonname": "Tanytarsus mendax-type",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:19:02.000Z",
-      "recdatemodified": "2017-12-18T21:50:16.000Z"
-    },
-    "32246": {
-      "taxonid": 32246,
-      "taxonname": "Tanytarsus pallidicornis-type (2)",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T04:26:29.000Z",
-      "recdatemodified": "2017-12-18T21:50:39.000Z"
     },
     "32248": {
       "taxonid": 32248,
@@ -217993,6 +217865,22 @@
       "recdatecreated": "2017-09-03T14:23:02.000Z",
       "recdatemodified": "2026-07-02T22:03:13.000Z"
     },
+    "32211": {
+      "taxonid": 32211,
+      "taxonname": "Micropsectra radialis-type",
+      "highertaxonid": 22879,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:32:42.000Z",
+      "recdatemodified": "2026-08-04T17:33:31.000Z"
+    },
+    "32209": {
+      "taxonid": 32209,
+      "taxonname": "Metriocnemus fuscipes-type",
+      "highertaxonid": 32207,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:28:13.000Z",
+      "recdatemodified": "2026-08-04T17:22:21.000Z"
+    },
     "32247": {
       "taxonid": 32247,
       "taxonname": "Xenopelopia",
@@ -218000,6 +217888,62 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-04T04:28:07.000Z",
       "recdatemodified": "2026-07-02T22:05:25.000Z"
+    },
+    "32218": {
+      "taxonid": 32218,
+      "taxonname": "Parakiefferiella bathophila-type",
+      "highertaxonid": 32216,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T00:46:27.000Z",
+      "recdatemodified": "2026-08-04T17:23:40.000Z"
+    },
+    "32240": {
+      "taxonid": 32240,
+      "taxonname": "Stempellinella",
+      "highertaxonid": 32222,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:11:24.000Z",
+      "recdatemodified": "2026-08-04T17:35:46.000Z"
+    },
+    "32224": {
+      "taxonid": 32224,
+      "taxonname": "Paratanytarsus penicillatus-type",
+      "highertaxonid": 22884,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T01:01:10.000Z",
+      "recdatemodified": "2026-08-04T17:34:30.000Z"
+    },
+    "32239": {
+      "taxonid": 32239,
+      "taxonname": "Zavrelia",
+      "highertaxonid": 32222,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:07:16.000Z",
+      "recdatemodified": "2026-08-04T17:37:52.000Z"
+    },
+    "32241": {
+      "taxonid": 32241,
+      "taxonname": "Stempellinella/Zavrelia",
+      "highertaxonid": 32240,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:13:59.000Z",
+      "recdatemodified": "2026-08-04T17:37:36.000Z"
+    },
+    "32246": {
+      "taxonid": 32246,
+      "taxonname": "Tanytarsus pallidicornis-type 2",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:26:29.000Z",
+      "recdatemodified": "2026-08-04T17:40:54.000Z"
+    },
+    "32244": {
+      "taxonid": 32244,
+      "taxonname": "Tanytarsus mendax-type",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:19:02.000Z",
+      "recdatemodified": "2026-08-04T17:39:52.000Z"
     },
     "32267": {
       "taxonid": 32267,
@@ -355513,14 +355457,6 @@
       "recdatecreated": "2022-11-05T09:17:04.000Z",
       "recdatemodified": "2022-11-05T09:17:04.000Z"
     },
-    "49911": {
-      "taxonid": 49911,
-      "taxonname": "Ilyocypris monstrifica",
-      "highertaxonid": 14515,
-      "taxagroupid": "OST",
-      "recdatecreated": "2022-11-05T15:34:54.000Z",
-      "recdatemodified": "2022-11-05T15:34:54.000Z"
-    },
     "49917": {
       "taxonid": 49917,
       "taxonname": "Arctocypris edita",
@@ -355841,14 +355777,6 @@
       "recdatecreated": "2022-11-09T07:11:58.000Z",
       "recdatemodified": "2022-11-09T07:11:58.000Z"
     },
-    "52603": {
-      "taxonid": 52603,
-      "taxonname": "Corynocera Oliveri type",
-      "highertaxonid": 22869,
-      "taxagroupid": "INS",
-      "recdatecreated": "2024-06-28T23:11:59.000Z",
-      "recdatemodified": "2024-06-28T23:11:59.000Z"
-    },
     "49947": {
       "taxonid": 49947,
       "taxonname": "Humidophila spp.",
@@ -356065,54 +355993,6 @@
       "recdatecreated": "2022-11-09T10:05:30.000Z",
       "recdatemodified": "2022-11-09T10:05:30.000Z"
     },
-    "49979": {
-      "taxonid": 49979,
-      "taxonname": "Cladotanytarsus mancus-type (C. 1)",
-      "highertaxonid": 49978,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:38:22.000Z",
-      "recdatemodified": "2022-11-09T16:38:22.000Z"
-    },
-    "49980": {
-      "taxonid": 49980,
-      "taxonname": "Cladotanytarsus mancus-type (C. 2)",
-      "highertaxonid": 49978,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:39:10.000Z",
-      "recdatemodified": "2022-11-09T16:39:10.000Z"
-    },
-    "49982": {
-      "taxonid": 49982,
-      "taxonname": "Corynoneura arctica-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:45:48.000Z",
-      "recdatemodified": "2022-11-09T16:45:48.000Z"
-    },
-    "49983": {
-      "taxonid": 49983,
-      "taxonname": "Corynoneura carriana-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:46:53.000Z",
-      "recdatemodified": "2022-11-09T16:46:53.000Z"
-    },
-    "49984": {
-      "taxonid": 49984,
-      "taxonname": "Corynoneura edwardsi-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:47:43.000Z",
-      "recdatemodified": "2022-11-09T16:47:43.000Z"
-    },
-    "49988": {
-      "taxonid": 49988,
-      "taxonname": "Cricotopus (Isocladius) sylvestris-type",
-      "highertaxonid": 32202,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:59:48.000Z",
-      "recdatemodified": "2022-11-09T16:59:48.000Z"
-    },
     "49989": {
       "taxonid": 49989,
       "taxonname": "Diamesa zernyi / D.cinerella-type",
@@ -356145,6 +356025,14 @@
       "recdatecreated": "2024-11-20T15:52:23.000Z",
       "recdatemodified": "2024-11-20T15:52:23.000Z"
     },
+    "49982": {
+      "taxonid": 49982,
+      "taxonname": "Corynoneura arctica-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:45:48.000Z",
+      "recdatemodified": "2026-08-04T17:10:10.000Z"
+    },
     "49986": {
       "taxonid": 49986,
       "taxonname": "Corynoneura undiff.",
@@ -356175,7 +356063,23 @@
       "highertaxonid": 69139,
       "taxagroupid": "INS",
       "recdatecreated": "2022-11-09T16:41:59.000Z",
-      "recdatemodified": "2026-06-02T14:13:19.000Z"
+      "recdatemodified": "2026-08-04T17:30:40.000Z"
+    },
+    "49979": {
+      "taxonid": 49979,
+      "taxonname": "Cladotanytarsus mancus-type 1",
+      "highertaxonid": 49978,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:38:22.000Z",
+      "recdatemodified": "2026-08-04T17:28:26.000Z"
+    },
+    "49984": {
+      "taxonid": 49984,
+      "taxonname": "Corynoneura edwardsi-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:47:43.000Z",
+      "recdatemodified": "2026-08-04T17:11:12.000Z"
     },
     "49993": {
       "taxonid": 49993,
@@ -356184,22 +356088,6 @@
       "taxagroupid": "FSH",
       "recdatecreated": "2022-11-09T20:20:33.000Z",
       "recdatemodified": "2022-11-09T20:20:33.000Z"
-    },
-    "49994": {
-      "taxonid": 49994,
-      "taxonname": "Heterotrissocladius grimshawi-type",
-      "highertaxonid": 22872,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T20:20:50.000Z",
-      "recdatemodified": "2022-11-09T20:20:50.000Z"
-    },
-    "49995": {
-      "taxonid": 49995,
-      "taxonname": "Heterotrissocladius marcidus-type",
-      "highertaxonid": 22872,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T20:23:20.000Z",
-      "recdatemodified": "2022-11-09T20:23:20.000Z"
     },
     "49996": {
       "taxonid": 49996,
@@ -356288,14 +356176,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2022-11-09T21:02:28.000Z",
       "recdatemodified": "2022-11-09T21:02:28.000Z"
-    },
-    "50009": {
-      "taxonid": 50009,
-      "taxonname": "Tanytarsus lugens-type",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T21:04:50.000Z",
-      "recdatemodified": "2022-11-09T21:04:50.000Z"
     },
     "50010": {
       "taxonid": 50010,
@@ -356665,6 +356545,14 @@
       "recdatecreated": "2013-02-21T00:00:00.000Z",
       "recdatemodified": "2022-11-22T07:54:01.000Z"
     },
+    "49994": {
+      "taxonid": 49994,
+      "taxonname": "Heterotrissocladius grimshawi-type",
+      "highertaxonid": 22872,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T20:20:50.000Z",
+      "recdatemodified": "2026-08-04T17:20:12.000Z"
+    },
     "50000": {
       "taxonid": 50000,
       "taxonname": "Orthocladius (type S)/Paracladius",
@@ -356680,6 +356568,14 @@
       "taxagroupid": "INS",
       "recdatecreated": "2022-11-09T20:51:04.000Z",
       "recdatemodified": "2026-06-02T13:53:43.000Z"
+    },
+    "49995": {
+      "taxonid": 49995,
+      "taxonname": "Heterotrissocladius marcidus-type",
+      "highertaxonid": 22872,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T20:23:20.000Z",
+      "recdatemodified": "2026-08-04T17:20:59.000Z"
     },
     "50059": {
       "taxonid": 50059,
@@ -365824,14 +365720,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2023-06-26T17:39:28.000Z",
       "recdatemodified": "2023-06-26T17:39:28.000Z"
-    },
-    "52604": {
-      "taxonid": 52604,
-      "taxonname": "Eukiefferiella/Tvetenia",
-      "highertaxonid": 32190,
-      "taxagroupid": "INS",
-      "recdatecreated": "2024-06-28T23:29:36.000Z",
-      "recdatemodified": "2024-06-28T23:29:36.000Z"
     },
     "51159": {
       "taxonid": 51159,
@@ -465161,14 +465049,6 @@
       "recdatecreated": "2026-03-16T17:37:06.000Z",
       "recdatemodified": "2026-03-16T17:42:56.000Z"
     },
-    "68925": {
-      "taxonid": 68925,
-      "taxonname": "Heterotrissocladius marcidus-type",
-      "highertaxonid": 22872,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:05.000Z",
-      "recdatemodified": "2026-03-16T17:42:56.000Z"
-    },
     "68928": {
       "taxonid": 68928,
       "taxonname": "Chironomus acerbiphilus-type",
@@ -465204,14 +465084,6 @@
     "68924": {
       "taxonid": 68924,
       "taxonname": "Heterotrissocladius maeaeri-type",
-      "highertaxonid": 22872,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:04.000Z",
-      "recdatemodified": "2026-03-16T17:42:56.000Z"
-    },
-    "68923": {
-      "taxonid": 68923,
-      "taxonname": "Heterotrissocladius grimshawi-type",
       "highertaxonid": 22872,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:04.000Z",
@@ -465256,14 +465128,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:03.000Z",
       "recdatemodified": "2026-03-16T17:42:56.000Z"
-    },
-    "68914": {
-      "taxonid": 68914,
-      "taxonname": "Corynocera oliveri",
-      "highertaxonid": 22869,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:02.000Z",
-      "recdatemodified": "2026-03-16T17:42:57.000Z"
     },
     "68916": {
       "taxonid": 68916,
@@ -465328,14 +465192,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:17.000Z",
       "recdatemodified": "2026-03-16T17:42:53.000Z"
-    },
-    "68958": {
-      "taxonid": 68958,
-      "taxonname": "Paratanytarsus penicillatus-type",
-      "highertaxonid": 22884,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:16.000Z",
-      "recdatemodified": "2026-03-16T17:42:54.000Z"
     },
     "68957": {
       "taxonid": 68957,
@@ -465473,14 +465329,6 @@
       "recdatecreated": "2026-03-16T17:37:09.000Z",
       "recdatemodified": "2026-03-16T17:42:55.000Z"
     },
-    "68940": {
-      "taxonid": 68940,
-      "taxonname": "Micropsectra radialis-type",
-      "highertaxonid": 22879,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:09.000Z",
-      "recdatemodified": "2026-03-16T17:42:55.000Z"
-    },
     "68938": {
       "taxonid": 68938,
       "taxonname": "Micropsectra junci-type",
@@ -465531,11 +465379,11 @@
     },
     "68996": {
       "taxonid": 68996,
-      "taxonname": "Allocladius-type",
+      "taxonname": "Allopsectrocladius-type",
       "highertaxonid": 23288,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:29.000Z",
-      "recdatemodified": "2026-03-16T17:42:51.000Z"
+      "recdatemodified": "2026-08-04T17:25:51.000Z"
     },
     "68991": {
       "taxonid": 68991,
@@ -465617,14 +465465,6 @@
       "recdatecreated": "2026-03-16T17:37:26.000Z",
       "recdatemodified": "2026-03-16T17:42:52.000Z"
     },
-    "68979": {
-      "taxonid": 68979,
-      "taxonname": "Tanytarsus pallidicornis-type 2",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:25.000Z",
-      "recdatemodified": "2026-03-16T17:42:52.000Z"
-    },
     "68981": {
       "taxonid": 68981,
       "taxonname": "Tanytarsus sylvaticus-type",
@@ -465689,14 +465529,6 @@
       "recdatecreated": "2026-03-16T17:37:23.000Z",
       "recdatemodified": "2026-03-16T17:42:53.000Z"
     },
-    "68971": {
-      "taxonid": 68971,
-      "taxonname": "Tanytarsus mendax-type",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:23.000Z",
-      "recdatemodified": "2026-03-16T17:42:53.000Z"
-    },
     "68974": {
       "taxonid": 68974,
       "taxonname": "Tanytarsus nemorosus-type",
@@ -465708,14 +465540,6 @@
     "68970": {
       "taxonid": 68970,
       "taxonname": "Tanytarsus lugens-type assigned",
-      "highertaxonid": 22886,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:22.000Z",
-      "recdatemodified": "2026-03-16T17:42:53.000Z"
-    },
-    "68969": {
-      "taxonid": 68969,
-      "taxonname": "Tanytarsus lugens-type",
       "highertaxonid": 22886,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:22.000Z",
@@ -466153,14 +465977,6 @@
       "recdatecreated": "2026-03-16T17:37:50.000Z",
       "recdatemodified": "2026-03-16T17:42:46.000Z"
     },
-    "69064": {
-      "taxonid": 69064,
-      "taxonname": "Eukiefferiella",
-      "highertaxonid": 52604,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:50.000Z",
-      "recdatemodified": "2026-06-02T13:41:14.000Z"
-    },
     "69062": {
       "taxonid": 69062,
       "taxonname": "Acricotopus",
@@ -466433,25 +466249,9 @@
       "recdatecreated": "2026-03-16T17:38:05.000Z",
       "recdatemodified": "2026-03-16T17:42:43.000Z"
     },
-    "69109": {
-      "taxonid": 69109,
-      "taxonname": "Corynoneura edwardsi-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:04.000Z",
-      "recdatemodified": "2026-03-16T17:42:43.000Z"
-    },
     "69110": {
       "taxonid": 69110,
       "taxonname": "Corynoneura lobata-type",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:04.000Z",
-      "recdatemodified": "2026-03-16T17:42:43.000Z"
-    },
-    "69108": {
-      "taxonid": 69108,
-      "taxonname": "Corynoneura arctica-type",
       "highertaxonid": 32198,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:04.000Z",
@@ -466461,14 +466261,6 @@
       "taxonid": 69105,
       "taxonname": "Ablabesmyia phatta-type (based on setation)",
       "highertaxonid": 32192,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:03.000Z",
-      "recdatemodified": "2026-03-16T17:42:43.000Z"
-    },
-    "69107": {
-      "taxonid": 69107,
-      "taxonname": "Corynoneura type A",
-      "highertaxonid": 32198,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:03.000Z",
       "recdatemodified": "2026-03-16T17:42:43.000Z"
@@ -466593,14 +466385,6 @@
       "recdatecreated": "2026-03-16T17:37:56.000Z",
       "recdatemodified": "2026-03-16T17:42:45.000Z"
     },
-    "69123": {
-      "taxonid": 69123,
-      "taxonname": "Cricotopus (Isocladius) sylvestris-type",
-      "highertaxonid": 32202,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:08.000Z",
-      "recdatemodified": "2026-03-16T17:43:30.000Z"
-    },
     "69224": {
       "taxonid": 69224,
       "taxonname": "Salix myrtilloides",
@@ -466649,14 +466433,6 @@
       "recdatecreated": "2026-03-16T17:38:08.000Z",
       "recdatemodified": "2026-03-16T17:42:42.000Z"
     },
-    "69161": {
-      "taxonid": 69161,
-      "taxonname": "Cladotanytarsus mancus-type 2",
-      "highertaxonid": 49978,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:18.000Z",
-      "recdatemodified": "2026-03-16T17:43:28.000Z"
-    },
     "69164": {
       "taxonid": 69164,
       "taxonname": "Eukiefferiella brevicalcar-type",
@@ -466679,14 +466455,6 @@
       "highertaxonid": 49978,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:18.000Z",
-      "recdatemodified": "2026-03-16T17:43:28.000Z"
-    },
-    "69160": {
-      "taxonid": 69160,
-      "taxonname": "Cladotanytarsus mancus-type 1",
-      "highertaxonid": 49978,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:17.000Z",
       "recdatemodified": "2026-03-16T17:43:28.000Z"
     },
     "69159": {
@@ -466793,14 +466561,6 @@
       "recdatecreated": "2026-03-16T17:38:13.000Z",
       "recdatemodified": "2026-03-16T17:43:29.000Z"
     },
-    "69145": {
-      "taxonid": 69145,
-      "taxonname": "Stempellinella/Zavrelia",
-      "highertaxonid": 32240,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:13.000Z",
-      "recdatemodified": "2026-06-02T14:08:46.000Z"
-    },
     "69144": {
       "taxonid": 69144,
       "taxonname": "Rheotanytarsus",
@@ -466873,22 +466633,6 @@
       "recdatecreated": "2026-03-16T17:38:11.000Z",
       "recdatemodified": "2026-03-16T17:43:30.000Z"
     },
-    "69130": {
-      "taxonid": 69130,
-      "taxonname": "Metriocnemus fuscipes-type",
-      "highertaxonid": 32207,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:10.000Z",
-      "recdatemodified": "2026-03-16T17:43:30.000Z"
-    },
-    "69133": {
-      "taxonid": 69133,
-      "taxonname": "Parakiefferiella bathophila-type",
-      "highertaxonid": 32216,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:10.000Z",
-      "recdatemodified": "2026-03-16T17:43:30.000Z"
-    },
     "69132": {
       "taxonid": 69132,
       "taxonname": "Parakiefferiella type A",
@@ -466909,14 +466653,6 @@
       "taxonid": 69129,
       "taxonname": "Metriocnemus eurynotus-type",
       "highertaxonid": 32207,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:09.000Z",
-      "recdatemodified": "2026-03-16T17:43:30.000Z"
-    },
-    "69128": {
-      "taxonid": 69128,
-      "taxonname": "Cricotopus/Orthocladius",
-      "highertaxonid": 32202,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:09.000Z",
       "recdatemodified": "2026-03-16T17:43:30.000Z"
@@ -467213,14 +466949,6 @@
       "taxonid": 69170,
       "taxonname": "Parametriocnemus/Paraphaenocladius",
       "highertaxonid": 52605,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:20.000Z",
-      "recdatemodified": "2026-03-16T17:43:27.000Z"
-    },
-    "69168": {
-      "taxonid": 69168,
-      "taxonname": "Eukiefferiella/Tvetenia",
-      "highertaxonid": 52604,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:20.000Z",
       "recdatemodified": "2026-03-16T17:43:27.000Z"
@@ -470353,22 +470081,6 @@
       "recdatecreated": "2026-06-09T14:39:41.000Z",
       "recdatemodified": "2026-06-09T14:39:41.000Z"
     },
-    "49985": {
-      "taxonid": 49985,
-      "taxonname": "Corynoneura (type A)",
-      "highertaxonid": 32198,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-11-09T16:49:37.000Z",
-      "recdatemodified": "2026-06-02T13:30:03.000Z"
-    },
-    "32204": {
-      "taxonid": 32204,
-      "taxonname": "Cricotopus/Orthocladius",
-      "highertaxonid": 32202,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:17:01.000Z",
-      "recdatemodified": "2026-06-02T13:39:26.000Z"
-    },
     "32236": {
       "taxonid": 32236,
       "taxonname": "Psectrocladius sordidellus-type",
@@ -470384,14 +470096,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:38:00.000Z",
       "recdatemodified": "2026-06-02T13:55:51.000Z"
-    },
-    "69142": {
-      "taxonid": 69142,
-      "taxonname": "Constempellina/Thienemanniola",
-      "highertaxonid": 69139,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:38:13.000Z",
-      "recdatemodified": "2026-06-02T14:07:55.000Z"
     },
     "69523": {
       "taxonid": 69523,
@@ -472256,6 +471960,94 @@
       "taxagroupid": "OST",
       "recdatecreated": "2026-08-02T21:02:58.000Z",
       "recdatemodified": "2026-08-02T21:02:58.000Z"
+    },
+    "49985": {
+      "taxonid": 49985,
+      "taxonname": "Corynoneura type A",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:49:37.000Z",
+      "recdatemodified": "2026-08-04T16:37:56.000Z"
+    },
+    "49983": {
+      "taxonid": 49983,
+      "taxonname": "Corynoneura carriana-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:46:53.000Z",
+      "recdatemodified": "2026-08-04T17:09:49.000Z"
+    },
+    "32204": {
+      "taxonid": 32204,
+      "taxonname": "Cricotopus/Orthocladius",
+      "highertaxonid": 32202,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:17:01.000Z",
+      "recdatemodified": "2026-08-04T17:14:50.000Z"
+    },
+    "49988": {
+      "taxonid": 49988,
+      "taxonname": "Cricotopus (Isocladius) sylvestris-type",
+      "highertaxonid": 32202,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:59:48.000Z",
+      "recdatemodified": "2026-08-04T17:16:48.000Z"
+    },
+    "52604": {
+      "taxonid": 52604,
+      "taxonname": "Eukiefferiella/Tvetenia",
+      "highertaxonid": 32190,
+      "taxagroupid": "INS",
+      "recdatecreated": "2024-06-28T23:29:36.000Z",
+      "recdatemodified": "2026-08-04T17:18:49.000Z"
+    },
+    "49980": {
+      "taxonid": 49980,
+      "taxonname": "Cladotanytarsus mancus-type 2",
+      "highertaxonid": 49978,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:39:10.000Z",
+      "recdatemodified": "2026-08-04T17:29:37.000Z"
+    },
+    "52603": {
+      "taxonid": 52603,
+      "taxonname": "Corynocera oliveri-type",
+      "highertaxonid": 22869,
+      "taxagroupid": "INS",
+      "recdatecreated": "2024-06-28T23:11:59.000Z",
+      "recdatemodified": "2026-08-04T17:32:12.000Z"
+    },
+    "50009": {
+      "taxonid": 50009,
+      "taxonname": "Tanytarsus lugens-type",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T21:04:50.000Z",
+      "recdatemodified": "2026-08-04T17:38:55.000Z"
+    },
+    "49911": {
+      "taxonid": 49911,
+      "taxonname": "Ilyocypris monstrifica",
+      "highertaxonid": 14515,
+      "taxagroupid": "OST",
+      "recdatecreated": "2022-11-05T15:34:54.000Z",
+      "recdatemodified": "2026-08-05T16:12:55.000Z"
+    },
+    "25535": {
+      "taxonid": 25535,
+      "taxonname": "Pelocypris tuberculata",
+      "highertaxonid": 14534,
+      "taxagroupid": "OST",
+      "recdatecreated": "2015-11-30T20:04:35.000Z",
+      "recdatemodified": "2026-08-05T19:40:03.000Z"
+    },
+    "69750": {
+      "taxonid": 69750,
+      "taxonname": "Cyathea cf. C. colensoi",
+      "highertaxonid": 1725,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-10T02:55:16.000Z",
+      "recdatemodified": "2026-08-10T02:55:16.000Z"
     }
   }
 }

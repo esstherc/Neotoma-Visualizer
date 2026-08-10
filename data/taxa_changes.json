@@ -1,60 +1,12 @@
 {
-  "generated_at": "2026-08-03T05:37:40+00:00",
-  "since": "2026-07-04",
+  "generated_at": "2026-08-10T03:49:25+00:00",
+  "since": "2026-07-11",
   "counts": {
-    "new": 140,
-    "modified": 3,
-    "total": 143
+    "new": 57,
+    "modified": 32,
+    "total": 89
   },
   "new": [
-    {
-      "taxonid": 69610,
-      "taxonname": "Achnanthes islandica",
-      "highertaxonid": 14153,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T13:48:07.000Z",
-      "recdatemodified": "2026-07-08T13:48:07.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        14153,
-        69610
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Achnanthes",
-        "Achnanthes islandica"
-      ]
-    },
-    {
-      "taxonid": 69611,
-      "taxonname": "Actinocyclus octonarius var. crassus",
-      "highertaxonid": 22530,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T13:55:36.000Z",
-      "recdatemodified": "2026-07-08T13:55:36.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        22529,
-        22530,
-        69611
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Hemidiscaceae",
-        "Actinocyclus",
-        "Actinocyclus octonarius var. crassus"
-      ]
-    },
     {
       "taxonid": 69703,
       "taxonname": "Actinocyclus senarius",
@@ -77,172 +29,6 @@
         "Hemidiscaceae",
         "Actinocyclus",
         "Actinocyclus senarius"
-      ]
-    },
-    {
-      "taxonid": 69612,
-      "taxonname": "Amphora granulata",
-      "highertaxonid": 10347,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T13:57:17.000Z",
-      "recdatemodified": "2026-07-08T13:57:17.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24600,
-        10347,
-        69612
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Catenulaceae",
-        "Amphora",
-        "Amphora granulata"
-      ]
-    },
-    {
-      "taxonid": 69613,
-      "taxonname": "Anaulus cf. balticus",
-      "highertaxonid": 52538,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:00:49.000Z",
-      "recdatemodified": "2026-07-13T18:20:07.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        52537,
-        52538,
-        69613
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Anaulaceae",
-        "Anaulus",
-        "Anaulus cf. balticus"
-      ]
-    },
-    {
-      "taxonid": 69614,
-      "taxonname": "Aneumastus pseudotusculus",
-      "highertaxonid": 24386,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:04:12.000Z",
-      "recdatemodified": "2026-07-08T14:04:12.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24617,
-        24386,
-        69614
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Mastogloiaceae",
-        "Aneumastus",
-        "Aneumastus pseudotusculus"
-      ]
-    },
-    {
-      "taxonid": 69615,
-      "taxonname": "Anorthoneis tenuis",
-      "highertaxonid": 24389,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:07:02.000Z",
-      "recdatemodified": "2026-07-08T14:07:02.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24606,
-        24389,
-        69615
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Cocconeidaceae",
-        "Anorthoneis",
-        "Anorthoneis tenuis"
-      ]
-    },
-    {
-      "taxonid": 69616,
-      "taxonname": "Asterionella sp. 1",
-      "highertaxonid": 24391,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:08:10.000Z",
-      "recdatemodified": "2026-07-08T14:08:10.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24391,
-        69616
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Asterionella",
-        "Asterionella sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69617,
-      "taxonname": "Aulacoseira sp. 1",
-      "highertaxonid": 24392,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:09:43.000Z",
-      "recdatemodified": "2026-07-08T14:09:43.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24632,
-        24392,
-        69617
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Aulacoseiraceae",
-        "Aulacoseira",
-        "Aulacoseira sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69618,
-      "taxonname": "Bacillaria socialis",
-      "highertaxonid": 24393,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:12:01.000Z",
-      "recdatemodified": "2026-07-08T14:12:01.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24393,
-        69618
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Bacillaria",
-        "Bacillaria socialis"
       ]
     },
     {
@@ -288,102 +74,6 @@
       ]
     },
     {
-      "taxonid": 69619,
-      "taxonname": "Biremis spp.",
-      "highertaxonid": 24395,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:13:50.000Z",
-      "recdatemodified": "2026-07-08T16:40:40.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24625,
-        24395,
-        69619
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Scoliotropidaceae",
-        "Biremis",
-        "Biremis spp."
-      ]
-    },
-    {
-      "taxonid": 69620,
-      "taxonname": "Caloneis aemula",
-      "highertaxonid": 24398,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:27:30.000Z",
-      "recdatemodified": "2026-07-08T14:27:30.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        24398,
-        69620
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Caloneis",
-        "Caloneis aemula"
-      ]
-    },
-    {
-      "taxonid": 69621,
-      "taxonname": "Caloneis cf. ventricosa",
-      "highertaxonid": 24398,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:29:51.000Z",
-      "recdatemodified": "2026-07-13T18:26:36.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        24398,
-        69621
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Caloneis",
-        "Caloneis cf. ventricosa"
-      ]
-    },
-    {
-      "taxonid": 69622,
-      "taxonname": "Caloneis sp. 1",
-      "highertaxonid": 24398,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:31:09.000Z",
-      "recdatemodified": "2026-07-08T14:31:09.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        24398,
-        69622
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Caloneis",
-        "Caloneis sp. 1"
-      ]
-    },
-    {
       "taxonid": 69698,
       "taxonname": "Chaetocerotanae",
       "highertaxonid": 69697,
@@ -410,102 +100,6 @@
       ]
     },
     {
-      "taxonid": 69623,
-      "taxonname": "Cocconeis cf. peltoides",
-      "highertaxonid": 24406,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:33:54.000Z",
-      "recdatemodified": "2026-07-08T14:33:54.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        24406,
-        69623
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Cocconeis",
-        "Cocconeis cf. peltoides"
-      ]
-    },
-    {
-      "taxonid": 69624,
-      "taxonname": "Cocconeis costata var. costata",
-      "highertaxonid": 24406,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:35:50.000Z",
-      "recdatemodified": "2026-07-08T14:35:50.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        24406,
-        69624
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Cocconeis",
-        "Cocconeis costata var. costata"
-      ]
-    },
-    {
-      "taxonid": 69625,
-      "taxonname": "Cocconeis disculoides",
-      "highertaxonid": 24406,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T14:37:05.000Z",
-      "recdatemodified": "2026-07-08T14:37:05.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        24406,
-        69625
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Cocconeis",
-        "Cocconeis disculoides"
-      ]
-    },
-    {
-      "taxonid": 69626,
-      "taxonname": "Cocconeis elongata",
-      "highertaxonid": 24406,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:19:59.000Z",
-      "recdatemodified": "2026-07-08T15:19:59.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        24406,
-        69626
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Cocconeis",
-        "Cocconeis elongata"
-      ]
-    },
-    {
       "taxonid": 69697,
       "taxonname": "Coscinodiscophycidae",
       "highertaxonid": 69696,
@@ -527,54 +121,6 @@
         "Bacillariophytina",
         "Bacillariophyceae",
         "Coscinodiscophycidae"
-      ]
-    },
-    {
-      "taxonid": 69627,
-      "taxonname": "Coscinodiscus cf. lineatus",
-      "highertaxonid": 24407,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:26:46.000Z",
-      "recdatemodified": "2026-07-08T15:26:46.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24635,
-        24407,
-        69627
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Coscinodiscaceae",
-        "Coscinodiscus",
-        "Coscinodiscus cf. lineatus"
-      ]
-    },
-    {
-      "taxonid": 69628,
-      "taxonname": "Coscinodiscus marginatus",
-      "highertaxonid": 24407,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:28:45.000Z",
-      "recdatemodified": "2026-07-08T15:28:45.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24635,
-        24407,
-        69628
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Coscinodiscaceae",
-        "Coscinodiscus",
-        "Coscinodiscus marginatus"
       ]
     },
     {
@@ -626,30 +172,6 @@
       ]
     },
     {
-      "taxonid": 69629,
-      "taxonname": "Cymbella sp. 1",
-      "highertaxonid": 24416,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:32:15.000Z",
-      "recdatemodified": "2026-07-08T15:32:15.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24608,
-        24416,
-        69629
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Cymbellaceae",
-        "Cymbella",
-        "Cymbella sp. 1"
-      ]
-    },
-    {
       "taxonid": 69732,
       "taxonname": "Diadesmis cf. contenta",
       "highertaxonid": 24428,
@@ -671,78 +193,6 @@
         "Diadesmidaceae",
         "Diadesmis",
         "Diadesmis cf. contenta"
-      ]
-    },
-    {
-      "taxonid": 69630,
-      "taxonname": "Diploneis cf. bombus",
-      "highertaxonid": 24433,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:37:11.000Z",
-      "recdatemodified": "2026-07-08T15:37:57.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24611,
-        24433,
-        69630
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Diploneidaceae",
-        "Diploneis",
-        "Diploneis cf. bombus"
-      ]
-    },
-    {
-      "taxonid": 69631,
-      "taxonname": "Diploneis cf. didymus",
-      "highertaxonid": 24433,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:40:31.000Z",
-      "recdatemodified": "2026-07-08T15:40:31.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24611,
-        24433,
-        69631
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Diploneidaceae",
-        "Diploneis",
-        "Diploneis cf. didymus"
-      ]
-    },
-    {
-      "taxonid": 69632,
-      "taxonname": "Encyonema nicafei",
-      "highertaxonid": 24436,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T15:59:27.000Z",
-      "recdatemodified": "2026-07-08T15:59:27.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24608,
-        24436,
-        69632
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Cymbellaceae",
-        "Encyonema",
-        "Encyonema nicafei"
       ]
     },
     {
@@ -794,76 +244,6 @@
       ]
     },
     {
-      "taxonid": 69633,
-      "taxonname": "Fragilaria cf. microstriata",
-      "highertaxonid": 24447,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:03:48.000Z",
-      "recdatemodified": "2026-07-08T16:03:48.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24447,
-        69633
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Fragilaria",
-        "Fragilaria cf. microstriata"
-      ]
-    },
-    {
-      "taxonid": 69634,
-      "taxonname": "Frickea",
-      "highertaxonid": 24601,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:11:31.000Z",
-      "recdatemodified": "2026-07-08T16:11:31.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24601,
-        69634
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Amphipleuraceae",
-        "Frickea"
-      ]
-    },
-    {
-      "taxonid": 69635,
-      "taxonname": "Frickea lewisana",
-      "highertaxonid": 69634,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:12:22.000Z",
-      "recdatemodified": "2026-07-08T16:12:22.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24601,
-        69634,
-        69635
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Amphipleuraceae",
-        "Frickea",
-        "Frickea lewisana"
-      ]
-    },
-    {
       "taxonid": 69733,
       "taxonname": "Frustulia capitata",
       "highertaxonid": 24451,
@@ -909,148 +289,6 @@
         "Naviculaceae",
         "Geissleria",
         "Geissleria cf. kriegeri"
-      ]
-    },
-    {
-      "taxonid": 69636,
-      "taxonname": "Gomphonema mammilla",
-      "highertaxonid": 24454,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:38:39.000Z",
-      "recdatemodified": "2026-07-08T16:38:39.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24615,
-        24454,
-        69636
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Gomphonemataceae",
-        "Gomphonema",
-        "Gomphonema mammilla"
-      ]
-    },
-    {
-      "taxonid": 69637,
-      "taxonname": "Gomphonema sp. 1",
-      "highertaxonid": 24454,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:40:01.000Z",
-      "recdatemodified": "2026-07-08T16:40:01.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24615,
-        24454,
-        69637
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Gomphonemataceae",
-        "Gomphonema",
-        "Gomphonema sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69638,
-      "taxonname": "Grammatophora cf. macilenta",
-      "highertaxonid": 24491,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:43:10.000Z",
-      "recdatemodified": "2026-07-08T16:43:10.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24491,
-        69638
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Grammatophora",
-        "Grammatophora cf. macilenta"
-      ]
-    },
-    {
-      "taxonid": 69640,
-      "taxonname": "Gyrosigma cf. balticum",
-      "highertaxonid": 24538,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:47:50.000Z",
-      "recdatemodified": "2026-07-08T16:47:50.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24622,
-        24538,
-        69640
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pleurosigmataceae",
-        "Gyrosigma",
-        "Gyrosigma cf. balticum"
-      ]
-    },
-    {
-      "taxonid": 69639,
-      "taxonname": "Gyrosigma temperei",
-      "highertaxonid": 24538,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:45:23.000Z",
-      "recdatemodified": "2026-07-08T16:45:23.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24622,
-        24538,
-        69639
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pleurosigmataceae",
-        "Gyrosigma",
-        "Gyrosigma temperei"
-      ]
-    },
-    {
-      "taxonid": 69641,
-      "taxonname": "Hantzschia spp. girdle view",
-      "highertaxonid": 24494,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-08T16:52:49.000Z",
-      "recdatemodified": "2026-07-08T16:52:49.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24494,
-        69641
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Hantzschia",
-        "Hantzschia spp. girdle view"
       ]
     },
     {
@@ -1178,126 +416,6 @@
       ]
     },
     {
-      "taxonid": 69642,
-      "taxonname": "Mastogloia sp. 1",
-      "highertaxonid": 24506,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:13:04.000Z",
-      "recdatemodified": "2026-07-09T13:13:04.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24617,
-        24506,
-        69642
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Mastogloiaceae",
-        "Mastogloia",
-        "Mastogloia sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69643,
-      "taxonname": "Navicula brachium",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:15:44.000Z",
-      "recdatemodified": "2026-07-09T13:15:44.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69643
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula brachium"
-      ]
-    },
-    {
-      "taxonid": 69644,
-      "taxonname": "Navicula cf. capitatoradiata",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:17:55.000Z",
-      "recdatemodified": "2026-07-09T13:17:55.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69644
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. capitatoradiata"
-      ]
-    },
-    {
-      "taxonid": 69645,
-      "taxonname": "Navicula cf. galloae",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:19:55.000Z",
-      "recdatemodified": "2026-07-09T13:19:55.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69645
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. galloae"
-      ]
-    },
-    {
-      "taxonid": 69646,
-      "taxonname": "Navicula cf. heufleri",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:24:53.000Z",
-      "recdatemodified": "2026-07-09T13:24:53.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69646
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. heufleri"
-      ]
-    },
-    {
       "taxonid": 69706,
       "taxonname": "Navicula cf. kriegeri",
       "highertaxonid": 22536,
@@ -1346,174 +464,6 @@
       ]
     },
     {
-      "taxonid": 69647,
-      "taxonname": "Navicula cf. oblonga",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:26:18.000Z",
-      "recdatemodified": "2026-07-09T13:26:18.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69647
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. oblonga"
-      ]
-    },
-    {
-      "taxonid": 69648,
-      "taxonname": "Navicula cf. patrickiae",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:28:03.000Z",
-      "recdatemodified": "2026-07-09T13:28:03.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69648
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. patrickiae"
-      ]
-    },
-    {
-      "taxonid": 69691,
-      "taxonname": "Navicula cf. reichardtii",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T19:39:07.000Z",
-      "recdatemodified": "2026-07-09T19:39:07.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69691
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. reichardtii"
-      ]
-    },
-    {
-      "taxonid": 69649,
-      "taxonname": "Navicula cf. schweigeri",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:31:39.000Z",
-      "recdatemodified": "2026-07-09T13:31:39.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69649
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. schweigeri"
-      ]
-    },
-    {
-      "taxonid": 69650,
-      "taxonname": "Navicula cf. subinflata",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:32:58.000Z",
-      "recdatemodified": "2026-07-09T13:32:58.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69650
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. subinflata"
-      ]
-    },
-    {
-      "taxonid": 69651,
-      "taxonname": "Navicula cf. tripunctata",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:34:13.000Z",
-      "recdatemodified": "2026-07-09T13:34:13.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69651
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. tripunctata"
-      ]
-    },
-    {
-      "taxonid": 69652,
-      "taxonname": "Navicula cf. zostereti",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:35:23.000Z",
-      "recdatemodified": "2026-07-09T13:35:23.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69652
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula cf. zostereti"
-      ]
-    },
-    {
       "taxonid": 69708,
       "taxonname": "Navicula demta",
       "highertaxonid": 22536,
@@ -1535,54 +485,6 @@
         "Naviculaceae",
         "Navicula",
         "Navicula demta"
-      ]
-    },
-    {
-      "taxonid": 69653,
-      "taxonname": "Navicula marginulata",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:36:36.000Z",
-      "recdatemodified": "2026-07-09T13:36:36.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69653
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula marginulata"
-      ]
-    },
-    {
-      "taxonid": 69654,
-      "taxonname": "Navicula oculiformis",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:37:32.000Z",
-      "recdatemodified": "2026-07-09T13:37:32.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69654
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula oculiformis"
       ]
     },
     {
@@ -1610,30 +512,6 @@
       ]
     },
     {
-      "taxonid": 69655,
-      "taxonname": "Navicula sp. 1",
-      "highertaxonid": 22536,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:50:41.000Z",
-      "recdatemodified": "2026-07-09T13:50:41.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        22536,
-        69655
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Navicula",
-        "Navicula sp. 1"
-      ]
-    },
-    {
       "taxonid": 69710,
       "taxonname": "Navicula zostereti",
       "highertaxonid": 22536,
@@ -1655,30 +533,6 @@
         "Naviculaceae",
         "Navicula",
         "Navicula zostereti"
-      ]
-    },
-    {
-      "taxonid": 69656,
-      "taxonname": "Neidiopsis sp. 1",
-      "highertaxonid": 24519,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:53:58.000Z",
-      "recdatemodified": "2026-07-09T13:53:58.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24618,
-        24519,
-        69656
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Neidiaceae",
-        "Neidiopsis",
-        "Neidiopsis sp. 1"
       ]
     },
     {
@@ -1740,78 +594,6 @@
       ]
     },
     {
-      "taxonid": 69657,
-      "taxonname": "Nitzschia cf. borealis",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T13:56:21.000Z",
-      "recdatemodified": "2026-07-09T13:56:21.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69657
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia cf. borealis"
-      ]
-    },
-    {
-      "taxonid": 69658,
-      "taxonname": "Nitzschia cf. laevis",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T14:00:08.000Z",
-      "recdatemodified": "2026-07-09T14:00:08.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69658
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia cf. laevis"
-      ]
-    },
-    {
-      "taxonid": 69659,
-      "taxonname": "Nitzschia cf. macilenta",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T14:02:47.000Z",
-      "recdatemodified": "2026-07-09T14:03:28.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69659
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia cf. macilenta"
-      ]
-    },
-    {
       "taxonid": 69735,
       "taxonname": "Nitzschia cf. subacicularis",
       "highertaxonid": 24521,
@@ -1836,54 +618,6 @@
       ]
     },
     {
-      "taxonid": 69660,
-      "taxonname": "Nitzschia columbiana",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T14:57:53.000Z",
-      "recdatemodified": "2026-07-09T14:57:53.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69660
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia columbiana"
-      ]
-    },
-    {
-      "taxonid": 69661,
-      "taxonname": "Nitzschia cylindrus",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:00:01.000Z",
-      "recdatemodified": "2026-07-09T15:00:01.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69661
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia cylindrus"
-      ]
-    },
-    {
       "taxonid": 69715,
       "taxonname": "Nitzschia marginulata",
       "highertaxonid": 24521,
@@ -1905,150 +639,6 @@
         "Bacillariaceae",
         "Nitzschia",
         "Nitzschia marginulata"
-      ]
-    },
-    {
-      "taxonid": 69662,
-      "taxonname": "Nitzschia proxima",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:02:30.000Z",
-      "recdatemodified": "2026-07-09T15:02:30.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69662
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia proxima"
-      ]
-    },
-    {
-      "taxonid": 69663,
-      "taxonname": "Nitzschia punctata",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:04:06.000Z",
-      "recdatemodified": "2026-07-09T15:04:06.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69663
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia punctata"
-      ]
-    },
-    {
-      "taxonid": 69664,
-      "taxonname": "Nitzschia sigmaformis",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:05:37.000Z",
-      "recdatemodified": "2026-07-09T15:05:37.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69664
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia sigmaformis"
-      ]
-    },
-    {
-      "taxonid": 69665,
-      "taxonname": "Orthoseira sp. 1",
-      "highertaxonid": 24529,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:07:44.000Z",
-      "recdatemodified": "2026-07-09T15:07:44.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24637,
-        24529,
-        69665
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Orthoseiraceae",
-        "Orthoseira",
-        "Orthoseira sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69692,
-      "taxonname": "Orthoseira spp.",
-      "highertaxonid": 24529,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-10T20:01:19.000Z",
-      "recdatemodified": "2026-07-10T20:01:19.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24637,
-        24529,
-        69692
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Orthoseiraceae",
-        "Orthoseira",
-        "Orthoseira spp."
-      ]
-    },
-    {
-      "taxonid": 69666,
-      "taxonname": "Parlibellus cf. plicatus",
-      "highertaxonid": 24532,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:09:26.000Z",
-      "recdatemodified": "2026-07-09T15:09:26.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24604,
-        24532,
-        69666
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Berkeleyaceae",
-        "Parlibellus",
-        "Parlibellus cf. plicatus"
       ]
     },
     {
@@ -2100,126 +690,6 @@
       ]
     },
     {
-      "taxonid": 69667,
-      "taxonname": "Pinnularia marchica",
-      "highertaxonid": 5397,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T15:12:09.000Z",
-      "recdatemodified": "2026-07-09T15:12:09.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        5397,
-        69667
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Pinnularia",
-        "Pinnularia marchica"
-      ]
-    },
-    {
-      "taxonid": 69668,
-      "taxonname": "Pinnularia sp. 1",
-      "highertaxonid": 5397,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T17:53:48.000Z",
-      "recdatemodified": "2026-07-09T17:53:48.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        5397,
-        69668
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Pinnularia",
-        "Pinnularia sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69669,
-      "taxonname": "Pinnularia sp. 2",
-      "highertaxonid": 5397,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T17:54:23.000Z",
-      "recdatemodified": "2026-07-09T17:54:23.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24620,
-        5397,
-        69669
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pinnulariaceae",
-        "Pinnularia",
-        "Pinnularia sp. 2"
-      ]
-    },
-    {
-      "taxonid": 69670,
-      "taxonname": "Placoneis cf. gastrum",
-      "highertaxonid": 24541,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T17:56:03.000Z",
-      "recdatemodified": "2026-07-09T17:56:03.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24608,
-        24541,
-        69670
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Cymbellaceae",
-        "Placoneis",
-        "Placoneis cf. gastrum"
-      ]
-    },
-    {
-      "taxonid": 69671,
-      "taxonname": "Plagiogramma cf. minimum",
-      "highertaxonid": 30237,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:04:11.000Z",
-      "recdatemodified": "2026-07-09T18:04:35.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        30178,
-        30237,
-        69671
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Plagiogrammaceae",
-        "Plagiogramma",
-        "Plagiogramma cf. minimum"
-      ]
-    },
-    {
       "taxonid": 69717,
       "taxonname": "Platessa cf. hustedtii",
       "highertaxonid": 24548,
@@ -2241,54 +711,6 @@
         "Achnanthaceae",
         "Platessa",
         "Platessa cf. hustedtii"
-      ]
-    },
-    {
-      "taxonid": 69672,
-      "taxonname": "Pleurosigma diversestriatum",
-      "highertaxonid": 24549,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:14:43.000Z",
-      "recdatemodified": "2026-07-09T18:14:43.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24622,
-        24549,
-        69672
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Pleurosigmataceae",
-        "Pleurosigma",
-        "Pleurosigma diversestriatum"
-      ]
-    },
-    {
-      "taxonid": 69673,
-      "taxonname": "Pseudostaurosiropsis sp. 1",
-      "highertaxonid": 24559,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:17:54.000Z",
-      "recdatemodified": "2026-07-09T18:17:54.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24610,
-        24559,
-        69673
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Diatomaceae",
-        "Pseudostaurosiropsis",
-        "Pseudostaurosiropsis sp. 1"
       ]
     },
     {
@@ -2366,30 +788,6 @@
       ]
     },
     {
-      "taxonid": 69674,
-      "taxonname": "Rhaphoneis tenuis",
-      "highertaxonid": 24563,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:19:44.000Z",
-      "recdatemodified": "2026-07-09T18:19:44.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24610,
-        24563,
-        69674
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Diatomaceae",
-        "Rhaphoneis",
-        "Rhaphoneis tenuis"
-      ]
-    },
-    {
       "taxonid": 69711,
       "taxonname": "Rhaponeidales",
       "highertaxonid": 69696,
@@ -2414,54 +812,6 @@
       ]
     },
     {
-      "taxonid": 69675,
-      "taxonname": "Rhoicosphenia cf. marina",
-      "highertaxonid": 24565,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:27:48.000Z",
-      "recdatemodified": "2026-07-09T18:27:48.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24623,
-        24565,
-        69675
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Rhoicospheniaceae",
-        "Rhoicosphenia",
-        "Rhoicosphenia cf. marina"
-      ]
-    },
-    {
-      "taxonid": 69676,
-      "taxonname": "Sellaphora cf. hohnii",
-      "highertaxonid": 24569,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:31:17.000Z",
-      "recdatemodified": "2026-07-09T18:31:17.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24626,
-        24569,
-        69676
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Sellaphoraceae",
-        "Sellaphora",
-        "Sellaphora cf. hohnii"
-      ]
-    },
-    {
       "taxonid": 69719,
       "taxonname": "Skeletonema spp.",
       "highertaxonid": 24574,
@@ -2483,102 +833,6 @@
         "Skeletonemataceae",
         "Skeletonema",
         "Skeletonema spp."
-      ]
-    },
-    {
-      "taxonid": 69678,
-      "taxonname": "Stauroneis cf. vandevijveri",
-      "highertaxonid": 24576,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:35:27.000Z",
-      "recdatemodified": "2026-07-09T18:35:27.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24627,
-        24576,
-        69678
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Stauroneidaceae",
-        "Stauroneis",
-        "Stauroneis cf. vandevijveri"
-      ]
-    },
-    {
-      "taxonid": 69679,
-      "taxonname": "Stauroneis circumborealis",
-      "highertaxonid": 24576,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:36:47.000Z",
-      "recdatemodified": "2026-07-09T18:36:47.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24627,
-        24576,
-        69679
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Stauroneidaceae",
-        "Stauroneis",
-        "Stauroneis circumborealis"
-      ]
-    },
-    {
-      "taxonid": 69680,
-      "taxonname": "Stauroneis girdle view",
-      "highertaxonid": 24576,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:37:35.000Z",
-      "recdatemodified": "2026-07-09T18:37:35.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24627,
-        24576,
-        69680
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Stauroneidaceae",
-        "Stauroneis",
-        "Stauroneis girdle view"
-      ]
-    },
-    {
-      "taxonid": 69677,
-      "taxonname": "Stauroneis spp. central area",
-      "highertaxonid": 24576,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:33:49.000Z",
-      "recdatemodified": "2026-07-09T18:33:49.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24627,
-        24576,
-        69677
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Stauroneidaceae",
-        "Stauroneis",
-        "Stauroneis spp. central area"
       ]
     },
     {
@@ -2654,126 +908,6 @@
       ]
     },
     {
-      "taxonid": 69693,
-      "taxonname": "Staurophora spp.",
-      "highertaxonid": 24578,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-10T20:02:23.000Z",
-      "recdatemodified": "2026-07-10T20:02:23.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24602,
-        24578,
-        69693
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Anomoeoneidaceae",
-        "Staurophora",
-        "Staurophora spp."
-      ]
-    },
-    {
-      "taxonid": 69681,
-      "taxonname": "Staurosirella sp. 1",
-      "highertaxonid": 24580,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:42:12.000Z",
-      "recdatemodified": "2026-07-09T18:42:12.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24580,
-        69681
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Staurosirella",
-        "Staurosirella sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69682,
-      "taxonname": "Stephanodiscus sp. 1",
-      "highertaxonid": 24582,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:42:57.000Z",
-      "recdatemodified": "2026-07-09T18:42:57.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24641,
-        24582,
-        69682
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Stephanodiscaceae",
-        "Stephanodiscus",
-        "Stephanodiscus sp. 1"
-      ]
-    },
-    {
-      "taxonid": 69683,
-      "taxonname": "Surirella cf. iowensis",
-      "highertaxonid": 24584,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:46:10.000Z",
-      "recdatemodified": "2026-07-09T18:46:10.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24628,
-        24584,
-        69683
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Surirellaceae",
-        "Surirella",
-        "Surirella cf. iowensis"
-      ]
-    },
-    {
-      "taxonid": 69684,
-      "taxonname": "Synedra cf. fulgens",
-      "highertaxonid": 24585,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:50:00.000Z",
-      "recdatemodified": "2026-07-09T18:50:00.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24585,
-        69684
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Synedra",
-        "Synedra cf. fulgens"
-      ]
-    },
-    {
       "taxonid": 69722,
       "taxonname": "Synedra fulgens",
       "highertaxonid": 24585,
@@ -2795,126 +929,6 @@
         "Fragilariaceae",
         "Synedra",
         "Synedra fulgens"
-      ]
-    },
-    {
-      "taxonid": 69685,
-      "taxonname": "Tabularia ktenoeides",
-      "highertaxonid": 24588,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:51:27.000Z",
-      "recdatemodified": "2026-07-09T18:51:27.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24588,
-        69685
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Tabularia",
-        "Tabularia ktenoeides"
-      ]
-    },
-    {
-      "taxonid": 69686,
-      "taxonname": "Thalassiosira cf. lineata",
-      "highertaxonid": 24592,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:53:50.000Z",
-      "recdatemodified": "2026-07-09T18:53:50.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24642,
-        24592,
-        69686
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Thalassiosiraceae",
-        "Thalassiosira",
-        "Thalassiosira cf. lineata"
-      ]
-    },
-    {
-      "taxonid": 69687,
-      "taxonname": "Thalassiosira ferelineata",
-      "highertaxonid": 24592,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T18:54:54.000Z",
-      "recdatemodified": "2026-07-09T18:54:54.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24642,
-        24592,
-        69687
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Thalassiosiraceae",
-        "Thalassiosira",
-        "Thalassiosira ferelineata"
-      ]
-    },
-    {
-      "taxonid": 69688,
-      "taxonname": "Thalassiosira sp. 10 CHES SRC",
-      "highertaxonid": 24592,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T19:17:11.000Z",
-      "recdatemodified": "2026-07-09T19:17:11.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24642,
-        24592,
-        69688
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Thalassiosiraceae",
-        "Thalassiosira",
-        "Thalassiosira sp. 10 CHES SRC"
-      ]
-    },
-    {
-      "taxonid": 69689,
-      "taxonname": "Thalassiosira sp. 2-1 CHES SRC",
-      "highertaxonid": 24592,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T19:21:14.000Z",
-      "recdatemodified": "2026-07-09T19:21:14.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24642,
-        24592,
-        69689
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Thalassiosiraceae",
-        "Thalassiosira",
-        "Thalassiosira sp. 2-1 CHES SRC"
       ]
     },
     {
@@ -2963,30 +977,6 @@
         "Naviculaceae",
         "Trachyneis",
         "Trachyneis vulgaris"
-      ]
-    },
-    {
-      "taxonid": 69690,
-      "taxonname": "Triceratium spp.",
-      "highertaxonid": 28475,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-09T19:25:04.000Z",
-      "recdatemodified": "2026-07-09T19:25:04.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24643,
-        28475,
-        69690
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Triceratiaceae",
-        "Triceratium",
-        "Triceratium spp."
       ]
     },
     {
@@ -3338,6 +1328,44 @@
       ]
     },
     {
+      "taxonid": 69750,
+      "taxonname": "Cyathea cf. C. colensoi",
+      "highertaxonid": 1725,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-10T02:55:16.000Z",
+      "recdatemodified": "2026-08-10T02:55:16.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        9535,
+        676,
+        9538,
+        9543,
+        1723,
+        1725,
+        69750
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Monilophyta",
+        "Polypodiophyta",
+        "Leptosporangiatae",
+        "Cyatheales",
+        "Cyatheaceae",
+        "Cyathea",
+        "Cyathea cf. C. colensoi"
+      ]
+    },
+    {
       "taxonid": 69741,
       "taxonname": "Parietaria judaica",
       "highertaxonid": 475,
@@ -3604,12 +1632,38 @@
   ],
   "modified": [
     {
-      "taxonid": 28603,
-      "taxonname": "Fragilaria schulzii",
-      "highertaxonid": 24447,
+      "taxonid": 69613,
+      "taxonname": "Anaulus cf. balticus",
+      "highertaxonid": 52538,
       "taxagroupid": "DIA",
-      "recdatecreated": "2017-01-23T19:56:32.000Z",
-      "recdatemodified": "2026-07-08T16:05:04.000Z",
+      "recdatecreated": "2026-07-08T14:00:49.000Z",
+      "recdatemodified": "2026-07-13T18:20:07.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        2054,
+        5396,
+        52537,
+        52538,
+        69613
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Anaulaceae",
+        "Anaulus",
+        "Anaulus cf. balticus"
+      ]
+    },
+    {
+      "taxonid": 69621,
+      "taxonname": "Caloneis cf. ventricosa",
+      "highertaxonid": 24398,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-07-08T14:29:51.000Z",
+      "recdatemodified": "2026-07-13T18:26:36.000Z",
       "changed_fields": [
         "recdatemodified"
       ],
@@ -3618,17 +1672,935 @@
         2054,
         5396,
         24597,
-        24614,
-        24447,
-        28603
+        24620,
+        24398,
+        69621
       ],
       "path_names": [
         "Algae",
         "Bacillariophyta",
         "Pennales",
-        "Fragilariaceae",
-        "Fragilaria",
-        "Fragilaria schulzii"
+        "Pinnulariaceae",
+        "Caloneis",
+        "Caloneis cf. ventricosa"
+      ]
+    },
+    {
+      "taxonid": 68996,
+      "taxonname": "Allopsectrocladius-type",
+      "highertaxonid": 23288,
+      "taxagroupid": "INS",
+      "recdatecreated": "2026-03-16T17:37:29.000Z",
+      "recdatemodified": "2026-08-04T17:25:51.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        23288,
+        68996
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Psectrocladius",
+        "Allopsectrocladius-type"
+      ]
+    },
+    {
+      "taxonid": 49979,
+      "taxonname": "Cladotanytarsus mancus-type 1",
+      "highertaxonid": 49978,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:38:22.000Z",
+      "recdatemodified": "2026-08-04T17:28:26.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        49978,
+        49979
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Cladotanytarsus",
+        "Cladotanytarsus mancus-type 1"
+      ]
+    },
+    {
+      "taxonid": 49980,
+      "taxonname": "Cladotanytarsus mancus-type 2",
+      "highertaxonid": 49978,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:39:10.000Z",
+      "recdatemodified": "2026-08-04T17:29:37.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        49978,
+        49980
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Cladotanytarsus",
+        "Cladotanytarsus mancus-type 2"
+      ]
+    },
+    {
+      "taxonid": 49981,
+      "taxonname": "Constempellina/Thienemanniola",
+      "highertaxonid": 69139,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:41:59.000Z",
+      "recdatemodified": "2026-08-04T17:30:40.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        69139,
+        49981
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Constempellina",
+        "Constempellina/Thienemanniola"
+      ]
+    },
+    {
+      "taxonid": 52603,
+      "taxonname": "Corynocera oliveri-type",
+      "highertaxonid": 22869,
+      "taxagroupid": "INS",
+      "recdatecreated": "2024-06-28T23:11:59.000Z",
+      "recdatemodified": "2026-08-04T17:32:12.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22869,
+        52603
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Corynocera",
+        "Corynocera oliveri-type"
+      ]
+    },
+    {
+      "taxonid": 49982,
+      "taxonname": "Corynoneura arctica-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:45:48.000Z",
+      "recdatemodified": "2026-08-04T17:10:10.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32198,
+        49982
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Corynoneura",
+        "Corynoneura arctica-type"
+      ]
+    },
+    {
+      "taxonid": 49983,
+      "taxonname": "Corynoneura carriana-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:46:53.000Z",
+      "recdatemodified": "2026-08-04T17:09:49.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32198,
+        49983
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Corynoneura",
+        "Corynoneura carriana-type"
+      ]
+    },
+    {
+      "taxonid": 49984,
+      "taxonname": "Corynoneura edwardsi-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:47:43.000Z",
+      "recdatemodified": "2026-08-04T17:11:12.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32198,
+        49984
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Corynoneura",
+        "Corynoneura edwardsi-type"
+      ]
+    },
+    {
+      "taxonid": 32200,
+      "taxonname": "Corynoneura scutellata-type",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T13:44:53.000Z",
+      "recdatemodified": "2026-08-04T17:12:52.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32198,
+        32200
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Corynoneura",
+        "Corynoneura scutellata-type"
+      ]
+    },
+    {
+      "taxonid": 49985,
+      "taxonname": "Corynoneura type A",
+      "highertaxonid": 32198,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:49:37.000Z",
+      "recdatemodified": "2026-08-04T16:37:56.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32198,
+        49985
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Corynoneura",
+        "Corynoneura type A"
+      ]
+    },
+    {
+      "taxonid": 49988,
+      "taxonname": "Cricotopus (Isocladius) sylvestris-type",
+      "highertaxonid": 32202,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T16:59:48.000Z",
+      "recdatemodified": "2026-08-04T17:16:48.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32202,
+        49988
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Cricotopus",
+        "Cricotopus (Isocladius) sylvestris-type"
+      ]
+    },
+    {
+      "taxonid": 32204,
+      "taxonname": "Cricotopus/Orthocladius",
+      "highertaxonid": 32202,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:17:01.000Z",
+      "recdatemodified": "2026-08-04T17:14:50.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32202,
+        32204
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Cricotopus",
+        "Cricotopus/Orthocladius"
+      ]
+    },
+    {
+      "taxonid": 52604,
+      "taxonname": "Eukiefferiella/Tvetenia",
+      "highertaxonid": 32190,
+      "taxagroupid": "INS",
+      "recdatecreated": "2024-06-28T23:29:36.000Z",
+      "recdatemodified": "2026-08-04T17:18:49.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        52604
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Eukiefferiella/Tvetenia"
+      ]
+    },
+    {
+      "taxonid": 49994,
+      "taxonname": "Heterotrissocladius grimshawi-type",
+      "highertaxonid": 22872,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T20:20:50.000Z",
+      "recdatemodified": "2026-08-04T17:20:12.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        22872,
+        49994
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Heterotrissocladius",
+        "Heterotrissocladius grimshawi-type"
+      ]
+    },
+    {
+      "taxonid": 49995,
+      "taxonname": "Heterotrissocladius marcidus-type",
+      "highertaxonid": 22872,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T20:23:20.000Z",
+      "recdatemodified": "2026-08-04T17:20:59.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        22872,
+        49995
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Heterotrissocladius",
+        "Heterotrissocladius marcidus-type"
+      ]
+    },
+    {
+      "taxonid": 32209,
+      "taxonname": "Metriocnemus fuscipes-type",
+      "highertaxonid": 32207,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:28:13.000Z",
+      "recdatemodified": "2026-08-04T17:22:21.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32207,
+        32209
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Metriocnemus",
+        "Metriocnemus fuscipes-type"
+      ]
+    },
+    {
+      "taxonid": 32211,
+      "taxonname": "Micropsectra radialis-type",
+      "highertaxonid": 22879,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:32:42.000Z",
+      "recdatemodified": "2026-08-04T17:33:31.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22879,
+        32211
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Micropsectra",
+        "Micropsectra radialis-type"
+      ]
+    },
+    {
+      "taxonid": 32218,
+      "taxonname": "Parakiefferiella bathophila-type",
+      "highertaxonid": 32216,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T00:46:27.000Z",
+      "recdatemodified": "2026-08-04T17:23:40.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        32190,
+        32216,
+        32218
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Orthocladiinae",
+        "Parakiefferiella",
+        "Parakiefferiella bathophila-type"
+      ]
+    },
+    {
+      "taxonid": 32224,
+      "taxonname": "Paratanytarsus penicillatus-type",
+      "highertaxonid": 22884,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T01:01:10.000Z",
+      "recdatemodified": "2026-08-04T17:34:30.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22884,
+        32224
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Paratanytarsus",
+        "Paratanytarsus penicillatus-type"
+      ]
+    },
+    {
+      "taxonid": 32240,
+      "taxonname": "Stempellinella",
+      "highertaxonid": 32222,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:11:24.000Z",
+      "recdatemodified": "2026-08-04T17:35:46.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        32240
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Stempellinella"
+      ]
+    },
+    {
+      "taxonid": 32241,
+      "taxonname": "Stempellinella/Zavrelia",
+      "highertaxonid": 32240,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:13:59.000Z",
+      "recdatemodified": "2026-08-04T17:37:36.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        32240,
+        32241
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Stempellinella",
+        "Stempellinella/Zavrelia"
+      ]
+    },
+    {
+      "taxonid": 50009,
+      "taxonname": "Tanytarsus lugens-type",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-11-09T21:04:50.000Z",
+      "recdatemodified": "2026-08-04T17:38:55.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22886,
+        50009
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Tanytarsus",
+        "Tanytarsus lugens-type"
+      ]
+    },
+    {
+      "taxonid": 32244,
+      "taxonname": "Tanytarsus mendax-type",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:19:02.000Z",
+      "recdatemodified": "2026-08-04T17:39:52.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22886,
+        32244
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Tanytarsus",
+        "Tanytarsus mendax-type"
+      ]
+    },
+    {
+      "taxonid": 32246,
+      "taxonname": "Tanytarsus pallidicornis-type 2",
+      "highertaxonid": 22886,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:26:29.000Z",
+      "recdatemodified": "2026-08-04T17:40:54.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        22886,
+        32246
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Tanytarsus",
+        "Tanytarsus pallidicornis-type 2"
+      ]
+    },
+    {
+      "taxonid": 32239,
+      "taxonname": "Zavrelia",
+      "highertaxonid": 32222,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T04:07:16.000Z",
+      "recdatemodified": "2026-08-04T17:37:52.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27837,
+        32222,
+        32239
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Chironominae",
+        "Tanytarsini",
+        "Zavrelia"
       ]
     },
     {
@@ -3672,6 +2644,86 @@
       ]
     },
     {
+      "taxonid": 14517,
+      "taxonname": "Ilyocypris gibba",
+      "highertaxonid": 14515,
+      "taxagroupid": "OST",
+      "recdatecreated": "2013-02-21T00:00:00.000Z",
+      "recdatemodified": "2026-08-05T16:05:39.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14514,
+        49495,
+        14515,
+        14517
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Ilyocyprididae",
+        "Ilyocypridinae",
+        "Ilyocypris",
+        "Ilyocypris gibba"
+      ]
+    },
+    {
+      "taxonid": 49911,
+      "taxonname": "Ilyocypris monstrifica",
+      "highertaxonid": 14515,
+      "taxagroupid": "OST",
+      "recdatecreated": "2022-11-05T15:34:54.000Z",
+      "recdatemodified": "2026-08-05T16:12:55.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14514,
+        49495,
+        14515,
+        49911
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Ilyocyprididae",
+        "Ilyocypridinae",
+        "Ilyocypris",
+        "Ilyocypris monstrifica"
+      ]
+    },
+    {
       "taxonid": 33976,
       "taxonname": "Limnocythere camera",
       "highertaxonid": 14597,
@@ -3709,6 +2761,46 @@
         "Limnocytherinae",
         "Limnocythere",
         "Limnocythere camera"
+      ]
+    },
+    {
+      "taxonid": 25535,
+      "taxonname": "Pelocypris tuberculata",
+      "highertaxonid": 14534,
+      "taxagroupid": "OST",
+      "recdatecreated": "2015-11-30T20:04:35.000Z",
+      "recdatemodified": "2026-08-05T19:40:03.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14522,
+        14533,
+        14534,
+        25535
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Cyprididae",
+        "Pelocypridinae",
+        "Pelocypris",
+        "Pelocypris tuberculata"
       ]
     }
   ]
