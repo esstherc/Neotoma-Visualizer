@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T03:49:25+00:00",
+  "generated_at": "2026-08-17T02:55:02+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -472048,6 +472048,30 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-08-10T02:55:16.000Z",
       "recdatemodified": "2026-08-10T02:55:16.000Z"
+    },
+    "69751": {
+      "taxonid": 69751,
+      "taxonname": "Plectritis-type",
+      "highertaxonid": 1302,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-12T16:58:03.000Z",
+      "recdatemodified": "2026-08-12T16:58:03.000Z"
+    },
+    "69752": {
+      "taxonid": 69752,
+      "taxonname": "Dahlia",
+      "highertaxonid": 22954,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-14T23:26:06.000Z",
+      "recdatemodified": "2026-08-14T23:26:06.000Z"
+    },
+    "69753": {
+      "taxonid": 69753,
+      "taxonname": "Unknown (NAU spore 101)",
+      "highertaxonid": 313,
+      "taxagroupid": "UPA",
+      "recdatecreated": "2026-08-14T23:46:13.000Z",
+      "recdatemodified": "2026-08-14T23:46:13.000Z"
     }
   }
 }
