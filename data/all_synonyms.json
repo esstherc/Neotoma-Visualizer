@@ -7474,6 +7474,21 @@
     ]
   },
   {
+    "valid_id": 23282,
+    "valid_name": "Procladius",
+    "taxagroupid": "INS",
+    "synonyms": [
+      {
+        "invalid_id": 23283,
+        "invalid_name": "Procladius sp.",
+        "synonymtypeid": 1,
+        "synonymtype": "taxonomic, heterotypic, or subjective synonym",
+        "recdatecreated": "2026-08-20T10:41:57.000Z",
+        "recdatemodified": "2026-08-20T10:41:57.000Z"
+      }
+    ]
+  },
+  {
     "valid_id": 23784,
     "valid_name": "Pselaphinae",
     "taxagroupid": "INS",
@@ -17821,6 +17836,21 @@
         "synonymtype": "nomenclatural, homotypic, or objective synonym",
         "recdatecreated": "2016-09-13T20:07:52.000Z",
         "recdatemodified": "2016-09-13T20:07:52.000Z"
+      }
+    ]
+  },
+  {
+    "valid_id": 69758,
+    "valid_name": "Placocista glabra",
+    "taxagroupid": "TES",
+    "synonyms": [
+      {
+        "invalid_id": 69755,
+        "invalid_name": "Placocista spinosa glabra",
+        "synonymtypeid": 1,
+        "synonymtype": "taxonomic, heterotypic, or subjective synonym",
+        "recdatecreated": "2026-08-18T12:50:26.000Z",
+        "recdatemodified": "2026-08-18T12:50:26.000Z"
       }
     ]
   },

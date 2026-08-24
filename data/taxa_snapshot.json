@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T02:55:02+00:00",
+  "generated_at": "2026-08-24T02:58:21+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -124497,14 +124497,6 @@
       "recdatecreated": "2013-10-25T19:36:24.000Z",
       "recdatemodified": "2013-10-25T19:36:24.000Z"
     },
-    "18699": {
-      "taxonid": 18699,
-      "taxonname": "Tanypodinae gen. sp.",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2013-10-25T19:37:55.000Z",
-      "recdatemodified": "2017-12-18T22:12:44.000Z"
-    },
     "18700": {
       "taxonid": 18700,
       "taxonname": "Symphitopsyche spp.",
@@ -157592,14 +157584,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2014-08-18T19:01:49.000Z",
       "recdatemodified": "2014-08-18T19:01:49.000Z"
-    },
-    "23283": {
-      "taxonid": 23283,
-      "taxonname": "Procladius sp.",
-      "highertaxonid": 23282,
-      "taxagroupid": "INS",
-      "recdatecreated": "2014-08-18T19:18:30.000Z",
-      "recdatemodified": "2017-12-18T22:12:35.000Z"
     },
     "23284": {
       "taxonid": 23284,
@@ -217673,14 +217657,6 @@
       "recdatecreated": "2017-09-04T01:53:39.000Z",
       "recdatemodified": "2017-12-18T21:22:48.000Z"
     },
-    "32233": {
-      "taxonid": 32233,
-      "taxonname": "Procladius (Holotanypus)",
-      "highertaxonid": 23282,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-04T01:55:27.000Z",
-      "recdatemodified": "2017-12-18T22:12:23.000Z"
-    },
     "32237": {
       "taxonid": 32237,
       "taxonname": "Pseudorthocladius",
@@ -217841,29 +217817,29 @@
       "recdatecreated": "2023-10-04T20:40:37.000Z",
       "recdatemodified": "2023-10-04T20:40:37.000Z"
     },
-    "32212": {
-      "taxonid": 32212,
-      "taxonname": "Monopelopia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T14:34:33.000Z",
-      "recdatemodified": "2026-07-02T22:04:01.000Z"
-    },
     "32214": {
       "taxonid": 32214,
       "taxonname": "Natarsia",
       "highertaxonid": 27839,
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-03T14:39:42.000Z",
-      "recdatemodified": "2026-07-02T21:53:45.000Z"
+      "recdatemodified": "2026-08-19T11:27:45.000Z"
+    },
+    "32233": {
+      "taxonid": 32233,
+      "taxonname": "Procladius (Holotanypus)",
+      "highertaxonid": 23282,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T01:55:27.000Z",
+      "recdatemodified": "2026-08-20T10:39:11.000Z"
     },
     "32206": {
       "taxonid": 32206,
-      "taxonname": "Krenopelopia",
+      "taxonname": "Krenopelopia-type",
       "highertaxonid": 27839,
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-03T14:23:02.000Z",
-      "recdatemodified": "2026-07-02T22:03:13.000Z"
+      "recdatemodified": "2026-08-19T11:06:31.000Z"
     },
     "32211": {
       "taxonid": 32211,
@@ -217944,6 +217920,14 @@
       "taxagroupid": "INS",
       "recdatecreated": "2017-09-04T04:19:02.000Z",
       "recdatemodified": "2026-08-04T17:39:52.000Z"
+    },
+    "32212": {
+      "taxonid": 32212,
+      "taxonname": "Monopelopia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:34:33.000Z",
+      "recdatemodified": "2026-08-19T11:25:05.000Z"
     },
     "32267": {
       "taxonid": 32267,
@@ -465601,14 +465585,6 @@
       "recdatecreated": "2026-03-16T17:37:42.000Z",
       "recdatemodified": "2026-03-16T17:42:48.000Z"
     },
-    "69034": {
-      "taxonid": 69034,
-      "taxonname": "Tanypodinae indet.",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:41.000Z",
-      "recdatemodified": "2026-03-16T17:42:48.000Z"
-    },
     "69032": {
       "taxonid": 69032,
       "taxonname": "Tanypus",
@@ -465616,30 +465592,6 @@
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:40.000Z",
       "recdatemodified": "2026-03-16T17:42:48.000Z"
-    },
-    "69033": {
-      "taxonid": 69033,
-      "taxonname": "Zavrelimyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:40.000Z",
-      "recdatemodified": "2026-03-16T17:42:48.000Z"
-    },
-    "69031": {
-      "taxonid": 69031,
-      "taxonname": "Procladius",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:39.000Z",
-      "recdatemodified": "2026-03-16T17:42:49.000Z"
-    },
-    "69029": {
-      "taxonid": 69029,
-      "taxonname": "Natarsia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:38.000Z",
-      "recdatemodified": "2026-03-16T17:42:49.000Z"
     },
     "69030": {
       "taxonid": 69030,
@@ -465671,30 +465623,6 @@
       "highertaxonid": 27839,
       "taxagroupid": "INS",
       "recdatecreated": "2026-03-16T17:37:37.000Z",
-      "recdatemodified": "2026-03-16T17:42:49.000Z"
-    },
-    "69024": {
-      "taxonid": 69024,
-      "taxonname": "Ablabesmyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:37.000Z",
-      "recdatemodified": "2026-03-16T17:42:49.000Z"
-    },
-    "69021": {
-      "taxonid": 69021,
-      "taxonname": "Krenopelopia-type",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:36.000Z",
-      "recdatemodified": "2026-03-16T17:42:49.000Z"
-    },
-    "69022": {
-      "taxonid": 69022,
-      "taxonname": "Monopelopia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-03-16T17:37:36.000Z",
       "recdatemodified": "2026-03-16T17:42:49.000Z"
     },
     "69020": {
@@ -470809,30 +470737,6 @@
       "recdatecreated": "2026-07-08T15:19:59.000Z",
       "recdatemodified": "2026-07-08T15:19:59.000Z"
     },
-    "23282": {
-      "taxonid": 23282,
-      "taxonname": "Procladius",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2014-08-18T19:16:49.000Z",
-      "recdatemodified": "2026-07-02T21:57:45.000Z"
-    },
-    "32192": {
-      "taxonid": 32192,
-      "taxonname": "Ablabesmyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2017-09-03T06:16:17.000Z",
-      "recdatemodified": "2026-07-02T22:02:21.000Z"
-    },
-    "46864": {
-      "taxonid": 46864,
-      "taxonname": "Zavrelimyia",
-      "highertaxonid": 27839,
-      "taxagroupid": "INS",
-      "recdatecreated": "2022-01-11T13:44:18.000Z",
-      "recdatemodified": "2026-07-02T22:06:50.000Z"
-    },
     "69610": {
       "taxonid": 69610,
       "taxonname": "Achnanthes islandica",
@@ -471000,6 +470904,14 @@
       "taxagroupid": "DIA",
       "recdatecreated": "2026-07-08T14:29:51.000Z",
       "recdatemodified": "2026-07-13T18:26:36.000Z"
+    },
+    "32192": {
+      "taxonid": 32192,
+      "taxonname": "Ablabesmyia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T06:16:17.000Z",
+      "recdatemodified": "2026-08-19T11:01:45.000Z"
     },
     "28603": {
       "taxonid": 28603,
@@ -471945,6 +471857,14 @@
       "recdatecreated": "2017-10-27T15:20:14.000Z",
       "recdatemodified": "2026-07-29T05:39:50.000Z"
     },
+    "23282": {
+      "taxonid": 23282,
+      "taxonname": "Procladius",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2014-08-18T19:16:49.000Z",
+      "recdatemodified": "2026-08-19T12:03:04.000Z"
+    },
     "50773": {
       "taxonid": 50773,
       "taxonname": "Fabaeformiscandona wedgwoodii",
@@ -471960,6 +471880,14 @@
       "taxagroupid": "OST",
       "recdatecreated": "2026-08-02T21:02:58.000Z",
       "recdatemodified": "2026-08-02T21:02:58.000Z"
+    },
+    "18699": {
+      "taxonid": 18699,
+      "taxonname": "Tanypodinae indet.",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2013-10-25T19:37:55.000Z",
+      "recdatemodified": "2026-08-19T12:06:58.000Z"
     },
     "49985": {
       "taxonid": 49985,
@@ -472072,6 +472000,70 @@
       "taxagroupid": "UPA",
       "recdatecreated": "2026-08-14T23:46:13.000Z",
       "recdatemodified": "2026-08-14T23:46:13.000Z"
+    },
+    "69754": {
+      "taxonid": 69754,
+      "taxonname": "Difflugia pulex-type",
+      "highertaxonid": 608,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:08:47.000Z",
+      "recdatemodified": "2026-08-18T09:08:47.000Z"
+    },
+    "69756": {
+      "taxonid": 69756,
+      "taxonname": "Plagiopyxis labiata",
+      "highertaxonid": 32022,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:26:47.000Z",
+      "recdatemodified": "2026-08-18T09:26:47.000Z"
+    },
+    "69757": {
+      "taxonid": 69757,
+      "taxonname": "Cyclopyxis intermedia",
+      "highertaxonid": 30697,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T12:36:13.000Z",
+      "recdatemodified": "2026-08-18T12:36:13.000Z"
+    },
+    "46864": {
+      "taxonid": 46864,
+      "taxonname": "Zavrelimyia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-01-11T13:44:18.000Z",
+      "recdatemodified": "2026-08-19T12:09:48.000Z"
+    },
+    "69759": {
+      "taxonid": 69759,
+      "taxonname": "Pinnularia ventricosa",
+      "highertaxonid": 5397,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-19T20:39:25.000Z",
+      "recdatemodified": "2026-08-19T20:39:25.000Z"
+    },
+    "69755": {
+      "taxonid": 69755,
+      "taxonname": "Placocista spinosa glabra",
+      "highertaxonid": null,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:12:47.000Z",
+      "recdatemodified": "2026-08-18T12:50:25.000Z"
+    },
+    "23283": {
+      "taxonid": 23283,
+      "taxonname": "Procladius sp.",
+      "highertaxonid": null,
+      "taxagroupid": "INS",
+      "recdatecreated": "2014-08-18T19:18:30.000Z",
+      "recdatemodified": "2026-08-20T10:41:56.000Z"
+    },
+    "69758": {
+      "taxonid": 69758,
+      "taxonname": "Placocista glabra",
+      "highertaxonid": 28075,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T12:49:50.000Z",
+      "recdatemodified": "2026-08-18T14:04:05.000Z"
     }
   }
 }

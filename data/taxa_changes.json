@@ -1,178 +1,34 @@
 {
-  "generated_at": "2026-08-17T02:55:02+00:00",
-  "since": "2026-07-18",
+  "generated_at": "2026-08-24T02:58:21+00:00",
+  "since": "2026-07-25",
   "counts": {
-    "new": 21,
-    "modified": 30,
-    "total": 51
+    "new": 19,
+    "modified": 39,
+    "total": 58
   },
   "new": [
     {
-      "taxonid": 69733,
-      "taxonname": "Frustulia capitata",
-      "highertaxonid": 24451,
+      "taxonid": 69759,
+      "taxonname": "Pinnularia ventricosa",
+      "highertaxonid": 5397,
       "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:33:42.000Z",
-      "recdatemodified": "2026-07-23T14:33:42.000Z",
+      "recdatecreated": "2026-08-19T20:39:25.000Z",
+      "recdatemodified": "2026-08-19T20:39:25.000Z",
       "path_ids": [
         2054,
         5396,
         24597,
-        24601,
-        24451,
-        69733
+        24620,
+        5397,
+        69759
       ],
       "path_names": [
         "Algae",
         "Bacillariophyta",
         "Pennales",
-        "Amphipleuraceae",
-        "Frustulia",
-        "Frustulia capitata"
-      ]
-    },
-    {
-      "taxonid": 69734,
-      "taxonname": "Geissleria cf. kriegeri",
-      "highertaxonid": 24452,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:35:26.000Z",
-      "recdatemodified": "2026-07-23T14:35:26.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        24452,
-        69734
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Geissleria",
-        "Geissleria cf. kriegeri"
-      ]
-    },
-    {
-      "taxonid": 69735,
-      "taxonname": "Nitzschia cf. subacicularis",
-      "highertaxonid": 24521,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:42:28.000Z",
-      "recdatemodified": "2026-07-23T14:42:28.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24603,
-        24521,
-        69735
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Bacillariaceae",
-        "Nitzschia",
-        "Nitzschia cf. subacicularis"
-      ]
-    },
-    {
-      "taxonid": 69736,
-      "taxonname": "Parlibellus spp.",
-      "highertaxonid": 24532,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:43:34.000Z",
-      "recdatemodified": "2026-07-23T14:43:34.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24604,
-        24532,
-        69736
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Berkeleyaceae",
-        "Parlibellus",
-        "Parlibellus spp."
-      ]
-    },
-    {
-      "taxonid": 69737,
-      "taxonname": "Pseudostaurosiropsis spp.",
-      "highertaxonid": 24559,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:46:24.000Z",
-      "recdatemodified": "2026-07-23T14:46:24.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24610,
-        24559,
-        69737
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Diatomaceae",
-        "Pseudostaurosiropsis",
-        "Pseudostaurosiropsis spp."
-      ]
-    },
-    {
-      "taxonid": 69738,
-      "taxonname": "Staurophora cf. soodensis",
-      "highertaxonid": 24578,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:48:19.000Z",
-      "recdatemodified": "2026-07-23T14:48:19.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24602,
-        24578,
-        69738
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Anomoeoneidaceae",
-        "Staurophora",
-        "Staurophora cf. soodensis"
-      ]
-    },
-    {
-      "taxonid": 69739,
-      "taxonname": "Trachyneis aspera var. vulgaris",
-      "highertaxonid": 30291,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-07-23T14:50:29.000Z",
-      "recdatemodified": "2026-07-23T14:50:29.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        22534,
-        30291,
-        69739
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Naviculaceae",
-        "Trachyneis",
-        "Trachyneis aspera var. vulgaris"
+        "Pinnulariaceae",
+        "Pinnularia",
+        "Pinnularia ventricosa"
       ]
     },
     {
@@ -408,6 +264,150 @@
       ]
     },
     {
+      "taxonid": 69757,
+      "taxonname": "Cyclopyxis intermedia",
+      "highertaxonid": 30697,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T12:36:13.000Z",
+      "recdatemodified": "2026-08-18T12:36:13.000Z",
+      "path_ids": [
+        32182,
+        32177,
+        32175,
+        30669,
+        31879,
+        30668,
+        30667,
+        30699,
+        30697,
+        69757
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Protozoa",
+        "Sarcomastigota",
+        "Amoebozoa",
+        "Lobosa",
+        "Tubulinea",
+        "Arcellinida",
+        "Trigonopyxidae",
+        "Cyclopyxis",
+        "Cyclopyxis intermedia"
+      ]
+    },
+    {
+      "taxonid": 69754,
+      "taxonname": "Difflugia pulex-type",
+      "highertaxonid": 608,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:08:47.000Z",
+      "recdatemodified": "2026-08-18T09:08:47.000Z",
+      "path_ids": [
+        32182,
+        32177,
+        32175,
+        30669,
+        31879,
+        30668,
+        30667,
+        30686,
+        608,
+        69754
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Protozoa",
+        "Sarcomastigota",
+        "Amoebozoa",
+        "Lobosa",
+        "Tubulinea",
+        "Arcellinida",
+        "Difflugiidae",
+        "Difflugia",
+        "Difflugia pulex-type"
+      ]
+    },
+    {
+      "taxonid": 69758,
+      "taxonname": "Placocista glabra",
+      "highertaxonid": 28075,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T12:49:50.000Z",
+      "recdatemodified": "2026-08-18T14:04:05.000Z",
+      "path_ids": [
+        32182,
+        32178,
+        32179,
+        30665,
+        30664,
+        39242,
+        30663,
+        30660,
+        30662,
+        28075,
+        69758
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Chromista",
+        "Harosa",
+        "Rhizaria",
+        "Cercozoa",
+        "Filosa",
+        "Imbricatea",
+        "Euglyphida",
+        "Assulinidae",
+        "Placocista",
+        "Placocista glabra"
+      ]
+    },
+    {
+      "taxonid": 69755,
+      "taxonname": "Placocista spinosa glabra",
+      "highertaxonid": null,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:12:47.000Z",
+      "recdatemodified": "2026-08-18T12:50:25.000Z",
+      "path_ids": [
+        69755
+      ],
+      "path_names": [
+        "Placocista spinosa glabra"
+      ]
+    },
+    {
+      "taxonid": 69756,
+      "taxonname": "Plagiopyxis labiata",
+      "highertaxonid": 32022,
+      "taxagroupid": "TES",
+      "recdatecreated": "2026-08-18T09:26:47.000Z",
+      "recdatemodified": "2026-08-18T09:26:47.000Z",
+      "path_ids": [
+        32182,
+        32177,
+        32175,
+        30669,
+        31879,
+        30668,
+        30667,
+        30679,
+        32022,
+        69756
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Protozoa",
+        "Sarcomastigota",
+        "Amoebozoa",
+        "Lobosa",
+        "Tubulinea",
+        "Arcellinida",
+        "Plagiopyxidae",
+        "Plagiopyxis",
+        "Plagiopyxis labiata"
+      ]
+    },
+    {
       "taxonid": 69753,
       "taxonname": "Unknown (NAU spore 101)",
       "highertaxonid": 313,
@@ -616,45 +616,43 @@
         "Valerianoideae",
         "Plectritis-type"
       ]
-    },
-    {
-      "taxonid": 69740,
-      "taxonname": "Tsuga heterophylla-type",
-      "highertaxonid": 34163,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-07-23T19:48:20.000Z",
-      "recdatemodified": "2026-07-23T19:48:20.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        16996,
-        1944,
-        329,
-        34163,
-        69740
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Pan-Coniferae",
-        "Coniferae",
-        "Pinaceae",
-        "Tsuga-type",
-        "Tsuga heterophylla-type"
-      ]
     }
   ],
   "modified": [
+    {
+      "taxonid": 32192,
+      "taxonname": "Ablabesmyia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T06:16:17.000Z",
+      "recdatemodified": "2026-08-19T11:01:45.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        32192
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Ablabesmyia"
+      ]
+    },
     {
       "taxonid": 68996,
       "taxonname": "Allopsectrocladius-type",
@@ -1202,6 +1200,40 @@
       ]
     },
     {
+      "taxonid": 32206,
+      "taxonname": "Krenopelopia-type",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:23:02.000Z",
+      "recdatemodified": "2026-08-19T11:06:31.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        32206
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Krenopelopia-type"
+      ]
+    },
+    {
       "taxonid": 32209,
       "taxonname": "Metriocnemus fuscipes-type",
       "highertaxonid": 32207,
@@ -1273,6 +1305,74 @@
         "Tanytarsini",
         "Micropsectra",
         "Micropsectra radialis-type"
+      ]
+    },
+    {
+      "taxonid": 32212,
+      "taxonname": "Monopelopia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:34:33.000Z",
+      "recdatemodified": "2026-08-19T11:25:05.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        32212
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Monopelopia"
+      ]
+    },
+    {
+      "taxonid": 32214,
+      "taxonname": "Natarsia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-03T14:39:42.000Z",
+      "recdatemodified": "2026-08-19T11:27:45.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        32214
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Natarsia"
       ]
     },
     {
@@ -1350,6 +1450,94 @@
       ]
     },
     {
+      "taxonid": 23282,
+      "taxonname": "Procladius",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2014-08-18T19:16:49.000Z",
+      "recdatemodified": "2026-08-19T12:03:04.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        23282
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Procladius"
+      ]
+    },
+    {
+      "taxonid": 32233,
+      "taxonname": "Procladius (Holotanypus)",
+      "highertaxonid": 23282,
+      "taxagroupid": "INS",
+      "recdatecreated": "2017-09-04T01:55:27.000Z",
+      "recdatemodified": "2026-08-20T10:39:11.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        23282,
+        32233
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Procladius",
+        "Procladius (Holotanypus)"
+      ]
+    },
+    {
+      "taxonid": 23283,
+      "taxonname": "Procladius sp.",
+      "highertaxonid": null,
+      "taxagroupid": "INS",
+      "recdatecreated": "2014-08-18T19:18:30.000Z",
+      "recdatemodified": "2026-08-20T10:41:56.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        23283
+      ],
+      "path_names": [
+        "Procladius sp."
+      ]
+    },
+    {
       "taxonid": 32240,
       "taxonname": "Stempellinella",
       "highertaxonid": 32222,
@@ -1421,6 +1609,40 @@
         "Tanytarsini",
         "Stempellinella",
         "Stempellinella/Zavrelia"
+      ]
+    },
+    {
+      "taxonid": 18699,
+      "taxonname": "Tanypodinae indet.",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2013-10-25T19:37:55.000Z",
+      "recdatemodified": "2026-08-19T12:06:58.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        18699
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Tanypodinae indet."
       ]
     },
     {
@@ -1571,6 +1793,40 @@
         "Chironominae",
         "Tanytarsini",
         "Zavrelia"
+      ]
+    },
+    {
+      "taxonid": 46864,
+      "taxonname": "Zavrelimyia",
+      "highertaxonid": 27839,
+      "taxagroupid": "INS",
+      "recdatecreated": "2022-01-11T13:44:18.000Z",
+      "recdatemodified": "2026-08-19T12:09:48.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        13915,
+        14062,
+        33141,
+        18678,
+        27839,
+        46864
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Insecta",
+        "Diptera",
+        "Nematocera",
+        "Chironomidae",
+        "Tanypodinae",
+        "Zavrelimyia"
       ]
     },
     {
