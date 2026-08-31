@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T02:58:21+00:00",
+  "generated_at": "2026-08-31T08:01:53+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -28168,14 +28168,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2012-03-21T00:00:00.000Z",
       "recdatemodified": "2014-02-09T08:22:12.000Z"
-    },
-    "3897": {
-      "taxonid": 3897,
-      "taxonname": "Astragalus danicus-type",
-      "highertaxonid": 1163,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2012-03-21T00:00:00.000Z",
-      "recdatemodified": "2014-02-09T08:24:38.000Z"
     },
     "3898": {
       "taxonid": 3898,
@@ -370865,14 +370857,6 @@
       "recdatecreated": "2023-11-29T10:44:10.000Z",
       "recdatemodified": "2023-11-29T10:44:10.000Z"
     },
-    "51927": {
-      "taxonid": 51927,
-      "taxonname": "Xylariaceae (type 93, HdV)",
-      "highertaxonid": 25929,
-      "taxagroupid": "FUN",
-      "recdatecreated": "2023-11-29T22:00:47.000Z",
-      "recdatemodified": "2023-11-29T22:00:47.000Z"
-    },
     "51928": {
       "taxonid": 51928,
       "taxonname": "Charcoal (wood)",
@@ -458057,14 +458041,6 @@
       "recdatecreated": "2025-09-04T11:26:59.000Z",
       "recdatemodified": "2025-09-04T11:26:59.000Z"
     },
-    "67884": {
-      "taxonid": 67884,
-      "taxonname": "Xylariaceae (type 1052, HdV)",
-      "highertaxonid": 25929,
-      "taxagroupid": "FUN",
-      "recdatecreated": "2025-09-04T11:36:07.000Z",
-      "recdatemodified": "2025-09-04T11:36:07.000Z"
-    },
     "67897": {
       "taxonid": 67897,
       "taxonname": "Apium spp.",
@@ -458248,6 +458224,14 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2025-10-06T12:05:23.000Z",
       "recdatemodified": "2026-02-12T15:08:07.000Z"
+    },
+    "67884": {
+      "taxonid": 67884,
+      "taxonname": "Xylariaceae (type 1052, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2025-09-04T11:36:07.000Z",
+      "recdatemodified": "2026-08-27T14:39:23.000Z"
     },
     "67904": {
       "taxonid": 67904,
@@ -471881,6 +471865,22 @@
       "recdatecreated": "2026-08-02T21:02:58.000Z",
       "recdatemodified": "2026-08-02T21:02:58.000Z"
     },
+    "69773": {
+      "taxonid": 69773,
+      "taxonname": "Fragilaria andreseniana",
+      "highertaxonid": 24447,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:42:06.000Z",
+      "recdatemodified": "2026-08-28T17:42:06.000Z"
+    },
+    "69774": {
+      "taxonid": 69774,
+      "taxonname": "Fragilariforma sp. 1 DB NPS",
+      "highertaxonid": 24449,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:56:43.000Z",
+      "recdatemodified": "2026-08-28T17:56:43.000Z"
+    },
     "18699": {
       "taxonid": 18699,
       "taxonname": "Tanypodinae indet.",
@@ -471920,6 +471920,14 @@
       "taxagroupid": "INS",
       "recdatecreated": "2022-11-09T16:59:48.000Z",
       "recdatemodified": "2026-08-04T17:16:48.000Z"
+    },
+    "69763": {
+      "taxonid": 69763,
+      "taxonname": "Rossellinia (type 1014, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2026-08-27T14:30:08.000Z",
+      "recdatemodified": "2026-08-27T14:34:03.000Z"
     },
     "52604": {
       "taxonid": 52604,
@@ -472064,6 +472072,230 @@
       "taxagroupid": "TES",
       "recdatecreated": "2026-08-18T12:49:50.000Z",
       "recdatemodified": "2026-08-18T14:04:05.000Z"
+    },
+    "51927": {
+      "taxonid": 51927,
+      "taxonname": "Xylariaceae (type 93, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2023-11-29T22:00:47.000Z",
+      "recdatemodified": "2026-08-27T14:42:10.000Z"
+    },
+    "69760": {
+      "taxonid": 69760,
+      "taxonname": "Carex cf. C. oederi",
+      "highertaxonid": 1297,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T07:48:53.000Z",
+      "recdatemodified": "2026-08-27T07:48:53.000Z"
+    },
+    "69761": {
+      "taxonid": 69761,
+      "taxonname": "Potamogeton cf. P. lucens",
+      "highertaxonid": 517,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T07:50:49.000Z",
+      "recdatemodified": "2026-08-27T07:50:49.000Z"
+    },
+    "69764": {
+      "taxonid": 69764,
+      "taxonname": "Brachysira neglectissima",
+      "highertaxonid": 24396,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:00:44.000Z",
+      "recdatemodified": "2026-08-27T22:00:44.000Z"
+    },
+    "69765": {
+      "taxonid": 69765,
+      "taxonname": "Caloneis sp. 1 DB NPS",
+      "highertaxonid": 24398,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:06:53.000Z",
+      "recdatemodified": "2026-08-27T22:06:53.000Z"
+    },
+    "69766": {
+      "taxonid": 69766,
+      "taxonname": "Caloneis sp. 2 DB NPS",
+      "highertaxonid": 24398,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:08:05.000Z",
+      "recdatemodified": "2026-08-27T22:08:05.000Z"
+    },
+    "69767": {
+      "taxonid": 69767,
+      "taxonname": "Cymbopleura sp. 1 DB NPS",
+      "highertaxonid": 24422,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T16:50:36.000Z",
+      "recdatemodified": "2026-08-28T16:50:36.000Z"
+    },
+    "3897": {
+      "taxonid": 3897,
+      "taxonname": "Astragalus danicus-type",
+      "highertaxonid": 1163,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2012-03-21T00:00:00.000Z",
+      "recdatemodified": "2026-08-27T11:46:03.000Z"
+    },
+    "69762": {
+      "taxonid": 69762,
+      "taxonname": "Rhynchospora fusca",
+      "highertaxonid": 261,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T14:28:08.000Z",
+      "recdatemodified": "2026-08-27T14:28:08.000Z"
+    },
+    "69768": {
+      "taxonid": 69768,
+      "taxonname": "Delicatophycus angustus",
+      "highertaxonid": 43091,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:13:27.000Z",
+      "recdatemodified": "2026-08-28T17:13:27.000Z"
+    },
+    "69769": {
+      "taxonid": 69769,
+      "taxonname": "Delicatophycus sp. 1 DB NPS",
+      "highertaxonid": 43091,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:15:28.000Z",
+      "recdatemodified": "2026-08-28T17:15:28.000Z"
+    },
+    "69770": {
+      "taxonid": 69770,
+      "taxonname": "Encyonopsis sp. 1 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:26:14.000Z",
+      "recdatemodified": "2026-08-28T17:26:14.000Z"
+    },
+    "69771": {
+      "taxonid": 69771,
+      "taxonname": "Encyonopsis sp. 2 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:27:09.000Z",
+      "recdatemodified": "2026-08-28T17:27:09.000Z"
+    },
+    "69772": {
+      "taxonid": 69772,
+      "taxonname": "Encyonopsis sp. 3 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:27:54.000Z",
+      "recdatemodified": "2026-08-28T17:27:54.000Z"
+    },
+    "69775": {
+      "taxonid": 69775,
+      "taxonname": "Geissleria sp. 1/sp.nov. DB NPS",
+      "highertaxonid": 24452,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:58:51.000Z",
+      "recdatemodified": "2026-08-28T17:58:51.000Z"
+    },
+    "69776": {
+      "taxonid": 69776,
+      "taxonname": "Iconella spp.",
+      "highertaxonid": 35389,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T18:02:38.000Z",
+      "recdatemodified": "2026-08-28T18:02:38.000Z"
+    },
+    "69777": {
+      "taxonid": 69777,
+      "taxonname": "Lindavia polymorpha",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T18:06:49.000Z",
+      "recdatemodified": "2026-08-28T18:06:49.000Z"
+    },
+    "69778": {
+      "taxonid": 69778,
+      "taxonname": "Fragilaria nana",
+      "highertaxonid": 24447,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:03:36.000Z",
+      "recdatemodified": "2026-08-28T22:03:36.000Z"
+    },
+    "69779": {
+      "taxonid": 69779,
+      "taxonname": "Lindavia sp. 1 DB NPS",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:06:16.000Z",
+      "recdatemodified": "2026-08-28T22:06:16.000Z"
+    },
+    "69780": {
+      "taxonid": 69780,
+      "taxonname": "Lindavia sp. 2 DB NPS",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:07:03.000Z",
+      "recdatemodified": "2026-08-28T22:07:03.000Z"
+    },
+    "69781": {
+      "taxonid": 69781,
+      "taxonname": "Mastogloia pseudosmithii",
+      "highertaxonid": 24506,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:14:02.000Z",
+      "recdatemodified": "2026-08-28T22:14:02.000Z"
+    },
+    "69782": {
+      "taxonid": 69782,
+      "taxonname": "Nitzschia fibula-fissa",
+      "highertaxonid": 24521,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:18:24.000Z",
+      "recdatemodified": "2026-08-28T22:18:24.000Z"
+    },
+    "69783": {
+      "taxonid": 69783,
+      "taxonname": "Pantocsekiella laurentiana",
+      "highertaxonid": 51283,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:33:53.000Z",
+      "recdatemodified": "2026-08-28T22:33:53.000Z"
+    },
+    "69784": {
+      "taxonid": 69784,
+      "taxonname": "Planothidium sp. 2 DB NPS",
+      "highertaxonid": 19370,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:36:08.000Z",
+      "recdatemodified": "2026-08-28T22:36:08.000Z"
+    },
+    "69785": {
+      "taxonid": 69785,
+      "taxonname": "Psammothidium hustedtii",
+      "highertaxonid": 19275,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:48:52.000Z",
+      "recdatemodified": "2026-08-28T22:48:52.000Z"
+    },
+    "69786": {
+      "taxonid": 69786,
+      "taxonname": "Sellaphora lanceolata",
+      "highertaxonid": 24569,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:56:28.000Z",
+      "recdatemodified": "2026-08-28T22:56:28.000Z"
+    },
+    "69787": {
+      "taxonid": 69787,
+      "taxonname": "Carex flava agg.",
+      "highertaxonid": 1297,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-29T12:05:21.000Z",
+      "recdatemodified": "2026-08-29T12:05:21.000Z"
+    },
+    "69788": {
+      "taxonid": 69788,
+      "taxonname": "Alnus/Salix",
+      "highertaxonid": 29503,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-29T12:26:54.000Z",
+      "recdatemodified": "2026-08-29T12:26:54.000Z"
     }
   }
 }

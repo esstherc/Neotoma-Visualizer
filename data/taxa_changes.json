@@ -1,12 +1,486 @@
 {
-  "generated_at": "2026-08-24T02:58:21+00:00",
-  "since": "2026-07-25",
+  "generated_at": "2026-08-31T08:01:53+00:00",
+  "since": "2026-08-01",
   "counts": {
-    "new": 19,
-    "modified": 39,
-    "total": 58
+    "new": 40,
+    "modified": 40,
+    "total": 80
   },
   "new": [
+    {
+      "taxonid": 69764,
+      "taxonname": "Brachysira neglectissima",
+      "highertaxonid": 24396,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:00:44.000Z",
+      "recdatemodified": "2026-08-27T22:00:44.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24605,
+        24396,
+        69764
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Brachysiraceae",
+        "Brachysira",
+        "Brachysira neglectissima"
+      ]
+    },
+    {
+      "taxonid": 69765,
+      "taxonname": "Caloneis sp. 1 DB NPS",
+      "highertaxonid": 24398,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:06:53.000Z",
+      "recdatemodified": "2026-08-27T22:06:53.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24620,
+        24398,
+        69765
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Pinnulariaceae",
+        "Caloneis",
+        "Caloneis sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69766,
+      "taxonname": "Caloneis sp. 2 DB NPS",
+      "highertaxonid": 24398,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-27T22:08:05.000Z",
+      "recdatemodified": "2026-08-27T22:08:05.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24620,
+        24398,
+        69766
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Pinnulariaceae",
+        "Caloneis",
+        "Caloneis sp. 2 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69767,
+      "taxonname": "Cymbopleura sp. 1 DB NPS",
+      "highertaxonid": 24422,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T16:50:36.000Z",
+      "recdatemodified": "2026-08-28T16:50:36.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        22534,
+        24422,
+        69767
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Naviculaceae",
+        "Cymbopleura",
+        "Cymbopleura sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69768,
+      "taxonname": "Delicatophycus angustus",
+      "highertaxonid": 43091,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:13:27.000Z",
+      "recdatemodified": "2026-08-28T17:13:27.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24615,
+        43091,
+        69768
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Gomphonemataceae",
+        "Delicatophycus",
+        "Delicatophycus angustus"
+      ]
+    },
+    {
+      "taxonid": 69769,
+      "taxonname": "Delicatophycus sp. 1 DB NPS",
+      "highertaxonid": 43091,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:15:28.000Z",
+      "recdatemodified": "2026-08-28T17:15:28.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24615,
+        43091,
+        69769
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Gomphonemataceae",
+        "Delicatophycus",
+        "Delicatophycus sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69770,
+      "taxonname": "Encyonopsis sp. 1 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:26:14.000Z",
+      "recdatemodified": "2026-08-28T17:26:14.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24438,
+        69770
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Encyonopsis",
+        "Encyonopsis sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69771,
+      "taxonname": "Encyonopsis sp. 2 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:27:09.000Z",
+      "recdatemodified": "2026-08-28T17:27:09.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24438,
+        69771
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Encyonopsis",
+        "Encyonopsis sp. 2 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69772,
+      "taxonname": "Encyonopsis sp. 3 DB NPS",
+      "highertaxonid": 24438,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:27:54.000Z",
+      "recdatemodified": "2026-08-28T17:27:54.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24438,
+        69772
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Encyonopsis",
+        "Encyonopsis sp. 3 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69773,
+      "taxonname": "Fragilaria andreseniana",
+      "highertaxonid": 24447,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:42:06.000Z",
+      "recdatemodified": "2026-08-28T17:42:06.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24614,
+        24447,
+        69773
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Fragilariaceae",
+        "Fragilaria",
+        "Fragilaria andreseniana"
+      ]
+    },
+    {
+      "taxonid": 69778,
+      "taxonname": "Fragilaria nana",
+      "highertaxonid": 24447,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:03:36.000Z",
+      "recdatemodified": "2026-08-28T22:03:36.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24614,
+        24447,
+        69778
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Fragilariaceae",
+        "Fragilaria",
+        "Fragilaria nana"
+      ]
+    },
+    {
+      "taxonid": 69774,
+      "taxonname": "Fragilariforma sp. 1 DB NPS",
+      "highertaxonid": 24449,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:56:43.000Z",
+      "recdatemodified": "2026-08-28T17:56:43.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24610,
+        24449,
+        69774
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Diatomaceae",
+        "Fragilariforma",
+        "Fragilariforma sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69775,
+      "taxonname": "Geissleria sp. 1/sp.nov. DB NPS",
+      "highertaxonid": 24452,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T17:58:51.000Z",
+      "recdatemodified": "2026-08-28T17:58:51.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        22534,
+        24452,
+        69775
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Naviculaceae",
+        "Geissleria",
+        "Geissleria sp. 1/sp.nov. DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69776,
+      "taxonname": "Iconella spp.",
+      "highertaxonid": 35389,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T18:02:38.000Z",
+      "recdatemodified": "2026-08-28T18:02:38.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24628,
+        35389,
+        69776
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Surirellaceae",
+        "Iconella",
+        "Iconella spp."
+      ]
+    },
+    {
+      "taxonid": 69777,
+      "taxonname": "Lindavia polymorpha",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T18:06:49.000Z",
+      "recdatemodified": "2026-08-28T18:06:49.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24599,
+        24635,
+        27105,
+        69777
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Centrales",
+        "Coscinodiscaceae",
+        "Lindavia",
+        "Lindavia polymorpha"
+      ]
+    },
+    {
+      "taxonid": 69779,
+      "taxonname": "Lindavia sp. 1 DB NPS",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:06:16.000Z",
+      "recdatemodified": "2026-08-28T22:06:16.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24599,
+        24635,
+        27105,
+        69779
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Centrales",
+        "Coscinodiscaceae",
+        "Lindavia",
+        "Lindavia sp. 1 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69780,
+      "taxonname": "Lindavia sp. 2 DB NPS",
+      "highertaxonid": 27105,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:07:03.000Z",
+      "recdatemodified": "2026-08-28T22:07:03.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24599,
+        24635,
+        27105,
+        69780
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Centrales",
+        "Coscinodiscaceae",
+        "Lindavia",
+        "Lindavia sp. 2 DB NPS"
+      ]
+    },
+    {
+      "taxonid": 69781,
+      "taxonname": "Mastogloia pseudosmithii",
+      "highertaxonid": 24506,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:14:02.000Z",
+      "recdatemodified": "2026-08-28T22:14:02.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24617,
+        24506,
+        69781
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Mastogloiaceae",
+        "Mastogloia",
+        "Mastogloia pseudosmithii"
+      ]
+    },
+    {
+      "taxonid": 69782,
+      "taxonname": "Nitzschia fibula-fissa",
+      "highertaxonid": 24521,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:18:24.000Z",
+      "recdatemodified": "2026-08-28T22:18:24.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        24603,
+        24521,
+        69782
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Bacillariaceae",
+        "Nitzschia",
+        "Nitzschia fibula-fissa"
+      ]
+    },
+    {
+      "taxonid": 69783,
+      "taxonname": "Pantocsekiella laurentiana",
+      "highertaxonid": 51283,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:33:53.000Z",
+      "recdatemodified": "2026-08-28T22:33:53.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24599,
+        24641,
+        51283,
+        69783
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Centrales",
+        "Stephanodiscaceae",
+        "Pantocsekiella",
+        "Pantocsekiella laurentiana"
+      ]
+    },
     {
       "taxonid": 69759,
       "taxonname": "Pinnularia ventricosa",
@@ -32,199 +506,105 @@
       ]
     },
     {
-      "taxonid": 69742,
-      "taxonname": "Cyphon cf. C. coarctatus",
-      "highertaxonid": 57204,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:39:18.000Z",
-      "recdatemodified": "2026-07-28T10:39:18.000Z",
+      "taxonid": 69784,
+      "taxonname": "Planothidium sp. 2 DB NPS",
+      "highertaxonid": 19370,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:36:08.000Z",
+      "recdatemodified": "2026-08-28T22:36:08.000Z",
       "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        18121,
-        57204,
-        69742
+        2054,
+        5396,
+        24597,
+        14154,
+        19370,
+        69784
       ],
       "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Scirtidae",
-        "Cyphon",
-        "Cyphon cf. C. coarctatus"
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Achnanthaceae",
+        "Planothidium",
+        "Planothidium sp. 2 DB NPS"
       ]
     },
     {
-      "taxonid": 69743,
-      "taxonname": "Helophorus nubilus",
-      "highertaxonid": 13970,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:41:43.000Z",
-      "recdatemodified": "2026-07-28T10:41:43.000Z",
+      "taxonid": 69785,
+      "taxonname": "Psammothidium hustedtii",
+      "highertaxonid": 19275,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:48:52.000Z",
+      "recdatemodified": "2026-08-28T22:48:52.000Z",
       "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        13969,
-        13970,
-        69743
+        2054,
+        5396,
+        24597,
+        14154,
+        19275,
+        69785
       ],
       "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Hydrophilidae",
-        "Helophorus",
-        "Helophorus nubilus"
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Achnanthaceae",
+        "Psammothidium",
+        "Psammothidium hustedtii"
       ]
     },
     {
-      "taxonid": 69746,
-      "taxonname": "Lochmaea suturalis",
-      "highertaxonid": 51977,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:45:52.000Z",
-      "recdatemodified": "2026-07-28T10:45:52.000Z",
+      "taxonid": 69786,
+      "taxonname": "Sellaphora lanceolata",
+      "highertaxonid": 24569,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-28T22:56:28.000Z",
+      "recdatemodified": "2026-08-28T22:56:28.000Z",
       "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        14035,
-        51977,
-        69746
+        2054,
+        5396,
+        24597,
+        24626,
+        24569,
+        69786
       ],
       "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Chrysomelidae",
-        "Lochmaea",
-        "Lochmaea suturalis"
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Sellaphoraceae",
+        "Sellaphora",
+        "Sellaphora lanceolata"
       ]
     },
     {
-      "taxonid": 69745,
-      "taxonname": "Macronychus quadrituberculatus",
-      "highertaxonid": 22269,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:44:32.000Z",
-      "recdatemodified": "2026-07-28T10:44:32.000Z",
+      "taxonid": 69763,
+      "taxonname": "Rossellinia (type 1014, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2026-08-27T14:30:08.000Z",
+      "recdatemodified": "2026-08-27T14:34:03.000Z",
       "path_ids": [
         32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        16781,
-        22269,
-        69745
+        535,
+        10006,
+        21403,
+        23121,
+        25927,
+        25929,
+        25930,
+        69763
       ],
       "path_names": [
         "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Elmidae",
-        "Macronychus",
-        "Macronychus quadrituberculatus"
-      ]
-    },
-    {
-      "taxonid": 69744,
-      "taxonname": "Oulimnius tuberculatus",
-      "highertaxonid": 27522,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:43:02.000Z",
-      "recdatemodified": "2026-07-28T10:43:02.000Z",
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        16781,
-        27522,
-        69744
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Elmidae",
-        "Oulimnius",
-        "Oulimnius tuberculatus"
-      ]
-    },
-    {
-      "taxonid": 69748,
-      "taxonname": "Phyllotreta vittula",
-      "highertaxonid": 21871,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:49:22.000Z",
-      "recdatemodified": "2026-07-28T10:49:22.000Z",
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        14035,
-        21871,
-        69748
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Chrysomelidae",
-        "Phyllotreta",
-        "Phyllotreta vittula"
-      ]
-    },
-    {
-      "taxonid": 69747,
-      "taxonname": "Plateumaris sericea/consimilis",
-      "highertaxonid": 21647,
-      "taxagroupid": "INS",
-      "recdatecreated": "2026-07-28T10:48:16.000Z",
-      "recdatemodified": "2026-07-28T10:48:16.000Z",
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        13915,
-        13916,
-        14035,
-        21647,
-        69747
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Insecta",
-        "Coleoptera",
-        "Chrysomelidae",
-        "Plateumaris",
-        "Plateumaris sericea/consimilis"
+        "Fungi",
+        "Ascomycota",
+        "Pezizomycotina",
+        "Sordariomycetes",
+        "Xylariomycetidae",
+        "Xylariales",
+        "Xylariaceae",
+        "Rossellinia (type 1014, HdV)"
       ]
     },
     {
@@ -424,6 +804,150 @@
       ]
     },
     {
+      "taxonid": 69788,
+      "taxonname": "Alnus/Salix",
+      "highertaxonid": 29503,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-29T12:26:54.000Z",
+      "recdatemodified": "2026-08-29T12:26:54.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2132,
+        9653,
+        9652,
+        9606,
+        9607,
+        29503,
+        69788
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Eudicotyledoneae",
+        "Gunneridae",
+        "Pentapetalae",
+        "Rosidae",
+        "Fabidae",
+        "Fabidae incertae sedis",
+        "Alnus/Salix"
+      ]
+    },
+    {
+      "taxonid": 69760,
+      "taxonname": "Carex cf. C. oederi",
+      "highertaxonid": 1297,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T07:48:53.000Z",
+      "recdatemodified": "2026-08-27T07:48:53.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        74,
+        40110,
+        40114,
+        1297,
+        69760
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Cyperaceae",
+        "Cyperoideae",
+        "Cariceae",
+        "Carex",
+        "Carex cf. C. oederi"
+      ]
+    },
+    {
+      "taxonid": 69787,
+      "taxonname": "Carex flava agg.",
+      "highertaxonid": 1297,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-29T12:05:21.000Z",
+      "recdatemodified": "2026-08-29T12:05:21.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        74,
+        40110,
+        40114,
+        1297,
+        69787
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Cyperaceae",
+        "Cyperoideae",
+        "Cariceae",
+        "Carex",
+        "Carex flava agg."
+      ]
+    },
+    {
       "taxonid": 69750,
       "taxonname": "Cyathea cf. C. colensoi",
       "highertaxonid": 1725,
@@ -516,56 +1040,6 @@
       ]
     },
     {
-      "taxonid": 69741,
-      "taxonname": "Parietaria judaica",
-      "highertaxonid": 475,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-07-28T07:39:14.000Z",
-      "recdatemodified": "2026-07-28T07:39:14.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        2133,
-        9575,
-        2132,
-        9653,
-        9652,
-        9606,
-        9607,
-        9116,
-        1816,
-        464,
-        475,
-        69741
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Angiospermae",
-        "Mesangiospermae",
-        "Eudicotyledoneae",
-        "Gunneridae",
-        "Pentapetalae",
-        "Rosidae",
-        "Fabidae",
-        "Rosales",
-        "Urticalean Rosids",
-        "Urticaceae",
-        "Parietaria",
-        "Parietaria judaica"
-      ]
-    },
-    {
       "taxonid": 69751,
       "taxonname": "Plectritis-type",
       "highertaxonid": 1302,
@@ -616,9 +1090,169 @@
         "Valerianoideae",
         "Plectritis-type"
       ]
+    },
+    {
+      "taxonid": 69761,
+      "taxonname": "Potamogeton cf. P. lucens",
+      "highertaxonid": 517,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T07:50:49.000Z",
+      "recdatemodified": "2026-08-27T07:50:49.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        7641,
+        3468,
+        517,
+        69761
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Alismatales",
+        "Potamogetonaceae",
+        "Potamogeton",
+        "Potamogeton cf. P. lucens"
+      ]
+    },
+    {
+      "taxonid": 69762,
+      "taxonname": "Rhynchospora fusca",
+      "highertaxonid": 261,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-08-27T14:28:08.000Z",
+      "recdatemodified": "2026-08-27T14:28:08.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        74,
+        40110,
+        40119,
+        261,
+        69762
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Cyperaceae",
+        "Cyperoideae",
+        "Rhynchosporeae",
+        "Rhynchospora",
+        "Rhynchospora fusca"
+      ]
     }
   ],
   "modified": [
+    {
+      "taxonid": 67884,
+      "taxonname": "Xylariaceae (type 1052, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2025-09-04T11:36:07.000Z",
+      "recdatemodified": "2026-08-27T14:39:23.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        535,
+        10006,
+        21403,
+        23121,
+        25927,
+        25929,
+        25930,
+        67884
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Fungi",
+        "Ascomycota",
+        "Pezizomycotina",
+        "Sordariomycetes",
+        "Xylariomycetidae",
+        "Xylariales",
+        "Xylariaceae",
+        "Xylariaceae (type 1052, HdV)"
+      ]
+    },
+    {
+      "taxonid": 51927,
+      "taxonname": "Xylariaceae (type 93, HdV)",
+      "highertaxonid": 25930,
+      "taxagroupid": "FUN",
+      "recdatecreated": "2023-11-29T22:00:47.000Z",
+      "recdatemodified": "2026-08-27T14:42:10.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        535,
+        10006,
+        21403,
+        23121,
+        25927,
+        25929,
+        25930,
+        51927
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Fungi",
+        "Ascomycota",
+        "Pezizomycotina",
+        "Sordariomycetes",
+        "Xylariomycetidae",
+        "Xylariales",
+        "Xylariaceae",
+        "Xylariaceae (type 93, HdV)"
+      ]
+    },
     {
       "taxonid": 32192,
       "taxonname": "Ablabesmyia",
@@ -1830,46 +2464,6 @@
       ]
     },
     {
-      "taxonid": 50773,
-      "taxonname": "Fabaeformiscandona wedgwoodii",
-      "highertaxonid": 14452,
-      "taxagroupid": "OST",
-      "recdatecreated": "2023-04-16T06:15:36.000Z",
-      "recdatemodified": "2026-07-29T21:04:52.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        9450,
-        13914,
-        14443,
-        14448,
-        14449,
-        14450,
-        14451,
-        14452,
-        50773
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Crustacea",
-        "Ostracoda",
-        "Podocopida",
-        "Cypridocopina",
-        "Cypridoidea",
-        "Candonidae",
-        "Candoninae",
-        "Candona",
-        "Fabaeformiscandona wedgwoodii"
-      ]
-    },
-    {
       "taxonid": 14517,
       "taxonname": "Ilyocypris gibba",
       "highertaxonid": 14515,
@@ -1950,46 +2544,6 @@
       ]
     },
     {
-      "taxonid": 33976,
-      "taxonname": "Limnocythere camera",
-      "highertaxonid": 14597,
-      "taxagroupid": "OST",
-      "recdatecreated": "2017-10-27T15:20:14.000Z",
-      "recdatemodified": "2026-07-29T05:39:50.000Z",
-      "changed_fields": [
-        "recdatemodified"
-      ],
-      "previous": {},
-      "path_ids": [
-        32182,
-        6758,
-        9449,
-        9450,
-        13914,
-        14443,
-        24059,
-        24060,
-        14595,
-        14596,
-        14597,
-        33976
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Animalia",
-        "Arthropoda",
-        "Crustacea",
-        "Ostracoda",
-        "Podocopida",
-        "Cytherocopina",
-        "Cytheroidea",
-        "Limnocytheridae",
-        "Limnocytherinae",
-        "Limnocythere",
-        "Limnocythere camera"
-      ]
-    },
-    {
       "taxonid": 25535,
       "taxonname": "Pelocypris tuberculata",
       "highertaxonid": 14534,
@@ -2027,6 +2581,62 @@
         "Pelocypridinae",
         "Pelocypris",
         "Pelocypris tuberculata"
+      ]
+    },
+    {
+      "taxonid": 3897,
+      "taxonname": "Astragalus danicus-type",
+      "highertaxonid": 1163,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2012-03-21T00:00:00.000Z",
+      "recdatemodified": "2026-08-27T11:46:03.000Z",
+      "changed_fields": [
+        "recdatemodified"
+      ],
+      "previous": {},
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2132,
+        9653,
+        9652,
+        9606,
+        9607,
+        1881,
+        346,
+        9690,
+        39753,
+        1163,
+        3897
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Eudicotyledoneae",
+        "Gunneridae",
+        "Pentapetalae",
+        "Rosidae",
+        "Fabidae",
+        "Fabales",
+        "Fabaceae",
+        "Faboideae",
+        "Astragaleae",
+        "Astragalus-type",
+        "Astragalus danicus-type"
       ]
     }
   ]
