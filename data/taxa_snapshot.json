@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T08:01:53+00:00",
+  "generated_at": "2026-09-07T06:55:23+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -377969,14 +377969,6 @@
       "recdatecreated": "2017-10-15T22:28:28.000Z",
       "recdatemodified": "2024-09-13T18:03:35.000Z"
     },
-    "52184": {
-      "taxonid": 52184,
-      "taxonname": " Gymnanthes lucida",
-      "highertaxonid": 2084,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2024-01-31T04:17:54.000Z",
-      "recdatemodified": "2024-09-13T18:03:35.000Z"
-    },
     "35696": {
       "taxonid": 35696,
       "taxonname": " Scincidae",
@@ -472296,6 +472288,102 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-08-29T12:26:54.000Z",
       "recdatemodified": "2026-08-29T12:26:54.000Z"
+    },
+    "69789": {
+      "taxonid": 69789,
+      "taxonname": "Stauroneis bovbjergii",
+      "highertaxonid": 24576,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T18:01:31.000Z",
+      "recdatemodified": "2026-08-31T18:01:31.000Z"
+    },
+    "69790": {
+      "taxonid": 69790,
+      "taxonname": "Staurosirella ansata",
+      "highertaxonid": 24580,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T18:05:54.000Z",
+      "recdatemodified": "2026-08-31T18:05:54.000Z"
+    },
+    "69791": {
+      "taxonid": 69791,
+      "taxonname": "Staurosirella neopinnata",
+      "highertaxonid": 24580,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T18:12:57.000Z",
+      "recdatemodified": "2026-08-31T18:12:57.000Z"
+    },
+    "69792": {
+      "taxonid": 69792,
+      "taxonname": "Stephanocyclus gamma",
+      "highertaxonid": 48772,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T19:18:22.000Z",
+      "recdatemodified": "2026-08-31T19:18:22.000Z"
+    },
+    "69793": {
+      "taxonid": 69793,
+      "taxonname": "Ulnaria danica",
+      "highertaxonid": 24595,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T19:25:02.000Z",
+      "recdatemodified": "2026-08-31T19:25:02.000Z"
+    },
+    "69794": {
+      "taxonid": 69794,
+      "taxonname": "Undetermined symmetrical biraphid",
+      "highertaxonid": 5396,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-08-31T21:39:39.000Z",
+      "recdatemodified": "2026-08-31T21:39:39.000Z"
+    },
+    "69795": {
+      "taxonid": 69795,
+      "taxonname": "Fragilaria cf. pectinalis",
+      "highertaxonid": 24447,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-01T16:42:15.000Z",
+      "recdatemodified": "2026-09-01T16:42:15.000Z"
+    },
+    "69796": {
+      "taxonid": 69796,
+      "taxonname": "Cocconeis cf. grovei",
+      "highertaxonid": 24406,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-01T22:21:45.000Z",
+      "recdatemodified": "2026-09-01T22:21:45.000Z"
+    },
+    "69797": {
+      "taxonid": 69797,
+      "taxonname": "Sellaphora cf. auldreekie",
+      "highertaxonid": 24569,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-01T22:24:08.000Z",
+      "recdatemodified": "2026-09-01T22:24:08.000Z"
+    },
+    "69798": {
+      "taxonid": 69798,
+      "taxonname": "Sellaphora cf. submuralis",
+      "highertaxonid": 24569,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-01T22:49:10.000Z",
+      "recdatemodified": "2026-09-01T22:49:10.000Z"
+    },
+    "69799": {
+      "taxonid": 69799,
+      "taxonname": "Sellaphora cf. seminuloides",
+      "highertaxonid": 24569,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-02T00:12:45.000Z",
+      "recdatemodified": "2026-09-02T00:12:45.000Z"
+    },
+    "69800": {
+      "taxonid": 69800,
+      "taxonname": "Staurosirella sp. 8 UMD",
+      "highertaxonid": 24580,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-02T00:15:57.000Z",
+      "recdatemodified": "2026-09-02T00:15:57.000Z"
     }
   }
 }
