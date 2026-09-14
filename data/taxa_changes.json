@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T06:55:23+00:00",
-  "since": "2026-08-08",
+  "generated_at": "2026-09-14T07:29:32+00:00",
+  "since": "2026-08-15",
   "counts": {
-    "new": 51,
+    "new": 50,
     "modified": 12,
-    "total": 63
+    "total": 62
   },
   "new": [
     {
@@ -860,6 +860,22 @@
       ]
     },
     {
+      "taxonid": 69803,
+      "taxonname": "Nanohaloarchaeaceae_X_sp.",
+      "highertaxonid": 32182,
+      "taxagroupid": "EUK",
+      "recdatecreated": "2026-09-10T20:52:41.000Z",
+      "recdatemodified": "2026-09-10T20:52:41.000Z",
+      "path_ids": [
+        32182,
+        69803
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Nanohaloarchaeaceae_X_sp."
+      ]
+    },
+    {
       "taxonid": 69763,
       "taxonname": "Rossellinia (type 1014, HdV)",
       "highertaxonid": 25930,
@@ -887,6 +903,76 @@
         "Xylariales",
         "Xylariaceae",
         "Rossellinia (type 1014, HdV)"
+      ]
+    },
+    {
+      "taxonid": 69801,
+      "taxonname": "Cyclocypris montiporta",
+      "highertaxonid": 14507,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-07T08:11:37.000Z",
+      "recdatemodified": "2026-09-07T08:11:37.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14498,
+        14507,
+        69801
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Cyclocyprididae",
+        "Cyclocypris",
+        "Cyclocypris montiporta"
+      ]
+    },
+    {
+      "taxonid": 69802,
+      "taxonname": "Fabaeformiscandona fujimotoi",
+      "highertaxonid": 14482,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-07T08:13:34.000Z",
+      "recdatemodified": "2026-09-07T08:13:34.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14450,
+        14451,
+        14482,
+        69802
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Candonidae",
+        "Candoninae",
+        "Fabaeformiscandona",
+        "Fabaeformiscandona fujimotoi"
       ]
     },
     {
@@ -1034,22 +1120,6 @@
       ]
     },
     {
-      "taxonid": 69753,
-      "taxonname": "Unknown (NAU spore 101)",
-      "highertaxonid": 313,
-      "taxagroupid": "UPA",
-      "recdatecreated": "2026-08-14T23:46:13.000Z",
-      "recdatemodified": "2026-08-14T23:46:13.000Z",
-      "path_ids": [
-        313,
-        69753
-      ],
-      "path_names": [
-        "Unknown",
-        "Unknown (NAU spore 101)"
-      ]
-    },
-    {
       "taxonid": 69788,
       "taxonname": "Alnus/Salix",
       "highertaxonid": 29503,
@@ -1191,150 +1261,6 @@
         "Cariceae",
         "Carex",
         "Carex flava agg."
-      ]
-    },
-    {
-      "taxonid": 69750,
-      "taxonname": "Cyathea cf. C. colensoi",
-      "highertaxonid": 1725,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-08-10T02:55:16.000Z",
-      "recdatemodified": "2026-08-10T02:55:16.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        9535,
-        676,
-        9538,
-        9543,
-        1723,
-        1725,
-        69750
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Monilophyta",
-        "Polypodiophyta",
-        "Leptosporangiatae",
-        "Cyatheales",
-        "Cyatheaceae",
-        "Cyathea",
-        "Cyathea cf. C. colensoi"
-      ]
-    },
-    {
-      "taxonid": 69752,
-      "taxonname": "Dahlia",
-      "highertaxonid": 22954,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-08-14T23:26:06.000Z",
-      "recdatemodified": "2026-08-14T23:26:06.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        2133,
-        9575,
-        2132,
-        9653,
-        9652,
-        9651,
-        9655,
-        9657,
-        9658,
-        9104,
-        409,
-        418,
-        22954,
-        69752
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Angiospermae",
-        "Mesangiospermae",
-        "Eudicotyledoneae",
-        "Gunneridae",
-        "Pentapetalae",
-        "Asteridae",
-        "Gentianidae",
-        "Campanulidae",
-        "Apiidae",
-        "Asterales",
-        "Asteraceae",
-        "Asteroideae",
-        "Coreopsideae",
-        "Dahlia"
-      ]
-    },
-    {
-      "taxonid": 69751,
-      "taxonname": "Plectritis-type",
-      "highertaxonid": 1302,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-08-12T16:58:03.000Z",
-      "recdatemodified": "2026-08-12T16:58:03.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        2133,
-        9575,
-        2132,
-        9653,
-        9652,
-        9651,
-        9655,
-        9657,
-        9658,
-        9112,
-        394,
-        1302,
-        69751
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Angiospermae",
-        "Mesangiospermae",
-        "Eudicotyledoneae",
-        "Gunneridae",
-        "Pentapetalae",
-        "Asteridae",
-        "Gentianidae",
-        "Campanulidae",
-        "Apiidae",
-        "Dipsacales",
-        "Caprifoliaceae",
-        "Valerianoideae",
-        "Plectritis-type"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:55:23+00:00",
+  "generated_at": "2026-09-14T07:29:32+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -472384,6 +472384,30 @@
       "taxagroupid": "DIA",
       "recdatecreated": "2026-09-02T00:15:57.000Z",
       "recdatemodified": "2026-09-02T00:15:57.000Z"
+    },
+    "69801": {
+      "taxonid": 69801,
+      "taxonname": "Cyclocypris montiporta",
+      "highertaxonid": 14507,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-07T08:11:37.000Z",
+      "recdatemodified": "2026-09-07T08:11:37.000Z"
+    },
+    "69802": {
+      "taxonid": 69802,
+      "taxonname": "Fabaeformiscandona fujimotoi",
+      "highertaxonid": 14482,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-07T08:13:34.000Z",
+      "recdatemodified": "2026-09-07T08:13:34.000Z"
+    },
+    "69803": {
+      "taxonid": 69803,
+      "taxonname": "Nanohaloarchaeaceae_X_sp.",
+      "highertaxonid": 32182,
+      "taxagroupid": "EUK",
+      "recdatecreated": "2026-09-10T20:52:41.000Z",
+      "recdatemodified": "2026-09-10T20:52:41.000Z"
     }
   }
 }
