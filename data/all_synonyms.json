@@ -2935,21 +2935,6 @@
     ]
   },
   {
-    "valid_id": 1801,
-    "valid_name": "Anthoceros laevis",
-    "taxagroupid": "BRY",
-    "synonyms": [
-      {
-        "invalid_id": 14837,
-        "invalid_name": "Phaeoceros laevis",
-        "synonymtypeid": 2,
-        "synonymtype": "nomenclatural, homotypic, or objective synonym",
-        "recdatecreated": "2013-09-30T14:03:02.000Z",
-        "recdatemodified": "2013-09-30T14:03:02.000Z"
-      }
-    ]
-  },
-  {
     "valid_id": 17057,
     "valid_name": "Anthocerotophyta",
     "taxagroupid": "BRY",
@@ -33476,14 +33461,6 @@
     "valid_name": "Parkinsonia",
     "taxagroupid": "VPL",
     "synonyms": [
-      {
-        "invalid_id": 15180,
-        "invalid_name": "Cercidium",
-        "synonymtypeid": 2,
-        "synonymtype": "nomenclatural, homotypic, or objective synonym",
-        "recdatecreated": "2013-09-30T14:03:02.000Z",
-        "recdatemodified": "2013-09-30T14:03:02.000Z"
-      },
       {
         "invalid_id": 27483,
         "invalid_name": "Cercidium",

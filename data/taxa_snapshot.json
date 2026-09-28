@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T07:32:58+00:00",
+  "generated_at": "2026-09-28T08:08:36+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -6953,14 +6953,6 @@
       "recdatecreated": "2012-03-21T00:00:00.000Z",
       "recdatemodified": "2017-04-21T10:20:41.000Z"
     },
-    "51930": {
-      "taxonid": 51930,
-      "taxonname": "Charcoal (moss)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-12-03T13:23:11.000Z",
-      "recdatemodified": "2023-12-03T13:23:11.000Z"
-    },
     "968": {
       "taxonid": 968,
       "taxonname": "Triglochin",
@@ -7128,14 +7120,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2012-03-21T00:00:00.000Z",
       "recdatemodified": "2015-01-14T02:42:33.000Z"
-    },
-    "990": {
-      "taxonid": 990,
-      "taxonname": "cf. Scrophulariaceae",
-      "highertaxonid": 15529,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2012-03-21T00:00:00.000Z",
-      "recdatemodified": "2012-03-21T00:00:00.000Z"
     },
     "991": {
       "taxonid": 991,
@@ -31416,14 +31400,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2012-03-21T00:00:00.000Z",
       "recdatemodified": "2017-03-29T10:34:21.000Z"
-    },
-    "4324": {
-      "taxonid": 4324,
-      "taxonname": "cf. Gentianaceae",
-      "highertaxonid": 15529,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2012-03-21T00:00:00.000Z",
-      "recdatemodified": "2013-10-01T17:42:16.000Z"
     },
     "4326": {
       "taxonid": 4326,
@@ -56440,14 +56416,6 @@
       "taxagroupid": "MOL",
       "recdatecreated": "2013-01-01T00:00:00.000Z",
       "recdatemodified": "2020-06-28T22:31:30.000Z"
-    },
-    "52614": {
-      "taxonid": 52614,
-      "taxonname": "Potamogeton-type",
-      "highertaxonid": 3468,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2024-07-06T15:36:40.000Z",
-      "recdatemodified": "2024-07-06T15:36:40.000Z"
     },
     "7617": {
       "taxonid": 7617,
@@ -110233,14 +110201,6 @@
       "recdatecreated": "2013-03-28T00:00:00.000Z",
       "recdatemodified": "2013-03-28T00:00:00.000Z"
     },
-    "14837": {
-      "taxonid": 14837,
-      "taxonname": "Phaeoceros laevis",
-      "highertaxonid": null,
-      "taxagroupid": "BRY",
-      "recdatecreated": "2013-01-01T00:00:00.000Z",
-      "recdatemodified": "2013-01-01T00:00:00.000Z"
-    },
     "14724": {
       "taxonid": 14724,
       "taxonname": "Odocoileus virginianus aplodon",
@@ -113756,14 +113716,6 @@
     "15179": {
       "taxonid": 15179,
       "taxonname": "Leptodactylon",
-      "highertaxonid": null,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2013-01-01T00:00:00.000Z",
-      "recdatemodified": "2013-01-01T00:00:00.000Z"
-    },
-    "15180": {
-      "taxonid": 15180,
-      "taxonname": "Cercidium",
       "highertaxonid": null,
       "taxagroupid": "VPL",
       "recdatecreated": "2013-01-01T00:00:00.000Z",
@@ -262457,14 +262409,6 @@
       "recdatecreated": "2019-03-08T13:19:59.000Z",
       "recdatemodified": "2019-03-08T13:19:59.000Z"
     },
-    "38013": {
-      "taxonid": 38013,
-      "taxonname": "cf. Larix-type",
-      "highertaxonid": 29554,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2019-03-08T13:55:35.000Z",
-      "recdatemodified": "2019-03-08T13:55:35.000Z"
-    },
     "38014": {
       "taxonid": 38014,
       "taxonname": "Alona undiff.",
@@ -273001,14 +272945,6 @@
       "recdatecreated": "2021-06-01T15:03:25.000Z",
       "recdatemodified": "2021-06-01T15:03:25.000Z"
     },
-    "39384": {
-      "taxonid": 39384,
-      "taxonname": "Charcoal undiff.",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:46:48.000Z",
-      "recdatemodified": "2020-06-02T23:37:51.000Z"
-    },
     "39388": {
       "taxonid": 39388,
       "taxonname": "Eriotheca",
@@ -273048,54 +272984,6 @@
       "taxagroupid": "TES",
       "recdatecreated": "2019-10-02T19:55:11.000Z",
       "recdatemodified": "2019-10-02T19:55:11.000Z"
-    },
-    "39380": {
-      "taxonid": 39380,
-      "taxonname": "Charcoal (dark)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:41:59.000Z",
-      "recdatemodified": "2020-11-10T23:06:47.000Z"
-    },
-    "39381": {
-      "taxonid": 39381,
-      "taxonname": "Charcoal (fibrous)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:43:07.000Z",
-      "recdatemodified": "2020-11-10T23:07:24.000Z"
-    },
-    "39382": {
-      "taxonid": 39382,
-      "taxonname": "Charcoal (graminoid)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:44:18.000Z",
-      "recdatemodified": "2020-11-10T23:07:58.000Z"
-    },
-    "39383": {
-      "taxonid": 39383,
-      "taxonname": "Charcoal (lattice)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:45:17.000Z",
-      "recdatemodified": "2020-11-10T23:08:35.000Z"
-    },
-    "39389": {
-      "taxonid": 39389,
-      "taxonname": "Charcoal (needle)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-27T03:02:09.000Z",
-      "recdatemodified": "2020-11-10T23:09:14.000Z"
-    },
-    "39385": {
-      "taxonid": 39385,
-      "taxonname": "Charcoal (porous)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:48:29.000Z",
-      "recdatemodified": "2020-11-10T23:09:49.000Z"
     },
     "39394": {
       "taxonid": 39394,
@@ -273472,6 +273360,46 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2019-10-18T11:58:55.000Z",
       "recdatemodified": "2019-10-18T11:58:55.000Z"
+    },
+    "39380": {
+      "taxonid": 39380,
+      "taxonname": "Charcoal (dark)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:41:59.000Z",
+      "recdatemodified": "2026-09-23T10:09:53.000Z"
+    },
+    "39381": {
+      "taxonid": 39381,
+      "taxonname": "Charcoal (fibrous)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:43:07.000Z",
+      "recdatemodified": "2026-09-23T10:12:16.000Z"
+    },
+    "39382": {
+      "taxonid": 39382,
+      "taxonname": "Charcoal (graminoid)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:44:18.000Z",
+      "recdatemodified": "2026-09-23T10:13:06.000Z"
+    },
+    "39389": {
+      "taxonid": 39389,
+      "taxonname": "Charcoal (needle)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-27T03:02:09.000Z",
+      "recdatemodified": "2026-09-23T10:14:23.000Z"
+    },
+    "39384": {
+      "taxonid": 39384,
+      "taxonname": "Charcoal (undiff.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:46:48.000Z",
+      "recdatemodified": "2026-09-23T12:22:43.000Z"
     },
     "39444": {
       "taxonid": 39444,
@@ -299137,30 +299065,6 @@
       "recdatecreated": "2020-11-10T18:34:33.000Z",
       "recdatemodified": "2020-11-10T18:34:33.000Z"
     },
-    "39379": {
-      "taxonid": 39379,
-      "taxonname": "Charcoal (branched)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:40:49.000Z",
-      "recdatemodified": "2020-11-10T23:05:18.000Z"
-    },
-    "39378": {
-      "taxonid": 39378,
-      "taxonname": "Charcoal (bordered pit)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:34:10.000Z",
-      "recdatemodified": "2020-11-10T23:06:04.000Z"
-    },
-    "39386": {
-      "taxonid": 39386,
-      "taxonname": "Charcoal (spongy)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2019-08-23T02:50:09.000Z",
-      "recdatemodified": "2020-11-10T23:10:34.000Z"
-    },
     "40019": {
       "taxonid": 40019,
       "taxonname": "Chaetachme aristata",
@@ -299520,6 +299424,14 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2020-11-12T08:34:57.000Z",
       "recdatemodified": "2020-11-12T08:34:57.000Z"
+    },
+    "39386": {
+      "taxonid": 39386,
+      "taxonname": "Charcoal (spongy)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:50:09.000Z",
+      "recdatemodified": "2026-09-23T10:14:48.000Z"
     },
     "42727": {
       "taxonid": 42727,
@@ -302329,14 +302241,6 @@
       "recdatecreated": "2021-04-06T19:08:50.000Z",
       "recdatemodified": "2021-04-06T19:08:50.000Z"
     },
-    "43074": {
-      "taxonid": 43074,
-      "taxonname": "Pavetta",
-      "highertaxonid": 43073,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-04-06T19:12:42.000Z",
-      "recdatemodified": "2021-04-06T19:12:42.000Z"
-    },
     "43075": {
       "taxonid": 43075,
       "taxonname": "Pavetta gardeniifolia-type",
@@ -303096,22 +303000,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-04-13T15:58:46.000Z",
       "recdatemodified": "2021-04-13T15:58:46.000Z"
-    },
-    "43170": {
-      "taxonid": 43170,
-      "taxonname": "Cf. Dialium",
-      "highertaxonid": 36935,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-04-13T16:01:51.000Z",
-      "recdatemodified": "2021-04-13T16:01:51.000Z"
-    },
-    "43171": {
-      "taxonid": 43171,
-      "taxonname": "Cf. Scrophulariaceae",
-      "highertaxonid": 9096,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-04-13T16:05:08.000Z",
-      "recdatemodified": "2021-04-13T16:05:08.000Z"
     },
     "43172": {
       "taxonid": 43172,
@@ -313793,14 +313681,6 @@
       "recdatecreated": "2021-05-18T19:13:53.000Z",
       "recdatemodified": "2021-05-18T19:13:53.000Z"
     },
-    "43552": {
-      "taxonid": 43552,
-      "taxonname": "cf. Gentianaceae",
-      "highertaxonid": 9100,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-05-19T01:42:34.000Z",
-      "recdatemodified": "2021-05-19T01:42:34.000Z"
-    },
     "43800": {
       "taxonid": 43800,
       "taxonname": "Rubus gunnianus",
@@ -314360,14 +314240,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2020-02-25T08:44:08.000Z",
       "recdatemodified": "2021-06-03T12:41:07.000Z"
-    },
-    "43990": {
-      "taxonid": 43990,
-      "taxonname": "Sapium-type",
-      "highertaxonid": 42556,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-06-03T13:31:21.000Z",
-      "recdatemodified": "2021-06-03T13:31:21.000Z"
     },
     "44029": {
       "taxonid": 44029,
@@ -316121,14 +315993,6 @@
       "recdatecreated": "2021-06-28T19:20:28.000Z",
       "recdatemodified": "2021-06-28T19:20:28.000Z"
     },
-    "44891": {
-      "taxonid": 44891,
-      "taxonname": "Rytigynia",
-      "highertaxonid": 43073,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-06-28T19:25:10.000Z",
-      "recdatemodified": "2021-06-28T19:25:10.000Z"
-    },
     "44892": {
       "taxonid": 44892,
       "taxonname": "Sacoglottis gabonensis",
@@ -316344,6 +316208,14 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-06-29T01:09:49.000Z",
       "recdatemodified": "2021-06-29T01:09:49.000Z"
+    },
+    "44891": {
+      "taxonid": 44891,
+      "taxonname": "Rytigynia",
+      "highertaxonid": 15546,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2021-06-28T19:25:10.000Z",
+      "recdatemodified": "2026-09-24T10:04:35.000Z"
     },
     "44919": {
       "taxonid": 44919,
@@ -321385,22 +321257,6 @@
       "recdatecreated": "2021-08-06T16:02:27.000Z",
       "recdatemodified": "2021-08-06T16:02:27.000Z"
     },
-    "45524": {
-      "taxonid": 45524,
-      "taxonname": "Sieruela",
-      "highertaxonid": 2105,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-06T16:07:20.000Z",
-      "recdatemodified": "2021-08-06T16:07:20.000Z"
-    },
-    "45525": {
-      "taxonid": 45525,
-      "taxonname": "Sieruela rutidosperma-type",
-      "highertaxonid": 45524,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-06T16:13:11.000Z",
-      "recdatemodified": "2021-08-06T16:13:11.000Z"
-    },
     "45526": {
       "taxonid": 45526,
       "taxonname": "Corchorus olitorius",
@@ -321624,6 +321480,14 @@
       "taxagroupid": "ALG",
       "recdatecreated": "2021-08-08T19:37:34.000Z",
       "recdatemodified": "2026-04-16T12:36:23.000Z"
+    },
+    "45525": {
+      "taxonid": 45525,
+      "taxonname": "Sieruela rutidosperma-type",
+      "highertaxonid": 47606,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2021-08-06T16:13:11.000Z",
+      "recdatemodified": "2026-09-24T10:09:27.000Z"
     },
     "31380": {
       "taxonid": 31380,
@@ -323865,14 +323729,6 @@
       "recdatecreated": "2021-08-11T23:20:28.000Z",
       "recdatemodified": "2021-08-11T23:20:28.000Z"
     },
-    "45801": {
-      "taxonid": 45801,
-      "taxonname": "cf. Albizia",
-      "highertaxonid": 1880,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-11T23:47:10.000Z",
-      "recdatemodified": "2021-08-11T23:47:10.000Z"
-    },
     "45802": {
       "taxonid": 45802,
       "taxonname": "Juniperus cf. J. procera",
@@ -323952,22 +323808,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-08-12T01:14:58.000Z",
       "recdatemodified": "2021-08-12T01:14:58.000Z"
-    },
-    "45814": {
-      "taxonid": 45814,
-      "taxonname": "cf. Albizia",
-      "highertaxonid": 39745,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-12T14:27:05.000Z",
-      "recdatemodified": "2021-08-12T14:27:05.000Z"
-    },
-    "45815": {
-      "taxonid": 45815,
-      "taxonname": "cf. Cleome",
-      "highertaxonid": 2105,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-12T14:33:28.000Z",
-      "recdatemodified": "2021-08-12T14:33:28.000Z"
     },
     "45816": {
       "taxonid": 45816,
@@ -324096,22 +323936,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-08-12T19:05:32.000Z",
       "recdatemodified": "2021-08-12T19:05:32.000Z"
-    },
-    "45834": {
-      "taxonid": 45834,
-      "taxonname": "Vanguerieae",
-      "highertaxonid": 733,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-12T19:07:29.000Z",
-      "recdatemodified": "2021-08-12T19:07:29.000Z"
-    },
-    "45835": {
-      "taxonid": 45835,
-      "taxonname": "Rytigynia",
-      "highertaxonid": 15546,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-08-12T19:08:56.000Z",
-      "recdatemodified": "2021-08-12T19:08:56.000Z"
     },
     "45836": {
       "taxonid": 45836,
@@ -326088,14 +325912,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-10-12T15:42:53.000Z",
       "recdatemodified": "2021-10-12T15:42:53.000Z"
-    },
-    "46062": {
-      "taxonid": 46062,
-      "taxonname": "cf. Vera-duthiea noctiflora",
-      "highertaxonid": 27763,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-10-12T15:55:18.000Z",
-      "recdatemodified": "2021-10-12T15:55:18.000Z"
     },
     "46063": {
       "taxonid": 46063,
@@ -328753,14 +328569,6 @@
       "recdatecreated": "2021-12-07T01:31:09.000Z",
       "recdatemodified": "2021-12-07T01:31:09.000Z"
     },
-    "67433": {
-      "taxonid": 67433,
-      "taxonname": "Molopanthera",
-      "highertaxonid": 733,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2025-07-09T02:17:19.000Z",
-      "recdatemodified": "2025-07-09T02:17:19.000Z"
-    },
     "46482": {
       "taxonid": 46482,
       "taxonname": "Excoecaria/Homalanthus",
@@ -329736,14 +329544,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2021-12-09T00:05:47.000Z",
       "recdatemodified": "2021-12-09T00:05:47.000Z"
-    },
-    "67434": {
-      "taxonid": 67434,
-      "taxonname": "Coccocypselum",
-      "highertaxonid": 40272,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2025-07-09T22:30:24.000Z",
-      "recdatemodified": "2025-07-09T22:30:24.000Z"
     },
     "46605": {
       "taxonid": 46605,
@@ -331832,22 +331632,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2022-01-12T14:32:01.000Z",
       "recdatemodified": "2022-01-12T14:32:01.000Z"
-    },
-    "46869": {
-      "taxonid": 46869,
-      "taxonname": "Celtis-type",
-      "highertaxonid": 9115,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2022-01-12T15:05:08.000Z",
-      "recdatemodified": "2022-01-12T15:05:08.000Z"
-    },
-    "46870": {
-      "taxonid": 46870,
-      "taxonname": "Celtis africana-type",
-      "highertaxonid": 46869,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2022-01-12T15:06:05.000Z",
-      "recdatemodified": "2022-01-12T15:06:05.000Z"
     },
     "46871": {
       "taxonid": 46871,
@@ -347961,14 +347745,6 @@
       "recdatecreated": "2022-08-02T17:59:46.000Z",
       "recdatemodified": "2022-08-02T17:59:46.000Z"
     },
-    "48965": {
-      "taxonid": 48965,
-      "taxonname": "Celtis-type (20µm)",
-      "highertaxonid": 46869,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2022-08-02T18:01:36.000Z",
-      "recdatemodified": "2022-08-02T18:01:36.000Z"
-    },
     "48966": {
       "taxonid": 48966,
       "taxonname": "Euphorbiaceae (trilobate (3cm))",
@@ -348257,14 +348033,6 @@
       "recdatecreated": "2022-08-02T19:30:10.000Z",
       "recdatemodified": "2022-08-02T19:30:10.000Z"
     },
-    "49002": {
-      "taxonid": 49002,
-      "taxonname": "Celtis adolfi-friderici-type",
-      "highertaxonid": 46869,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2022-08-02T19:33:21.000Z",
-      "recdatemodified": "2022-08-02T19:33:21.000Z"
-    },
     "67436": {
       "taxonid": 67436,
       "taxonname": "Macrothumia",
@@ -348272,6 +348040,14 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2025-07-09T22:32:43.000Z",
       "recdatemodified": "2025-07-09T22:32:43.000Z"
+    },
+    "48965": {
+      "taxonid": 48965,
+      "taxonname": "Celtis-type (20µm)",
+      "highertaxonid": 1415,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2022-08-02T18:01:36.000Z",
+      "recdatemodified": "2026-09-24T09:19:29.000Z"
     },
     "49003": {
       "taxonid": 49003,
@@ -364329,14 +364105,6 @@
       "recdatecreated": "2023-05-16T23:11:03.000Z",
       "recdatemodified": "2023-05-16T23:11:03.000Z"
     },
-    "50998": {
-      "taxonid": 50998,
-      "taxonname": "Chione",
-      "highertaxonid": 40263,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2023-05-17T19:23:25.000Z",
-      "recdatemodified": "2023-05-17T19:23:25.000Z"
-    },
     "50999": {
       "taxonid": 50999,
       "taxonname": "Hoffmannia",
@@ -369025,70 +368793,6 @@
       "recdatecreated": "2023-10-29T12:03:32.000Z",
       "recdatemodified": "2023-10-29T12:03:32.000Z"
     },
-    "51602": {
-      "taxonid": 51602,
-      "taxonname": "Charcoal (framed)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:29:25.000Z",
-      "recdatemodified": "2023-10-29T17:29:25.000Z"
-    },
-    "51603": {
-      "taxonid": 51603,
-      "taxonname": "Charcoal (irregular)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:31:52.000Z",
-      "recdatemodified": "2023-10-29T17:31:52.000Z"
-    },
-    "51604": {
-      "taxonid": 51604,
-      "taxonname": "Charcoal (linear)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:34:03.000Z",
-      "recdatemodified": "2023-10-29T17:34:03.000Z"
-    },
-    "51605": {
-      "taxonid": 51605,
-      "taxonname": "Charcoal (plain)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:35:40.000Z",
-      "recdatemodified": "2023-10-29T17:35:40.000Z"
-    },
-    "51606": {
-      "taxonid": 51606,
-      "taxonname": "Charcoal (ramified)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:37:17.000Z",
-      "recdatemodified": "2023-10-29T17:37:17.000Z"
-    },
-    "51607": {
-      "taxonid": 51607,
-      "taxonname": "Charcoal (spheroid)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:38:43.000Z",
-      "recdatemodified": "2023-10-29T17:38:43.000Z"
-    },
-    "51608": {
-      "taxonid": 51608,
-      "taxonname": "Charcoal (striated)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:40:13.000Z",
-      "recdatemodified": "2023-10-29T17:40:13.000Z"
-    },
-    "51609": {
-      "taxonid": 51609,
-      "taxonname": "Charcoal (tubular)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:42:44.000Z",
-      "recdatemodified": "2023-10-29T17:42:44.000Z"
-    },
     "51610": {
       "taxonid": 51610,
       "taxonname": "Androsace maxima-type",
@@ -369401,13 +369105,29 @@
       "recdatecreated": "2023-11-24T15:55:50.000Z",
       "recdatemodified": "2023-11-24T15:55:50.000Z"
     },
-    "51601": {
-      "taxonid": 51601,
-      "taxonname": "Charcoal (block)",
-      "highertaxonid": 1062,
+    "51607": {
+      "taxonid": 51607,
+      "taxonname": "Charcoal (spheroid)",
+      "highertaxonid": 69879,
       "taxagroupid": "CHR",
-      "recdatecreated": "2023-10-29T17:20:20.000Z",
-      "recdatemodified": "2026-05-07T19:41:13.000Z"
+      "recdatecreated": "2023-10-29T17:38:43.000Z",
+      "recdatemodified": "2026-09-24T09:18:03.000Z"
+    },
+    "51606": {
+      "taxonid": 51606,
+      "taxonname": "Charcoal (ramified)",
+      "highertaxonid": 69871,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:37:17.000Z",
+      "recdatemodified": "2026-09-23T12:18:26.000Z"
+    },
+    "51603": {
+      "taxonid": 51603,
+      "taxonname": "Charcoal (irregular)",
+      "highertaxonid": 69879,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:31:52.000Z",
+      "recdatemodified": "2026-09-24T09:18:32.000Z"
     },
     "51744": {
       "taxonid": 51744,
@@ -370857,22 +370577,6 @@
       "recdatecreated": "2023-11-29T10:44:10.000Z",
       "recdatemodified": "2023-11-29T10:44:10.000Z"
     },
-    "51928": {
-      "taxonid": 51928,
-      "taxonname": "Charcoal (wood)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-12-03T13:06:30.000Z",
-      "recdatemodified": "2023-12-03T13:06:30.000Z"
-    },
-    "51929": {
-      "taxonid": 51929,
-      "taxonname": "Charcoal (herbaceous)",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2023-12-03T13:09:10.000Z",
-      "recdatemodified": "2023-12-03T13:09:10.000Z"
-    },
     "51934": {
       "taxonid": 51934,
       "taxonname": "Sphagnum cf. S. angustifolium",
@@ -371000,6 +370704,14 @@
       "taxagroupid": "INS",
       "recdatecreated": "2023-12-04T20:17:57.000Z",
       "recdatemodified": "2023-12-04T20:17:57.000Z"
+    },
+    "51929": {
+      "taxonid": 51929,
+      "taxonname": "Charcoal (herbaceous)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-12-03T13:09:10.000Z",
+      "recdatemodified": "2026-09-23T10:13:30.000Z"
     },
     "51961": {
       "taxonid": 51961,
@@ -372985,14 +372697,6 @@
       "recdatecreated": "2024-02-01T04:51:59.000Z",
       "recdatemodified": "2024-02-01T04:51:59.000Z"
     },
-    "52214": {
-      "taxonid": 52214,
-      "taxonname": "Phialanthus myrtilloides",
-      "highertaxonid": 733,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2024-02-01T06:17:44.000Z",
-      "recdatemodified": "2024-02-01T06:17:44.000Z"
-    },
     "52215": {
       "taxonid": 52215,
       "taxonname": "Varronia",
@@ -373072,14 +372776,6 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2024-02-02T04:46:51.000Z",
       "recdatemodified": "2024-02-02T04:46:51.000Z"
-    },
-    "52226": {
-      "taxonid": 52226,
-      "taxonname": "Stenostomum",
-      "highertaxonid": 733,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2024-02-02T04:51:43.000Z",
-      "recdatemodified": "2024-02-02T04:51:43.000Z"
     },
     "52227": {
       "taxonid": 52227,
@@ -373392,6 +373088,22 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2024-02-02T04:59:46.000Z",
       "recdatemodified": "2026-02-11T14:11:33.000Z"
+    },
+    "52226": {
+      "taxonid": 52226,
+      "taxonname": "Stenostomum",
+      "highertaxonid": 40269,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2024-02-02T04:51:43.000Z",
+      "recdatemodified": "2026-09-24T14:37:29.000Z"
+    },
+    "52214": {
+      "taxonid": 52214,
+      "taxonname": "Phialanthus myrtilloides",
+      "highertaxonid": 69886,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2024-02-01T06:17:44.000Z",
+      "recdatemodified": "2026-09-24T14:54:01.000Z"
     },
     "52269": {
       "taxonid": 52269,
@@ -377551,14 +377263,6 @@
       "highertaxonid": 1178,
       "taxagroupid": "VPL",
       "recdatecreated": "2021-06-29T19:59:22.000Z",
-      "recdatemodified": "2024-09-13T17:40:58.000Z"
-    },
-    "44958": {
-      "taxonid": 44958,
-      "taxonname": "Sieruela usambarica-type",
-      "highertaxonid": 2105,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2021-06-29T20:09:53.000Z",
       "recdatemodified": "2024-09-13T17:40:58.000Z"
     },
     "45407": {
@@ -461425,62 +461129,6 @@
       "recdatecreated": "2025-12-16T02:14:04.000Z",
       "recdatemodified": "2025-12-16T02:14:04.000Z"
     },
-    "68279": {
-      "taxonid": 68279,
-      "taxonname": "Charcoal morphotype D",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:49:00.000Z",
-      "recdatemodified": "2025-12-16T02:49:00.000Z"
-    },
-    "68280": {
-      "taxonid": 68280,
-      "taxonname": "Charcoal morphotype F",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:50:18.000Z",
-      "recdatemodified": "2025-12-16T02:50:18.000Z"
-    },
-    "68281": {
-      "taxonid": 68281,
-      "taxonname": "Charcoal morphotype M",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:51:56.000Z",
-      "recdatemodified": "2025-12-16T02:51:56.000Z"
-    },
-    "68282": {
-      "taxonid": 68282,
-      "taxonname": "Charcoal morphotype P",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:52:52.000Z",
-      "recdatemodified": "2025-12-16T02:52:52.000Z"
-    },
-    "68284": {
-      "taxonid": 68284,
-      "taxonname": "Charcoal S/B",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:55:09.000Z",
-      "recdatemodified": "2025-12-16T02:55:09.000Z"
-    },
-    "68285": {
-      "taxonid": 68285,
-      "taxonname": "area:perimeter",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:56:08.000Z",
-      "recdatemodified": "2025-12-16T02:56:08.000Z"
-    },
-    "68286": {
-      "taxonid": 68286,
-      "taxonname": "length:width",
-      "highertaxonid": 68279,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2025-12-16T02:56:33.000Z",
-      "recdatemodified": "2025-12-16T02:56:33.000Z"
-    },
     "50700": {
       "taxonid": 50700,
       "taxonname": "Mixtacandona spandli",
@@ -461816,6 +461464,54 @@
       "taxagroupid": "OST",
       "recdatecreated": "2025-12-20T09:14:26.000Z",
       "recdatemodified": "2025-12-20T09:14:26.000Z"
+    },
+    "68279": {
+      "taxonid": 68279,
+      "taxonname": "Charcoal morphotype D",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:49:00.000Z",
+      "recdatemodified": "2026-09-23T10:24:32.000Z"
+    },
+    "68285": {
+      "taxonid": 68285,
+      "taxonname": "area:perimeter",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:56:08.000Z",
+      "recdatemodified": "2026-09-23T10:24:55.000Z"
+    },
+    "68280": {
+      "taxonid": 68280,
+      "taxonname": "Charcoal morphotype F",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:50:18.000Z",
+      "recdatemodified": "2026-09-23T10:25:23.000Z"
+    },
+    "68282": {
+      "taxonid": 68282,
+      "taxonname": "Charcoal morphotype P",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:52:52.000Z",
+      "recdatemodified": "2026-09-23T10:26:27.000Z"
+    },
+    "68284": {
+      "taxonid": 68284,
+      "taxonname": "Charcoal S/B",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:55:09.000Z",
+      "recdatemodified": "2026-09-23T10:26:58.000Z"
+    },
+    "68286": {
+      "taxonid": 68286,
+      "taxonname": "length:width",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:56:33.000Z",
+      "recdatemodified": "2026-09-23T10:27:19.000Z"
     },
     "68328": {
       "taxonid": 68328,
@@ -464569,14 +464265,6 @@
       "recdatecreated": "2026-02-27T20:34:15.000Z",
       "recdatemodified": "2026-02-27T20:34:15.000Z"
     },
-    "68600": {
-      "taxonid": 68600,
-      "taxonname": "Charcoal morphotype E",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:02:27.000Z",
-      "recdatemodified": "2026-02-28T05:02:27.000Z"
-    },
     "68577": {
       "taxonid": 68577,
       "taxonname": "Rexlowea",
@@ -464617,182 +464305,6 @@
       "recdatecreated": "2026-02-27T20:42:16.000Z",
       "recdatemodified": "2026-02-27T20:42:16.000Z"
     },
-    "68583": {
-      "taxonid": 68583,
-      "taxonname": "Charcoal morphotype A1",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:52:26.000Z",
-      "recdatemodified": "2026-02-28T04:52:26.000Z"
-    },
-    "68584": {
-      "taxonid": 68584,
-      "taxonname": "Charcoal morphotype A2",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:53:21.000Z",
-      "recdatemodified": "2026-02-28T04:53:21.000Z"
-    },
-    "68585": {
-      "taxonid": 68585,
-      "taxonname": "Charcoal morphotype A3",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:54:29.000Z",
-      "recdatemodified": "2026-02-28T04:54:29.000Z"
-    },
-    "68586": {
-      "taxonid": 68586,
-      "taxonname": "Charcoal morphotype A4",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:55:24.000Z",
-      "recdatemodified": "2026-02-28T04:55:24.000Z"
-    },
-    "68587": {
-      "taxonid": 68587,
-      "taxonname": "Charcoal morphotype B1",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:56:00.000Z",
-      "recdatemodified": "2026-02-28T04:56:00.000Z"
-    },
-    "68588": {
-      "taxonid": 68588,
-      "taxonname": "Charcoal morphotype B2",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:56:29.000Z",
-      "recdatemodified": "2026-02-28T04:56:29.000Z"
-    },
-    "68589": {
-      "taxonid": 68589,
-      "taxonname": "Charcoal morphotype B3",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:57:06.000Z",
-      "recdatemodified": "2026-02-28T04:57:06.000Z"
-    },
-    "68590": {
-      "taxonid": 68590,
-      "taxonname": "Charcoal morphotype B4",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:57:33.000Z",
-      "recdatemodified": "2026-02-28T04:57:33.000Z"
-    },
-    "68591": {
-      "taxonid": 68591,
-      "taxonname": "Charcoal morphotype B5",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:58:00.000Z",
-      "recdatemodified": "2026-02-28T04:58:00.000Z"
-    },
-    "68592": {
-      "taxonid": 68592,
-      "taxonname": "Charcoal morphotype C1",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:58:43.000Z",
-      "recdatemodified": "2026-02-28T04:58:43.000Z"
-    },
-    "68593": {
-      "taxonid": 68593,
-      "taxonname": "Charcoal morphotype C2",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:59:06.000Z",
-      "recdatemodified": "2026-02-28T04:59:06.000Z"
-    },
-    "68594": {
-      "taxonid": 68594,
-      "taxonname": "Charcoal morphotype C4",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T04:59:32.000Z",
-      "recdatemodified": "2026-02-28T04:59:32.000Z"
-    },
-    "68595": {
-      "taxonid": 68595,
-      "taxonname": "Charcoal morphotype C5",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:00:02.000Z",
-      "recdatemodified": "2026-02-28T05:00:02.000Z"
-    },
-    "68596": {
-      "taxonid": 68596,
-      "taxonname": "Charcoal morphotype C6",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:00:38.000Z",
-      "recdatemodified": "2026-02-28T05:00:38.000Z"
-    },
-    "68597": {
-      "taxonid": 68597,
-      "taxonname": "Charcoal morphotype C7",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:01:03.000Z",
-      "recdatemodified": "2026-02-28T05:01:03.000Z"
-    },
-    "68598": {
-      "taxonid": 68598,
-      "taxonname": "Charcoal morphotype D1",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:01:36.000Z",
-      "recdatemodified": "2026-02-28T05:01:36.000Z"
-    },
-    "68599": {
-      "taxonid": 68599,
-      "taxonname": "Charcoal morphotype D3",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:02:03.000Z",
-      "recdatemodified": "2026-02-28T05:02:03.000Z"
-    },
-    "68601": {
-      "taxonid": 68601,
-      "taxonname": "Charcoal morphotype F",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:02:56.000Z",
-      "recdatemodified": "2026-02-28T05:02:56.000Z"
-    },
-    "68602": {
-      "taxonid": 68602,
-      "taxonname": "Charcoal morphotype F",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:03:41.000Z",
-      "recdatemodified": "2026-02-28T05:03:41.000Z"
-    },
-    "68603": {
-      "taxonid": 68603,
-      "taxonname": "Charcoal morphotype G",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T05:04:27.000Z",
-      "recdatemodified": "2026-02-28T05:04:27.000Z"
-    },
-    "68604": {
-      "taxonid": 68604,
-      "taxonname": "Charcoal morphotype C3",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T06:14:57.000Z",
-      "recdatemodified": "2026-02-28T06:14:57.000Z"
-    },
-    "68605": {
-      "taxonid": 68605,
-      "taxonname": "Charcoal morphotype D2",
-      "highertaxonid": 1062,
-      "taxagroupid": "CHR",
-      "recdatecreated": "2026-02-28T06:15:28.000Z",
-      "recdatemodified": "2026-02-28T06:15:28.000Z"
-    },
     "69226": {
       "taxonid": 69226,
       "taxonname": "Salix repens",
@@ -464800,6 +464312,134 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-03-25T09:07:39.000Z",
       "recdatemodified": "2026-03-25T09:07:39.000Z"
+    },
+    "68584": {
+      "taxonid": 68584,
+      "taxonname": "Charcoal morphotype A2",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:53:21.000Z",
+      "recdatemodified": "2026-09-23T10:16:41.000Z"
+    },
+    "68585": {
+      "taxonid": 68585,
+      "taxonname": "Charcoal morphotype A3",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:54:29.000Z",
+      "recdatemodified": "2026-09-23T10:17:15.000Z"
+    },
+    "68586": {
+      "taxonid": 68586,
+      "taxonname": "Charcoal morphotype A4",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:55:24.000Z",
+      "recdatemodified": "2026-09-23T10:17:41.000Z"
+    },
+    "68587": {
+      "taxonid": 68587,
+      "taxonname": "Charcoal morphotype B1",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:56:00.000Z",
+      "recdatemodified": "2026-09-23T10:18:10.000Z"
+    },
+    "68589": {
+      "taxonid": 68589,
+      "taxonname": "Charcoal morphotype B3",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:57:06.000Z",
+      "recdatemodified": "2026-09-23T10:19:13.000Z"
+    },
+    "68590": {
+      "taxonid": 68590,
+      "taxonname": "Charcoal morphotype B4",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:57:33.000Z",
+      "recdatemodified": "2026-09-23T10:19:40.000Z"
+    },
+    "68592": {
+      "taxonid": 68592,
+      "taxonname": "Charcoal morphotype C1",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:58:43.000Z",
+      "recdatemodified": "2026-09-23T10:20:44.000Z"
+    },
+    "68593": {
+      "taxonid": 68593,
+      "taxonname": "Charcoal morphotype C2",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:59:06.000Z",
+      "recdatemodified": "2026-09-23T10:21:15.000Z"
+    },
+    "68594": {
+      "taxonid": 68594,
+      "taxonname": "Charcoal morphotype C4",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:59:32.000Z",
+      "recdatemodified": "2026-09-23T10:22:15.000Z"
+    },
+    "68595": {
+      "taxonid": 68595,
+      "taxonname": "Charcoal morphotype C5",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:00:02.000Z",
+      "recdatemodified": "2026-09-23T10:22:52.000Z"
+    },
+    "68596": {
+      "taxonid": 68596,
+      "taxonname": "Charcoal morphotype C6",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:00:38.000Z",
+      "recdatemodified": "2026-09-23T10:23:31.000Z"
+    },
+    "68598": {
+      "taxonid": 68598,
+      "taxonname": "Charcoal morphotype D1",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:01:36.000Z",
+      "recdatemodified": "2026-09-23T10:27:52.000Z"
+    },
+    "68605": {
+      "taxonid": 68605,
+      "taxonname": "Charcoal morphotype D2",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T06:15:28.000Z",
+      "recdatemodified": "2026-09-23T10:28:16.000Z"
+    },
+    "68600": {
+      "taxonid": 68600,
+      "taxonname": "Charcoal morphotype E",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:02:27.000Z",
+      "recdatemodified": "2026-09-23T10:29:01.000Z"
+    },
+    "68601": {
+      "taxonid": 68601,
+      "taxonname": "Charcoal morphotype F",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:02:56.000Z",
+      "recdatemodified": "2026-09-23T10:29:35.000Z"
+    },
+    "68603": {
+      "taxonid": 68603,
+      "taxonname": "Charcoal morphotype G",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:04:27.000Z",
+      "recdatemodified": "2026-09-23T11:50:33.000Z"
     },
     "68606": {
       "taxonid": 68606,
@@ -472824,6 +472464,590 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-09-21T04:01:59.000Z",
       "recdatemodified": "2026-09-21T04:01:59.000Z"
+    },
+    "69856": {
+      "taxonid": 69856,
+      "taxonname": "Rhodium",
+      "highertaxonid": 23801,
+      "taxagroupid": "CHM",
+      "recdatecreated": "2026-09-21T09:05:19.000Z",
+      "recdatemodified": "2026-09-21T09:05:19.000Z"
+    },
+    "69857": {
+      "taxonid": 69857,
+      "taxonname": "Pinus heldreichii",
+      "highertaxonid": 212,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-23T08:23:06.000Z",
+      "recdatemodified": "2026-09-23T08:23:06.000Z"
+    },
+    "68588": {
+      "taxonid": 68588,
+      "taxonname": "Charcoal morphotype B2",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:56:29.000Z",
+      "recdatemodified": "2026-09-23T10:18:37.000Z"
+    },
+    "69858": {
+      "taxonid": 69858,
+      "taxonname": "Morphometry (area, total)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:15:47.000Z",
+      "recdatemodified": "2026-09-23T09:17:08.000Z"
+    },
+    "69859": {
+      "taxonid": 69859,
+      "taxonname": "Morphometry (aspect ratio, mean)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:18:16.000Z",
+      "recdatemodified": "2026-09-23T09:18:16.000Z"
+    },
+    "69860": {
+      "taxonid": 69860,
+      "taxonname": "Morphometry (aspect ratio, std. dev.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:19:30.000Z",
+      "recdatemodified": "2026-09-23T09:19:30.000Z"
+    },
+    "69861": {
+      "taxonid": 69861,
+      "taxonname": "Morphometry (circularity, mean)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:20:13.000Z",
+      "recdatemodified": "2026-09-23T09:20:13.000Z"
+    },
+    "69862": {
+      "taxonid": 69862,
+      "taxonname": "Morphometry (circularity, std. dev.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:21:01.000Z",
+      "recdatemodified": "2026-09-23T09:21:01.000Z"
+    },
+    "69863": {
+      "taxonid": 69863,
+      "taxonname": "Morphometry (perimeter, mean)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:21:40.000Z",
+      "recdatemodified": "2026-09-23T09:21:40.000Z"
+    },
+    "69864": {
+      "taxonid": 69864,
+      "taxonname": "Morphometry (perimeter, std. dev.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:23:12.000Z",
+      "recdatemodified": "2026-09-23T09:23:12.000Z"
+    },
+    "69865": {
+      "taxonid": 69865,
+      "taxonname": "Physicochemistry (reflectance, mean)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:31:40.000Z",
+      "recdatemodified": "2026-09-23T09:31:40.000Z"
+    },
+    "69866": {
+      "taxonid": 69866,
+      "taxonname": "Physicochemistry (reflectance, std. dev.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:33:50.000Z",
+      "recdatemodified": "2026-09-23T09:33:50.000Z"
+    },
+    "69867": {
+      "taxonid": 69867,
+      "taxonname": "Physicochemistry (O/C ratio, mean)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:34:36.000Z",
+      "recdatemodified": "2026-09-23T09:34:36.000Z"
+    },
+    "69868": {
+      "taxonid": 69868,
+      "taxonname": "Physicochemistry (O/C ratio, std. dev.)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:35:50.000Z",
+      "recdatemodified": "2026-09-23T09:35:50.000Z"
+    },
+    "69869": {
+      "taxonid": 69869,
+      "taxonname": "Charcoal (geometric)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:40:32.000Z",
+      "recdatemodified": "2026-09-23T09:40:32.000Z"
+    },
+    "51608": {
+      "taxonid": 51608,
+      "taxonname": "Charcoal (striated)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:40:13.000Z",
+      "recdatemodified": "2026-09-23T12:21:22.000Z"
+    },
+    "69874": {
+      "taxonid": 69874,
+      "taxonname": "Pleuroxus uncinatus",
+      "highertaxonid": 27697,
+      "taxagroupid": "CRU",
+      "recdatecreated": "2026-09-23T15:00:23.000Z",
+      "recdatemodified": "2026-09-23T15:00:23.000Z"
+    },
+    "69875": {
+      "taxonid": 69875,
+      "taxonname": "Chydorus gibbus",
+      "highertaxonid": 27686,
+      "taxagroupid": "CRU",
+      "recdatecreated": "2026-09-23T15:03:26.000Z",
+      "recdatemodified": "2026-09-23T15:03:26.000Z"
+    },
+    "51604": {
+      "taxonid": 51604,
+      "taxonname": "Charcoal (linear)",
+      "highertaxonid": 69871,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:34:03.000Z",
+      "recdatemodified": "2026-09-23T12:18:07.000Z"
+    },
+    "51605": {
+      "taxonid": 51605,
+      "taxonname": "Charcoal (plain)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:35:40.000Z",
+      "recdatemodified": "2026-09-23T12:20:04.000Z"
+    },
+    "45801": {
+      "taxonid": 45801,
+      "taxonname": "cf. Albizia",
+      "highertaxonid": 39745,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2021-08-11T23:47:10.000Z",
+      "recdatemodified": "2026-09-23T09:51:27.000Z"
+    },
+    "69876": {
+      "taxonid": 69876,
+      "taxonname": "Candona directa",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-24T04:10:53.000Z",
+      "recdatemodified": "2026-09-24T04:10:53.000Z"
+    },
+    "69871": {
+      "taxonid": 69871,
+      "taxonname": "Charcoal (elongated)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T09:53:47.000Z",
+      "recdatemodified": "2026-09-23T09:53:47.000Z"
+    },
+    "69877": {
+      "taxonid": 69877,
+      "taxonname": "Candona godlewski",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-24T04:12:18.000Z",
+      "recdatemodified": "2026-09-24T04:12:18.000Z"
+    },
+    "51602": {
+      "taxonid": 51602,
+      "taxonname": "Charcoal (framed)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:29:25.000Z",
+      "recdatemodified": "2026-09-23T12:19:27.000Z"
+    },
+    "51609": {
+      "taxonid": 51609,
+      "taxonname": "Charcoal (tubular)",
+      "highertaxonid": 69871,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:42:44.000Z",
+      "recdatemodified": "2026-09-23T12:18:49.000Z"
+    },
+    "69872": {
+      "taxonid": 69872,
+      "taxonname": "Charcoal (segmented)",
+      "highertaxonid": 69871,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T10:01:43.000Z",
+      "recdatemodified": "2026-09-23T10:01:43.000Z"
+    },
+    "51928": {
+      "taxonid": 51928,
+      "taxonname": "Charcoal (wood)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-12-03T13:06:30.000Z",
+      "recdatemodified": "2026-09-23T10:08:49.000Z"
+    },
+    "39378": {
+      "taxonid": 39378,
+      "taxonname": "Charcoal (bordered pit)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:34:10.000Z",
+      "recdatemodified": "2026-09-23T10:11:17.000Z"
+    },
+    "51930": {
+      "taxonid": 51930,
+      "taxonname": "Charcoal (moss)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-12-03T13:23:11.000Z",
+      "recdatemodified": "2026-09-23T10:14:01.000Z"
+    },
+    "68591": {
+      "taxonid": 68591,
+      "taxonname": "Charcoal morphotype B5",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:58:00.000Z",
+      "recdatemodified": "2026-09-23T10:20:12.000Z"
+    },
+    "68583": {
+      "taxonid": 68583,
+      "taxonname": "Charcoal morphotype A1",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T04:52:26.000Z",
+      "recdatemodified": "2026-09-23T10:16:29.000Z"
+    },
+    "68604": {
+      "taxonid": 68604,
+      "taxonname": "Charcoal morphotype C3",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T06:14:57.000Z",
+      "recdatemodified": "2026-09-23T10:21:46.000Z"
+    },
+    "68597": {
+      "taxonid": 68597,
+      "taxonname": "Charcoal morphotype C7",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:01:03.000Z",
+      "recdatemodified": "2026-09-23T10:23:59.000Z"
+    },
+    "68281": {
+      "taxonid": 68281,
+      "taxonname": "Charcoal morphotype M",
+      "highertaxonid": 68279,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2025-12-16T02:51:56.000Z",
+      "recdatemodified": "2026-09-23T10:26:03.000Z"
+    },
+    "68599": {
+      "taxonid": 68599,
+      "taxonname": "Charcoal morphotype D3",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:02:03.000Z",
+      "recdatemodified": "2026-09-23T10:28:39.000Z"
+    },
+    "68602": {
+      "taxonid": 68602,
+      "taxonname": "Charcoal morphotype F",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-02-28T05:03:41.000Z",
+      "recdatemodified": "2026-09-23T10:29:53.000Z"
+    },
+    "39385": {
+      "taxonid": 39385,
+      "taxonname": "Charcoal (porous)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:48:29.000Z",
+      "recdatemodified": "2026-09-23T12:20:20.000Z"
+    },
+    "39379": {
+      "taxonid": 39379,
+      "taxonname": "Charcoal (branched)",
+      "highertaxonid": 69871,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:40:49.000Z",
+      "recdatemodified": "2026-09-23T12:17:35.000Z"
+    },
+    "39383": {
+      "taxonid": 39383,
+      "taxonname": "Charcoal (latticed)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2019-08-23T02:45:17.000Z",
+      "recdatemodified": "2026-09-23T12:19:44.000Z"
+    },
+    "51601": {
+      "taxonid": 51601,
+      "taxonname": "Charcoal (block)",
+      "highertaxonid": 69869,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2023-10-29T17:20:20.000Z",
+      "recdatemodified": "2026-09-23T12:19:11.000Z"
+    },
+    "69878": {
+      "taxonid": 69878,
+      "taxonname": "Candona orbiculata",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-24T04:14:08.000Z",
+      "recdatemodified": "2026-09-24T04:14:08.000Z"
+    },
+    "990": {
+      "taxonid": 990,
+      "taxonname": "cf. Scrophulariaceae",
+      "highertaxonid": 15529,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2012-03-21T00:00:00.000Z",
+      "recdatemodified": "2026-09-24T08:42:32.000Z"
+    },
+    "4324": {
+      "taxonid": 4324,
+      "taxonname": "cf. Gentianaceae",
+      "highertaxonid": 15529,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2012-03-21T00:00:00.000Z",
+      "recdatemodified": "2026-09-24T09:13:04.000Z"
+    },
+    "69879": {
+      "taxonid": 69879,
+      "taxonname": "Charcoal (irregular/rounded)",
+      "highertaxonid": 1062,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-24T09:16:56.000Z",
+      "recdatemodified": "2026-09-24T09:16:56.000Z"
+    },
+    "49002": {
+      "taxonid": 49002,
+      "taxonname": "Celtis adolfi-friderici-type",
+      "highertaxonid": 49,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2022-08-02T19:33:21.000Z",
+      "recdatemodified": "2026-09-24T09:17:15.000Z"
+    },
+    "46870": {
+      "taxonid": 46870,
+      "taxonname": "Celtis africana-type",
+      "highertaxonid": 49,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2022-01-12T15:06:05.000Z",
+      "recdatemodified": "2026-09-24T09:17:43.000Z"
+    },
+    "69873": {
+      "taxonid": 69873,
+      "taxonname": "Charcoal (vitreous)",
+      "highertaxonid": 69879,
+      "taxagroupid": "CHR",
+      "recdatecreated": "2026-09-23T10:04:38.000Z",
+      "recdatemodified": "2026-09-24T09:18:20.000Z"
+    },
+    "50998": {
+      "taxonid": 50998,
+      "taxonname": "Chione",
+      "highertaxonid": 40263,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2023-05-17T19:23:25.000Z",
+      "recdatemodified": "2026-09-24T09:34:23.000Z"
+    },
+    "44958": {
+      "taxonid": 44958,
+      "taxonname": "Sieruela usambarica-type",
+      "highertaxonid": 47606,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2021-06-29T20:09:53.000Z",
+      "recdatemodified": "2026-09-24T10:10:00.000Z"
+    },
+    "69880": {
+      "taxonid": 69880,
+      "taxonname": "Amphora lange-bertalotii",
+      "highertaxonid": 10347,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:26:27.000Z",
+      "recdatemodified": "2026-09-24T13:26:27.000Z"
+    },
+    "69881": {
+      "taxonid": 69881,
+      "taxonname": "Eunotia fennica",
+      "highertaxonid": 5395,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:28:24.000Z",
+      "recdatemodified": "2026-09-24T13:28:24.000Z"
+    },
+    "69882": {
+      "taxonid": 69882,
+      "taxonname": "Nitzschia dealpina",
+      "highertaxonid": 24521,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:31:41.000Z",
+      "recdatemodified": "2026-09-24T13:31:41.000Z"
+    },
+    "69883": {
+      "taxonid": 69883,
+      "taxonname": "Hantzschia calcifuga",
+      "highertaxonid": 24494,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:34:57.000Z",
+      "recdatemodified": "2026-09-24T13:34:57.000Z"
+    },
+    "69884": {
+      "taxonid": 69884,
+      "taxonname": "Fragilariforma spp.",
+      "highertaxonid": 24449,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:37:34.000Z",
+      "recdatemodified": "2026-09-24T13:37:34.000Z"
+    },
+    "69885": {
+      "taxonid": 69885,
+      "taxonname": "Cocconeis scutellum / C.fluviatilis",
+      "highertaxonid": 24406,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-09-24T13:41:27.000Z",
+      "recdatemodified": "2026-09-24T13:41:27.000Z"
+    },
+    "67433": {
+      "taxonid": 67433,
+      "taxonname": "Molopanthera",
+      "highertaxonid": 43073,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2025-07-09T02:17:19.000Z",
+      "recdatemodified": "2026-09-24T14:43:34.000Z"
+    },
+    "69886": {
+      "taxonid": 69886,
+      "taxonname": "Phialanthus",
+      "highertaxonid": 40270,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-24T14:53:27.000Z",
+      "recdatemodified": "2026-09-24T14:53:27.000Z"
+    },
+    "69887": {
+      "taxonid": 69887,
+      "taxonname": "Candona spicata",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T08:45:13.000Z",
+      "recdatemodified": "2026-09-25T08:45:13.000Z"
+    },
+    "69888": {
+      "taxonid": 69888,
+      "taxonname": "Candona rupestris",
+      "highertaxonid": 14452,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T08:46:42.000Z",
+      "recdatemodified": "2026-09-25T08:46:42.000Z"
+    },
+    "69889": {
+      "taxonid": 69889,
+      "taxonname": "Candona rupestris rupestris",
+      "highertaxonid": 69888,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T08:48:12.000Z",
+      "recdatemodified": "2026-09-25T08:48:12.000Z"
+    },
+    "69890": {
+      "taxonid": 69890,
+      "taxonname": "Candona rupestris dissona",
+      "highertaxonid": 69888,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T08:49:41.000Z",
+      "recdatemodified": "2026-09-25T08:49:41.000Z"
+    },
+    "69891": {
+      "taxonid": 69891,
+      "taxonname": "Cytherissa lacustris lacustris",
+      "highertaxonid": 14623,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T09:03:42.000Z",
+      "recdatemodified": "2026-09-25T09:03:42.000Z"
+    },
+    "69892": {
+      "taxonid": 69892,
+      "taxonname": "Cytherissa lacustris hovsgolensis",
+      "highertaxonid": 14623,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T09:09:30.000Z",
+      "recdatemodified": "2026-09-25T09:09:30.000Z"
+    },
+    "69893": {
+      "taxonid": 69893,
+      "taxonname": "Cytherissa daschdorshi",
+      "highertaxonid": 14622,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-25T09:12:43.000Z",
+      "recdatemodified": "2026-09-25T09:12:43.000Z"
+    },
+    "69894": {
+      "taxonid": 69894,
+      "taxonname": "Acetosa",
+      "highertaxonid": 33590,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-25T12:45:14.000Z",
+      "recdatemodified": "2026-09-25T12:45:14.000Z"
+    },
+    "69895": {
+      "taxonid": 69895,
+      "taxonname": "Acetosa pratensis",
+      "highertaxonid": 69894,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-25T12:47:30.000Z",
+      "recdatemodified": "2026-09-25T12:47:30.000Z"
+    },
+    "69896": {
+      "taxonid": 69896,
+      "taxonname": "Acetosella",
+      "highertaxonid": 33590,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-25T13:15:45.000Z",
+      "recdatemodified": "2026-09-25T13:15:45.000Z"
+    },
+    "69897": {
+      "taxonid": 69897,
+      "taxonname": "Triticum cf. T. dicoccum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-25T13:32:50.000Z",
+      "recdatemodified": "2026-09-25T13:32:50.000Z"
+    },
+    "69898": {
+      "taxonid": 69898,
+      "taxonname": "Baicalcandona",
+      "highertaxonid": 14451,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-26T08:47:01.000Z",
+      "recdatemodified": "2026-09-26T08:47:01.000Z"
+    },
+    "69899": {
+      "taxonid": 69899,
+      "taxonname": "Baicalocandona navitarum",
+      "highertaxonid": 69898,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-26T08:48:50.000Z",
+      "recdatemodified": "2026-09-26T08:48:50.000Z"
+    },
+    "69900": {
+      "taxonid": 69900,
+      "taxonname": "Leucocythere dorsotuberosa var. typica",
+      "highertaxonid": 50296,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-26T08:52:48.000Z",
+      "recdatemodified": "2026-09-26T08:52:48.000Z"
+    },
+    "69901": {
+      "taxonid": 69901,
+      "taxonname": "Gentiana cf. G. ettingshausenii-type",
+      "highertaxonid": 448,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-09-28T02:27:39.000Z",
+      "recdatemodified": "2026-09-28T02:27:39.000Z"
     }
   }
 }
