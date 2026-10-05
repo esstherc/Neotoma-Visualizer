@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-28T08:08:36+00:00",
-  "since": "2026-08-29",
+  "generated_at": "2026-10-05T08:08:37+00:00",
+  "since": "2026-09-05",
   "counts": {
-    "new": 114,
+    "new": 109,
     "modified": 65,
-    "total": 179
+    "total": 174
   },
   "new": [
     {
@@ -366,6 +366,30 @@
       ]
     },
     {
+      "taxonid": 69910,
+      "taxonname": "Achnanthes cf A .marginulata fo. major",
+      "highertaxonid": 14153,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-10-02T14:41:05.000Z",
+      "recdatemodified": "2026-10-02T14:41:05.000Z",
+      "path_ids": [
+        2054,
+        5396,
+        24597,
+        14154,
+        14153,
+        69910
+      ],
+      "path_names": [
+        "Algae",
+        "Bacillariophyta",
+        "Pennales",
+        "Achnanthaceae",
+        "Achnanthes",
+        "Achnanthes cf A .marginulata fo. major"
+      ]
+    },
+    {
       "taxonid": 69880,
       "taxonname": "Amphora lange-bertalotii",
       "highertaxonid": 10347,
@@ -387,30 +411,6 @@
         "Catenulaceae",
         "Amphora",
         "Amphora lange-bertalotii"
-      ]
-    },
-    {
-      "taxonid": 69796,
-      "taxonname": "Cocconeis cf. grovei",
-      "highertaxonid": 24406,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-01T22:21:45.000Z",
-      "recdatemodified": "2026-09-01T22:21:45.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        14154,
-        24406,
-        69796
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Achnanthaceae",
-        "Cocconeis",
-        "Cocconeis cf. grovei"
       ]
     },
     {
@@ -459,30 +459,6 @@
         "Eunotiaceae",
         "Eunotia",
         "Eunotia fennica"
-      ]
-    },
-    {
-      "taxonid": 69795,
-      "taxonname": "Fragilaria cf. pectinalis",
-      "highertaxonid": 24447,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-01T16:42:15.000Z",
-      "recdatemodified": "2026-09-01T16:42:15.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24447,
-        69795
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Fragilaria",
-        "Fragilaria cf. pectinalis"
       ]
     },
     {
@@ -558,240 +534,6 @@
       ]
     },
     {
-      "taxonid": 69797,
-      "taxonname": "Sellaphora cf. auldreekie",
-      "highertaxonid": 24569,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-01T22:24:08.000Z",
-      "recdatemodified": "2026-09-01T22:24:08.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24626,
-        24569,
-        69797
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Sellaphoraceae",
-        "Sellaphora",
-        "Sellaphora cf. auldreekie"
-      ]
-    },
-    {
-      "taxonid": 69799,
-      "taxonname": "Sellaphora cf. seminuloides",
-      "highertaxonid": 24569,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-02T00:12:45.000Z",
-      "recdatemodified": "2026-09-02T00:12:45.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24626,
-        24569,
-        69799
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Sellaphoraceae",
-        "Sellaphora",
-        "Sellaphora cf. seminuloides"
-      ]
-    },
-    {
-      "taxonid": 69798,
-      "taxonname": "Sellaphora cf. submuralis",
-      "highertaxonid": 24569,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-01T22:49:10.000Z",
-      "recdatemodified": "2026-09-01T22:49:10.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24626,
-        24569,
-        69798
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Sellaphoraceae",
-        "Sellaphora",
-        "Sellaphora cf. submuralis"
-      ]
-    },
-    {
-      "taxonid": 69789,
-      "taxonname": "Stauroneis bovbjergii",
-      "highertaxonid": 24576,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T18:01:31.000Z",
-      "recdatemodified": "2026-08-31T18:01:31.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24627,
-        24576,
-        69789
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Stauroneidaceae",
-        "Stauroneis",
-        "Stauroneis bovbjergii"
-      ]
-    },
-    {
-      "taxonid": 69790,
-      "taxonname": "Staurosirella ansata",
-      "highertaxonid": 24580,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T18:05:54.000Z",
-      "recdatemodified": "2026-08-31T18:05:54.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24580,
-        69790
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Staurosirella",
-        "Staurosirella ansata"
-      ]
-    },
-    {
-      "taxonid": 69791,
-      "taxonname": "Staurosirella neopinnata",
-      "highertaxonid": 24580,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T18:12:57.000Z",
-      "recdatemodified": "2026-08-31T18:12:57.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24580,
-        69791
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Staurosirella",
-        "Staurosirella neopinnata"
-      ]
-    },
-    {
-      "taxonid": 69800,
-      "taxonname": "Staurosirella sp. 8 UMD",
-      "highertaxonid": 24580,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-09-02T00:15:57.000Z",
-      "recdatemodified": "2026-09-02T00:15:57.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24580,
-        69800
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Staurosirella",
-        "Staurosirella sp. 8 UMD"
-      ]
-    },
-    {
-      "taxonid": 69792,
-      "taxonname": "Stephanocyclus gamma",
-      "highertaxonid": 48772,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T19:18:22.000Z",
-      "recdatemodified": "2026-08-31T19:18:22.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24599,
-        24635,
-        48772,
-        69792
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Centrales",
-        "Coscinodiscaceae",
-        "Stephanocyclus",
-        "Stephanocyclus gamma"
-      ]
-    },
-    {
-      "taxonid": 69793,
-      "taxonname": "Ulnaria danica",
-      "highertaxonid": 24595,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T19:25:02.000Z",
-      "recdatemodified": "2026-08-31T19:25:02.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        24597,
-        24614,
-        24595,
-        69793
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Pennales",
-        "Fragilariaceae",
-        "Ulnaria",
-        "Ulnaria danica"
-      ]
-    },
-    {
-      "taxonid": 69794,
-      "taxonname": "Undetermined symmetrical biraphid",
-      "highertaxonid": 5396,
-      "taxagroupid": "DIA",
-      "recdatecreated": "2026-08-31T21:39:39.000Z",
-      "recdatemodified": "2026-08-31T21:39:39.000Z",
-      "path_ids": [
-        2054,
-        5396,
-        69794
-      ],
-      "path_names": [
-        "Algae",
-        "Bacillariophyta",
-        "Undetermined symmetrical biraphid"
-      ]
-    },
-    {
       "taxonid": 69803,
       "taxonname": "Nanohaloarchaeaceae_X_sp.",
       "highertaxonid": 32182,
@@ -805,6 +547,20 @@
       "path_names": [
         "Eukaryota",
         "Nanohaloarchaeaceae_X_sp."
+      ]
+    },
+    {
+      "taxonid": 69903,
+      "taxonname": "Anhysteretic Remanent Magnetization",
+      "highertaxonid": null,
+      "taxagroupid": "MAG",
+      "recdatecreated": "2026-09-29T21:26:53.000Z",
+      "recdatemodified": "2026-09-29T21:26:53.000Z",
+      "path_ids": [
+        69903
+      ],
+      "path_names": [
+        "Anhysteretic Remanent Magnetization"
       ]
     },
     {
@@ -2616,6 +2372,42 @@
       ]
     },
     {
+      "taxonid": 69902,
+      "taxonname": "Hungarocypris serrata",
+      "highertaxonid": 50275,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-28T09:23:44.000Z",
+      "recdatemodified": "2026-09-28T09:23:44.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14522,
+        50274,
+        50275,
+        69902
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Cyprididae",
+        "Hungarocypridinae",
+        "Hungarocypris",
+        "Hungarocypris serrata"
+      ]
+    },
+    {
       "taxonid": 69900,
       "taxonname": "Leucocythere dorsotuberosa var. typica",
       "highertaxonid": 50296,
@@ -2651,6 +2443,78 @@
         "Leucocythere",
         "Leucocythere dorsotuberosa",
         "Leucocythere dorsotuberosa var. typica"
+      ]
+    },
+    {
+      "taxonid": 69904,
+      "taxonname": "Pseudocandona ceratina",
+      "highertaxonid": 14492,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-30T09:26:11.000Z",
+      "recdatemodified": "2026-09-30T09:26:11.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14450,
+        14451,
+        14492,
+        69904
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Candonidae",
+        "Candoninae",
+        "Pseudocandona",
+        "Pseudocandona ceratina"
+      ]
+    },
+    {
+      "taxonid": 69905,
+      "taxonname": "Pseudocandona gajewskajae",
+      "highertaxonid": 14492,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-30T09:27:55.000Z",
+      "recdatemodified": "2026-09-30T09:27:55.000Z",
+      "path_ids": [
+        32182,
+        6758,
+        9449,
+        9450,
+        13914,
+        14443,
+        14448,
+        14449,
+        14450,
+        14451,
+        14492,
+        69905
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Animalia",
+        "Arthropoda",
+        "Crustacea",
+        "Ostracoda",
+        "Podocopida",
+        "Cypridocopina",
+        "Cypridoidea",
+        "Candonidae",
+        "Candoninae",
+        "Pseudocandona",
+        "Pseudocandona gajewskajae"
       ]
     },
     {
@@ -2794,50 +2658,6 @@
       ]
     },
     {
-      "taxonid": 69788,
-      "taxonname": "Alnus/Salix",
-      "highertaxonid": 29503,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-08-29T12:26:54.000Z",
-      "recdatemodified": "2026-08-29T12:26:54.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        2133,
-        9575,
-        2132,
-        9653,
-        9652,
-        9606,
-        9607,
-        29503,
-        69788
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Angiospermae",
-        "Mesangiospermae",
-        "Eudicotyledoneae",
-        "Gunneridae",
-        "Pentapetalae",
-        "Rosidae",
-        "Fabidae",
-        "Fabidae incertae sedis",
-        "Alnus/Salix"
-      ]
-    },
-    {
       "taxonid": 69824,
       "taxonname": "Araliaceae cf. Polyscias-type",
       "highertaxonid": 22,
@@ -2921,56 +2741,6 @@
         "Chloranthales",
         "Chloranthaceae",
         "Ascarina-type"
-      ]
-    },
-    {
-      "taxonid": 69787,
-      "taxonname": "Carex flava agg.",
-      "highertaxonid": 1297,
-      "taxagroupid": "VPL",
-      "recdatecreated": "2026-08-29T12:05:21.000Z",
-      "recdatemodified": "2026-08-29T12:05:21.000Z",
-      "path_ids": [
-        32182,
-        9095,
-        33028,
-        33029,
-        33038,
-        9534,
-        5480,
-        2133,
-        9575,
-        2131,
-        15532,
-        15531,
-        15533,
-        9108,
-        74,
-        40110,
-        40114,
-        1297,
-        69787
-      ],
-      "path_names": [
-        "Eukaryota",
-        "Plantae",
-        "Viridiplantae",
-        "Streptophyta",
-        "Embryophyta",
-        "Tracheophyta",
-        "Spermatophyta",
-        "Angiospermae",
-        "Mesangiospermae",
-        "Monocotyledoneae",
-        "Nartheciidae",
-        "Petrosaviidae",
-        "Commelinidae",
-        "Poales",
-        "Cyperaceae",
-        "Cyperoideae",
-        "Cariceae",
-        "Carex",
-        "Carex flava agg."
       ]
     },
     {
@@ -3378,6 +3148,110 @@
       ]
     },
     {
+      "taxonid": 69909,
+      "taxonname": "Triticum aestivum/T. durum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:34:19.000Z",
+      "recdatemodified": "2026-10-02T11:34:19.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        417,
+        49744,
+        50819,
+        50820,
+        969,
+        69909
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Poaceae",
+        "Pooideae",
+        "Triticeae",
+        "Triticinae",
+        "Triticum",
+        "Triticum aestivum/T. durum"
+      ]
+    },
+    {
+      "taxonid": 69908,
+      "taxonname": "Triticum cf. T. aestivum/T. durum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:32:56.000Z",
+      "recdatemodified": "2026-10-02T11:32:56.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        417,
+        49744,
+        50819,
+        50820,
+        969,
+        69908
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Poaceae",
+        "Pooideae",
+        "Triticeae",
+        "Triticinae",
+        "Triticum",
+        "Triticum cf. T. aestivum/T. durum"
+      ]
+    },
+    {
       "taxonid": 69897,
       "taxonname": "Triticum cf. T. dicoccum",
       "highertaxonid": 969,
@@ -3427,6 +3301,110 @@
         "Triticinae",
         "Triticum",
         "Triticum cf. T. dicoccum"
+      ]
+    },
+    {
+      "taxonid": 69906,
+      "taxonname": "Triticum cf. T. monococcum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:27:33.000Z",
+      "recdatemodified": "2026-10-02T11:27:33.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        417,
+        49744,
+        50819,
+        50820,
+        969,
+        69906
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Poaceae",
+        "Pooideae",
+        "Triticeae",
+        "Triticinae",
+        "Triticum",
+        "Triticum cf. T. monococcum"
+      ]
+    },
+    {
+      "taxonid": 69907,
+      "taxonname": "Triticum cf. T. spelta",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:28:45.000Z",
+      "recdatemodified": "2026-10-02T11:28:45.000Z",
+      "path_ids": [
+        32182,
+        9095,
+        33028,
+        33029,
+        33038,
+        9534,
+        5480,
+        2133,
+        9575,
+        2131,
+        15532,
+        15531,
+        15533,
+        9108,
+        417,
+        49744,
+        50819,
+        50820,
+        969,
+        69907
+      ],
+      "path_names": [
+        "Eukaryota",
+        "Plantae",
+        "Viridiplantae",
+        "Streptophyta",
+        "Embryophyta",
+        "Tracheophyta",
+        "Spermatophyta",
+        "Angiospermae",
+        "Mesangiospermae",
+        "Monocotyledoneae",
+        "Nartheciidae",
+        "Petrosaviidae",
+        "Commelinidae",
+        "Poales",
+        "Poaceae",
+        "Pooideae",
+        "Triticeae",
+        "Triticinae",
+        "Triticum",
+        "Triticum cf. T. spelta"
       ]
     },
     {

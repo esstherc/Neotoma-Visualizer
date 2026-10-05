@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T08:08:36+00:00",
+  "generated_at": "2026-10-05T08:08:37+00:00",
   "taxa": {
     "1": {
       "taxonid": 1,
@@ -473048,6 +473048,78 @@
       "taxagroupid": "VPL",
       "recdatecreated": "2026-09-28T02:27:39.000Z",
       "recdatemodified": "2026-09-28T02:27:39.000Z"
+    },
+    "69902": {
+      "taxonid": 69902,
+      "taxonname": "Hungarocypris serrata",
+      "highertaxonid": 50275,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-28T09:23:44.000Z",
+      "recdatemodified": "2026-09-28T09:23:44.000Z"
+    },
+    "69903": {
+      "taxonid": 69903,
+      "taxonname": "Anhysteretic Remanent Magnetization",
+      "highertaxonid": null,
+      "taxagroupid": "MAG",
+      "recdatecreated": "2026-09-29T21:26:53.000Z",
+      "recdatemodified": "2026-09-29T21:26:53.000Z"
+    },
+    "69904": {
+      "taxonid": 69904,
+      "taxonname": "Pseudocandona ceratina",
+      "highertaxonid": 14492,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-30T09:26:11.000Z",
+      "recdatemodified": "2026-09-30T09:26:11.000Z"
+    },
+    "69905": {
+      "taxonid": 69905,
+      "taxonname": "Pseudocandona gajewskajae",
+      "highertaxonid": 14492,
+      "taxagroupid": "OST",
+      "recdatecreated": "2026-09-30T09:27:55.000Z",
+      "recdatemodified": "2026-09-30T09:27:55.000Z"
+    },
+    "69906": {
+      "taxonid": 69906,
+      "taxonname": "Triticum cf. T. monococcum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:27:33.000Z",
+      "recdatemodified": "2026-10-02T11:27:33.000Z"
+    },
+    "69907": {
+      "taxonid": 69907,
+      "taxonname": "Triticum cf. T. spelta",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:28:45.000Z",
+      "recdatemodified": "2026-10-02T11:28:45.000Z"
+    },
+    "69908": {
+      "taxonid": 69908,
+      "taxonname": "Triticum cf. T. aestivum/T. durum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:32:56.000Z",
+      "recdatemodified": "2026-10-02T11:32:56.000Z"
+    },
+    "69909": {
+      "taxonid": 69909,
+      "taxonname": "Triticum aestivum/T. durum",
+      "highertaxonid": 969,
+      "taxagroupid": "VPL",
+      "recdatecreated": "2026-10-02T11:34:19.000Z",
+      "recdatemodified": "2026-10-02T11:34:19.000Z"
+    },
+    "69910": {
+      "taxonid": 69910,
+      "taxonname": "Achnanthes cf A .marginulata fo. major",
+      "highertaxonid": 14153,
+      "taxagroupid": "DIA",
+      "recdatecreated": "2026-10-02T14:41:05.000Z",
+      "recdatemodified": "2026-10-02T14:41:05.000Z"
     }
   }
 }
